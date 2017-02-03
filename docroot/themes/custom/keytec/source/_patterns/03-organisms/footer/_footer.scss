@@ -1,0 +1,31 @@
+.footer {
+  background: $keytec-grey;
+  padding-top: rem-calc(50);
+
+  .image {
+    text-align: right;
+    float: right;
+    margin-top: $spacer1;
+  }
+  .text {
+    color: $dark-gray;
+    margin-top: $spacer1;
+  }
+  @include breakpoint(medium) {
+    .menu {
+      li {
+        border-bottom: none;
+      }
+    }
+    .text {
+      margin-top: $spacer2;
+    }
+    .image {
+      margin-top: $spacer2;
+    }
+  }
+
+}
+
+
+

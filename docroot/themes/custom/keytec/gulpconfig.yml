@@ -1,0 +1,134 @@
+css:
+  enabled: true
+  src:
+    - scss/**/*.scss
+    - source/_patterns/**/*.scss
+  dest: dest/
+  flattenDestOutput: true
+  lint:
+    enabled: false
+    failOnError: false
+  sourceComments: false
+  sourceMapEmbed: false
+  # tell the compiler whether you want 'expanded' or 'compressed' output code
+  outputStyle: expanded
+  autoPrefixerBrowsers: # https://github.com/ai/browserslist#queries
+    - last 2 versions
+    - IE >= 9
+  includePaths:
+    - ./node_modules
+    - ./bower_components/foundation-sites/scss
+    - ./fonts
+  sassdoc: # http://sassdoc.com
+    enabled: true
+    dest: dest/sassdoc
+    verbose: false
+    basePath: https://github.com/phase2/pattern-lab-starter/blob/master/scss
+#    exclude:
+#      - file.scss
+    theme: default
+    sort: # http://sassdoc.com/customising-the-view/#sort
+      - file
+      - group
+      - line>
+js:
+  enabled: true
+  src:
+    - js/**/*.js
+  dest: dest/
+  destName: script.js
+  sourceMapEmbed: false
+  uglify: false
+  babel: true
+  eslint:
+    enabled: true
+    src:
+      - js/**/*.js
+      - gulpfile.js
+patternLab:
+  enabled: true
+  configFile: pattern-lab/config/config.yml
+  watchedExtensions:
+    - twig
+    - json
+    - yaml
+    - yml
+    - md
+    - jpg
+    - jpeg
+    - png
+  injectFiles:
+    - bower_components/jquery/dist/jquery.js
+    - bower_components/jquery-once/jquery.once.js
+    - bower_components/domready/ready.js
+    - bower_components/slick-carousel/slick/slick.js
+    - bower_components/slick-carousel/slick/slick.css
+    - bower_components/underscore/underscore.js
+    - bower_components/backbone/backbone.js
+    - bower_components/matchmedia/matchMedia.js
+    - bower_components/matchmedia/matchMedia.addListener.js
+    - bower_components/drupal8/index.js
+    - bower_components/autosize/dist/autosize.js
+    - bower_components/jquery-ui/ui/core.js
+    - bower_components/jquery-ui/ui/widget.js
+    - bower_components/jquery-ui/ui/mouse.js
+    - bower_components/jquery-ui/ui/slider.js
+    - bower_components/jquery-ui/themes/base/core.css
+    - bower_components/jquery-ui/themes/base/theme.css
+    - bower_components/jquery-ui/themes/base/slider.css
+    - bower_components/foundation-sites/dist/foundation.js
+    - fonts/balzac/balzac.css
+#    - source/styleguide/styleguide.js
+#    - source/styleguide/custom-styleguide-specific.css
+ #   - ../../modules/**/*.css
+  injectBower: false
+
+icons:
+  enabled: true
+  src: icons/src/*.svg
+  dest: dest/icons
+  fontPathPrefix: 'icons/'
+  classNamePrefix: icon
+  autohint: false
+  normalize: true
+  templates:
+    enabled: true
+    css:
+      src: icons/templates/_icons.scss
+      dest: scss/00-config/
+    demo:
+      src: icons/templates/icons.twig
+      dest: source/_patterns/01-atoms/icons/
+  formats:
+    - ttf
+    - eot
+    - woff
+    - woff2
+    - svg
+browserSync:
+  enabled: true
+  port: 3050
+  watchFiles:
+    # - template.php
+  # domain: mysite.dev # enable when full CMS is set up
+  baseDir: ./
+  startPath: pattern-lab/public/
+  openBrowserAtStart: false
+  # requires above to be true; allows non-default browser to open
+  browser:
+    - Google Chrome
+  # Tunnel the Browsersync server through a random Public URL
+  # -> http://randomstring23232.localtunnel.me
+  tunnel: false
+  reloadDelay: 50
+  reloadDebounce: 750
+drupal:
+  enabled: true
+  watch:
+    - templates/**
+  command: drush cr
+  # in this directory
+  dir: ./
+  inject:
+    bower: true
+    file: food.info.yml

@@ -1,0 +1,82 @@
+{
+  "headline": null,
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "organisms-two-col",
+          "with": {
+            "headline": null,
+            "modifier":"greyed large",
+            "left_size":7,
+            "left": {
+              "include()": {
+                "pattern": "atoms-text",
+                "with": {
+                  "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p><a href=\"#\" >www.flixbus.de</a></p>"
+                }
+              }
+            },
+            "right": {
+              "join()": [
+                {
+                  "include()": {
+                    "pattern": "atoms-tape",
+                    "with": {
+                      "label": "Leistungen",
+                      "modifier": "small red",
+                      "class": "small-12 columns",
+                      "attributes": {
+                        "Attribute()": {
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "atoms-text",
+                    "with": {
+                      "text": "<ul><li>Drupal Entwicklungen</li><li>Drupal Schulungen</li><li>Drupal Performance-Optimierung</li><li>Wartung und technischer Support</li></ul>",
+                      "attributes": {
+                        "Attribute()": {
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-two-col",
+          "with": {
+            "headline": null,
+            "modifier": "large red",
+            "left_size":7,
+            "left": {
+              "include()": {
+                "pattern": "atoms-image",
+                "with": {
+                  "src": "/images/ref_detail_ipad_horizontal.png"
+                }
+              }
+            },
+            "right": {
+              "include()": {
+                "pattern": "atoms-image",
+                "with": {
+                  "src": "/images/ref_header_iphone.png"
+                }
+              }
+            }
+
+          }
+        }
+      }
+    ]
+  }
+}

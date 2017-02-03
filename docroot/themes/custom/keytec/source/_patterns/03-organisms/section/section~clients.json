@@ -1,0 +1,105 @@
+{
+  "headline": "Unsere Kunden",
+  "modifier": "greyed",
+  "content_has_row": true,
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+.two-col {
+
+  &--large{
+    padding: rem-calc(42) 0;
+    @include breakpoint(medium){
+      padding: rem-calc(84) 0;
+    }
+  }
+  &--greyed {
+    background-color: $keytec-grey;
+  }
+  &__column {
+    &--overlapping {
+      margin-top: -20px;
+    }
+    &--large {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+  }
+  &--red {
+    background-color: #d3aaae;
+  }
+  &--beige {
+    background-color: beige;
+  }
+}

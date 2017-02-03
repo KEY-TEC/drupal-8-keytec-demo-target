@@ -1,0 +1,15 @@
+{
+  "content": {
+    "include()": {
+      "pattern": "atoms-image-center",
+      "with": {
+        "src":"/images/ref_header_macbook.png",
+        "attributes": {
+          "Attribute()": {
+          }
+        }
+      }
+    }
+  }
+}
+

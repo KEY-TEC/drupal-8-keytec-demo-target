@@ -1,0 +1,84 @@
+{
+  "headline":"KEY-TEC konzipiert, entwickelt und<br>wartet Drupal Application",
+  "content_has_row": true,
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "label": "est. 2000",
+            "modifier": "cross red",
+            "class": "small-12 columns text-center",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-service",
+          "with": {
+            "href": "#",
+            "src":"/images/kyt_beratung_icon_stat.png",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-service",
+          "with":{
+            "href": "#",
+            "src":"/images/kyt_entwicklung_icon_stat.png",
+            "kicker":"Entwicklung",
+            "headline":"Total Genial",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-service",
+          "with":{
+            "href": "#",
+            "src":"/images/kyt_wartung_icon_stat.png",
+            "kicker":"Wartung",
+            "headline":"Total Optimal",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser-service",
+          "with":{
+            "href": "#",
+            "src":"/images/kyt_hosting_icon_stat.png",
+            "kicker":"Hosting",
+            "headline":"Total Final",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-6 medium-3 columns"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

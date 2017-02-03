@@ -1,0 +1,36 @@
+{
+  "name": "pattern-lab-starter",
+  "version": "0.0.0",
+  "description": "Components for PL work via Bower",
+  "keywords": [
+    "js"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "comment": "dependencies get injected into Drupal and Pattern Lab; devDependencies only get injected into Pattern Lab",
+  "suggestedDevDeps": {
+    "drupal7": "http://cgit.drupalcode.org/drupal/plain/misc/drupal.js?h=7.x",
+    "drupal8": "http://cgit.drupalcode.org/drupal/plain/core/misc/drupal.js?h=8.1.x"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "^2.0.0",
+    "underscore": "1.8.3",
+    "backbone": "1.2.3",
+    "domready": "^1.0.8",
+    "drupal8": "http://cgit.drupalcode.org/drupal/plain/core/misc/drupal.js?h=8.1.7",
+    "jquery-once": "2.1.1",
+    "matchmedia": "matchmedia#^0.3.0",
+    "slick-carousel": "slick.js#^1.6.0",
+    "autosize": "3.0.17",
+    "jquery-ui": "jqueryui#~1.11.4"
+  }
+}

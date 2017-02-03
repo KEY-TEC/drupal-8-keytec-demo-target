@@ -1,0 +1,6 @@
+services:
+  keytec_theme.twig.keytec:
+    arguments: ['@renderer']
+    class: Drupal\keytec_theme\TwigExtension\KeytecTheme
+    tags:
+      - { name: twig.extension }

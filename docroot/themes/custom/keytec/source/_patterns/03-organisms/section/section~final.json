@@ -1,0 +1,128 @@
+{
+  "headline": "<p>Ein knackiger Zweizeiler zum Thema Hosting</br>sit eget eros faucibus tincidunt<p>",
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "organisms-two-col",
+          "with": {
+            "headline": null,
+            "modifier":"greyed",
+            "left_modifier":"overlapping",
+            "left": {
+              "include()": {
+                "pattern": "atoms-image",
+                "with": {
+                  "src": "/images/ref_brockhaus_active.jpg"
+                }
+              }
+            },
+            "right_modifier":"large",
+            "right": {
+              "join()": [
+                {
+                  "include()": {
+                    "pattern": "atoms-headline",
+                    "with": {
+                      "modifier":"balzac yellow",
+                      "text":"Drupal 7"
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "atoms-text",
+                    "with": {
+                      "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      },
+      {
+      "include()": {
+        "pattern": "organisms-two-col",
+        "with": {
+          "modifier": "large",
+          "headline": {
+            "include()": {
+              "pattern": "atoms-headline",
+              "with": {
+                "modifier": "balzac yellow",
+                "text": "Hosting headline #2"
+              }
+            }
+          },
+          "left": {
+            "include()": {
+                  "pattern": "atoms-text",
+                  "with": {
+                    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,"
+                  }
+                }
+          },
+          "right": {
+            "include()": {
+              "pattern": "atoms-text",
+              "with": {
+                "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+              }
+            }
+          }
+
+        }
+      }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-two-col",
+          "with": {
+            "headline": null,
+            "modifier":"greyed large",
+            "left": {
+              "join()": [
+                {
+                  "include()": {
+                    "pattern": "atoms-tape",
+                    "with": {
+                      "label": "Leistungen",
+                      "modifier": "small red",
+                      "class": "small-12 columns",
+                      "attributes": {
+                        "Attribute()": {
+                        }
+                      }
+                    }
+                  }
+                },
+                {
+                  "include()": {
+                    "pattern": "atoms-text",
+                    "with": {
+                      "text": "<ul><li>Drupal 7</li><li>Erweiterung der Search API</li><li>Frontend mit backbone.js</li><li>Fehlertolerante Suche</li><li>Abo-Modelle/Nutzerverwaltung</li><li>Responsive HTML5 Drupaltheme</li><li>Second Level Support</li></ul>",
+                      "attributes": {
+                        "Attribute()": {
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "right": {
+              "include()": {
+                "pattern": "atoms-image",
+                "with": {
+                  "src": "/images/ref_detail_ipad_horizontal.png"
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

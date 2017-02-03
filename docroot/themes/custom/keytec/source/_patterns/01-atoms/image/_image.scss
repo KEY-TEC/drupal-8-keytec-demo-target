@@ -1,0 +1,14 @@
+.image{
+
+  &--right{
+    text-align: right;
+  }
+  &--small{
+    img{
+      width:40%;
+    }
+  }
+  &--center{
+    text-align: center;
+  }
+}

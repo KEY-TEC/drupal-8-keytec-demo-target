@@ -1,0 +1,19 @@
+{
+  "attributes": {
+    "Attribute()": {}
+  },
+  "items" : [
+    {
+      "title":"Kontakt",
+      "link": "#"
+    },
+    {
+      "title":"Impressum",
+      "link": "#"
+    },
+    {
+      "title":"Datenschutz",
+      "link": "#"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.text{
+  &--color {
+    p {
+    color: $text-grey;
+  }
+  }
+  &--dark-color {
+    p {
+      color: $text-grey;
+    }
+  }
+}

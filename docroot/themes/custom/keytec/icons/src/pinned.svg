@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>pinned</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pinned" fill="#000000">
+            <path d="M448.8,3.2 C464,8.8 472.8,23.2 472.8,38.4 L472.8,474.4 C472.8,489.6 463.2,503.2 448.8,509.6 C444,512 439.2,512 433.6,512 C423.2,512 413.6,508 405.6,500.8 L256.8,357.6 L107.2,500.8 C99.2,508 89.6,512 79.2,512 C74.4,512 68.8,511.2 64,508.8 C48.8,503.2 40,488.8 40,473.6 L40,37.6 C40,22.4 49.6,8.8 64,2.4 C69.6,0.8 74.4,0 79.2,0 L433.6,0 C439.2,0 444,0.8 448.8,3.2 L448.8,3.2 Z M83.2,43.2 L83.2,464 L226.4,326.4 L256.8,297.6 L287.2,326.4 L430.4,464 L430.4,43.2 L83.2,43.2 L83.2,43.2 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

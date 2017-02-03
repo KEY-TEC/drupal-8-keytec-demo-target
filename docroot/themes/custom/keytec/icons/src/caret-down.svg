@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>caret-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="caret-down" fill="#000000">
+            <path d="M512,144 C512,152.666667 508.833333,160.166667 502.5,166.5 L278.5,390.5 C272.166667,396.833333 264.666667,400 256,400 C247.333333,400 239.833333,396.833333 233.5,390.5 L9.5,166.5 C3.16666667,160.166667 0,152.666667 0,144 C0,135.333333 3.16666667,127.833333 9.5,121.5 C15.8333333,115.166667 23.3333333,112 32,112 L480,112 C488.666667,112 496.166667,115.166667 502.5,121.5 C508.833333,127.833333 512,135.333333 512,144 L512,144 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

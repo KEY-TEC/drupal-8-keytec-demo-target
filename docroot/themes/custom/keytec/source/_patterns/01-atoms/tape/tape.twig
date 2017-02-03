@@ -1,0 +1,17 @@
+<div class="tape-wrapper {{ class }}">
+  <div class="tape {{ modifier_class('tape', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    <div class="tape--label">
+      {% block label %}
+        {{- label -}}
+      {% endblock label %}
+    </div>
+    {% if label2 != null %}
+      <div class="tape--label2">
+        {% block label2 %}
+          {{- label2 -}}
+        {% endblock label2 %}
+      </div>
+    {% endif %}
+    {{ sub }}
+  </div>
+</div>

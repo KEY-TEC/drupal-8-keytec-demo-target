@@ -1,0 +1,28 @@
+name: keytec
+type: theme
+description: keytec Theme
+core: 8.x
+libraries:
+  - keytec/global-styling
+#  - core/drupalSettings
+#  - core/drupal.ajax
+
+component-libraries:
+
+  organisms:
+        paths:
+          - source/_patterns/03-organisms
+  molecules:
+        paths:
+          - source/_patterns/02-molecules
+  atoms:
+        paths:
+          - source/_patterns/01-atoms
+  templates:
+        paths:
+          - source/_patterns/04-templates
+
+regions:
+  header: Header
+  content: Content  # the content region is required
+  footer: Footer

@@ -1,0 +1,21 @@
+{
+  "modifier": "horizontal",
+  "items" : [
+    {
+      "title":"Leistungen",
+      "link": "#"
+    },
+    {
+      "title":"Projekte",
+      "link": "#"
+    },
+    {
+      "title":"Über uns",
+      "link": "#"
+    },
+    {
+      "title":"Kontakte",
+      "link": "#"
+    }
+  ]
+}

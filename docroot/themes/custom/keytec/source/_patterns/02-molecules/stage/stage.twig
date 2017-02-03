@@ -1,0 +1,19 @@
+<div class="stage {{ modifier_class('stage', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }} style="background-image: url('{{ background_image }}')">
+    <div class="stage__layer">
+        <div class="row ">
+        {% if logo_image != null %}
+
+            <div class="hide-for-small-only stage__logo small-5 columns">
+                {% include "@atoms/image/image.twig" with {"modifier":logo_modifier, "src":logo_image} only %}
+            </div>
+        {% endif %}
+        {% if label != null %}
+
+            <div class="small-7 columns">
+                {% include "@atoms/tape/tape.twig" with {"modifier":tape_modifier,"label":label,"label2":label2} only %}
+            </div>
+
+        {% endif %}
+        </div>
+    </div>
+</div>

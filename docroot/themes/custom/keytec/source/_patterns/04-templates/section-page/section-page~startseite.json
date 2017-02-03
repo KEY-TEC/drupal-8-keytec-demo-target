@@ -1,0 +1,104 @@
+{
+
+  "items" : [
+    {
+      "title":"Kontakt",
+      "link": "#"
+    },
+    {
+      "title":"Impressum",
+      "link": "#"
+    },
+    {
+      "title":"Datenschutz",
+      "link": "#"
+    }
+  ]
+,
+
+"content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-stage",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "class": "show-for-medium",
+            "modifier": "scroll beige positioned",
+            "attributes": {
+              "Attribute()": {
+                "data-scrollto": "next"
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-section-services",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-section-references",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-section-clients",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-stage-association",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "organisms-section-contact",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

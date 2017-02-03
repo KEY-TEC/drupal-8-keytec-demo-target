@@ -1,0 +1,7 @@
+{%- if block('label') %}
+  <div class="button {{ modifier_class('button', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    {% block label %}
+      {{- label -}}
+    {% endblock label %}
+  </div>
+{% endif -%}

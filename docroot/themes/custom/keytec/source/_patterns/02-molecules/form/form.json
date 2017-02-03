@@ -1,0 +1,55 @@
+{
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-form-name",
+          "with": {
+            "placeholder": "Name",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-form-name",
+          "with": {
+            "placeholder": "Email",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-form-textarea",
+          "with": {
+            "placeholder": "Nachricht",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-button-send",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+
+

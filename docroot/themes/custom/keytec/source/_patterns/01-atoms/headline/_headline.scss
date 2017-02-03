@@ -1,0 +1,32 @@
+.headline {
+  color: $dark-gray;
+  font-size: rem-calc(25);
+  line-height: rem-calc(30);
+  letter-spacing: rem-calc(-0.2);
+  //max-width: rem-calc(700);
+  //margin: rem-calc(84) auto 0;
+
+  @include breakpoint(medium) {
+    font-size: rem-calc(36);
+    line-height: rem-calc(46);
+    //margin: rem-calc(84) auto rem-calc(12);
+  }
+  &--left{
+    text-align: left;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  &--balzac {
+    font-family: balzac;
+    color: #98b6b8;
+  }
+  &--yellow{
+    color: #e7c78a;
+
+  }
+  &--green{
+    color: #b7cf95;
+
+  }
+
+}

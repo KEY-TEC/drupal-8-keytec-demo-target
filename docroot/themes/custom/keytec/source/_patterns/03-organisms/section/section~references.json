@@ -1,0 +1,69 @@
+{
+  "headline": "Unsere Arbeiten machen Eindruck",
+  "modifier": "greyed no-spacing",
+  "content_has_row": true,
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-teaser",
+          "with": {
+            "src": "/images/ref_brockhaus_active.jpg",
+            "headline": "Brockhaus",
+            "subheadline": "Recherche- und Referenzportal für alle,<br>sie es genau wissen wollen",
+            "attributes": {
+              "Attribute()": {
+                "class": "small-12 medium-6 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser",
+          "with": {
+            "src": "/images/ref_mfs_inactive.jpg",
+            "headline": "MFS Fußballtraining",
+            "subheadline": "Videoportal mit über 600 Lehrvideos für Trainer & Spieler",
+            "attributes": {
+              "Attribute()": {
+                "class": "small-12 medium-6 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser",
+          "with": {
+            "src": "/images/ref_flixbus_inactive.jpg",
+            "headline": "Flixbus",
+            "subheadline": "Drupalseite für eiens der führenden<br>Fernbusunternehmen in Europa",
+            "attributes": {
+              "Attribute()": {
+                "class": "small-12 medium-6 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-teaser",
+          "with": {
+            "src": "/images/ref_wissen_inactive.jpg",
+            "headline": "Wissen.de",
+            "subheadline": "Ausgezeichnetes Wissensportal zum<br>Thema Allgemeinwissen",
+            "attributes": {
+              "Attribute()": {
+                "class": "small-12 medium-6 columns"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

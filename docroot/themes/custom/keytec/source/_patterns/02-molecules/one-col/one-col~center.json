@@ -1,0 +1,41 @@
+{
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-image",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+
+

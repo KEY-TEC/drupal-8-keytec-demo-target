@@ -1,0 +1,37 @@
+{
+  "src":"/images/kyt_logo@2x.png",
+  "menu": {
+    "include()": {
+      "pattern": "molecules-menu",
+      "with": {
+        "modifier": "horizontal",
+        "class": "column",
+        "items" : [
+          {
+            "title":"Leistungen",
+            "link": "#"
+          },
+          {
+            "title":"Projekte",
+            "link": "#"
+          },
+          {
+            "title":"Uber uns",
+            "link": "#"
+          },
+          {
+            "title":"Kontakte",
+            "link": "#"
+          }
+        ],
+        "attributes": {
+          "Attribute()": {
+            "id": "main-menu"
+          }
+        }
+      },
+      "only":true
+    }
+  }
+}
+

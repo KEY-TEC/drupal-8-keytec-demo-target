@@ -1,0 +1,8 @@
+{%- if block('heading') %}
+  <{{ tag|default('div') }} class="tapped-headline {{ modifier_class('tapped-headline', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+      {% block heading %}
+        {{- heading -}}
+      {% endblock heading %}
+  </{{ tag|default('div') }}>
+{% endif -%}
+

@@ -1,0 +1,5 @@
+{% macro euro_sign(price, max_price = 5) %}
+  {% for i in 1..max_price %}
+    <span class="recipe-trivia__price{% if loop.index <= price %} recipe-trivia__price--filled{% endif %}">€</span>
+  {% endfor %}
+{% endmacro euro_sign %}

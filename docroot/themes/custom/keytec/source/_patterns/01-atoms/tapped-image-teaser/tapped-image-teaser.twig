@@ -1,0 +1,7 @@
+{%- if block('heading') %}
+  <{{ tag|default('div') }} class="tapped-image-teaser{{ modifier_class('tapped-image-teaser', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+      {% block heading %}
+        {{- heading -}}
+      {% endblock heading %}
+  </{{ tag|default('div') }}>
+{% endif -%}

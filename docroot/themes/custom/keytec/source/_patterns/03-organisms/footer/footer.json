@@ -1,0 +1,92 @@
+{
+  "primary": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-menu-footer",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "secondary": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-menu-footer",
+          "with": {
+            "modifier":"footer",
+            "items": [
+              {
+                "title": "Startseite",
+                "link": "#"
+              },
+              {
+                "title": "Über uns",
+                "link": "#"
+              }
+            ],
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          },
+          "only":true
+        }
+      }
+    ]
+  },
+  "address": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text": "<p>KEY-TEC GmbH &Co.KG</br>Blutenburgstr.68</br>80636 München</br>+49(0)89/2554477910</br>patrick.konstantin@key-tec.de</p>",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "logo": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-image",
+          "with": {
+            "class": "logo-footer",
+            "src": "/images/association_badge_bw@2x.png",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "copyright": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-copyright",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

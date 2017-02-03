@@ -1,0 +1,11 @@
+global-styling:
+  version: 1.x
+  css:
+    theme:
+      dest/style.css: {}
+#  js:
+#    bower_components/slick.js/slick/slick.min.js: {}
+#    js/slider.js: {}
+#  dependencies:
+#    - core/jquery
+

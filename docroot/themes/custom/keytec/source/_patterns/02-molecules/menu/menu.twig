@@ -1,0 +1,9 @@
+<nav class="menu-wrapper {{ class }}">
+  <ul class="menu {{ modifier_class('menu', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    {% for item in items %}
+      <li>
+        <a href="{{ item.link }}">{{ item.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>

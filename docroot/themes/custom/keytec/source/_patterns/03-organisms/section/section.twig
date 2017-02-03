@@ -1,0 +1,19 @@
+<section class="section {{ modifier_class('section', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    {% if headline is not empty  %}
+    <div class="row section__headline {{ modifier_class('section__headline', space_modifier) }}">
+
+        {% include "@atoms/headline/headline.twig" with {"modifier":headline_modifier,"text":headline,"attributes":attributes_object({"class": "small-12 columns"})} only %}
+    </div>
+        {% endif %}
+
+
+    {% if content_has_row == true %}
+        <div class="row">
+    {% endif %}
+    {% block content %}
+    {{ content }}
+    {% endblock content %}
+    {% if content_has_row == true %}
+        </div>
+    {% endif %}
+</section>

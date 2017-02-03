@@ -1,0 +1,22 @@
+# Compiled files
+dest/
+scss/00-config/_icons.scss
+
+# OS generated files
+.DS_Store
+.DS_Store?
+
+# Dependencies
+node_modules
+
+# Node.js files
+npm-debug.log
+
+# Generated files
+*.sass-cache/
+
+#IDE plugins
+.idea
+atlassian-ide-plugin.xml
+
+source/styleguide/css

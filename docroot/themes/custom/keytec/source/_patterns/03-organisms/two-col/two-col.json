@@ -1,0 +1,49 @@
+{
+  "left_size":6,
+  "left": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text": "<p>Fernbusse haben sich in erstaunlicher Geschwindigkeit zu einer beliebten Alternative zur Bahn entwickelt. Mit WLAN, Steckdosen, Snacks und Entertainmentangeboten decken Fernbusse die Wünsche der Kunden deutlich besser ab als andere Verkehrsmittel.<br>FLIXBUS startete im Februar 2013 mit drei Linien in Deutschland. Mit über 10.000 täglichen Verbindungen in derzeit 15 Ländern, einem starken Partnernetzwerk und einem innovativen Ticketing-System ist FLIXBUS MeinFernbus mittlerweile eines der führenden Fernbusunternehmen in Europa.<br/><br/><a href=\"http://www.flixbus.de/\">www.flixbus.de</a></p>",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "right": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "label": "Leistungen",
+            "modifier": "small red",
+            "class": "small-12 columns",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text": "<ul><li>Drupal Entwicklungen</li><li>Drupal Schulungen</li><li>Drupal Performance-Optimierung</li><li>Wartung und technischer Support</li></ul>",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

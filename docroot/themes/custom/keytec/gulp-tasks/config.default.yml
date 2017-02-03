@@ -1,0 +1,8 @@
+images:
+  enabled: true
+  optimizationLevel: 5
+  verbose: true
+  src:
+    - images/**/*.{jpg,png,gif,svg}
+    - source/_patterns/**/*.{jpg,png,gif,svg}
+  dest: dest/images/

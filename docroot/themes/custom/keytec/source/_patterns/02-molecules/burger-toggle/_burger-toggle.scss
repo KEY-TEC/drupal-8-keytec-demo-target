@@ -1,0 +1,4 @@
+.burger-toggle button {
+  @include hamburger($black, $primary-color, 20px, 12px);
+  vertical-align: baseline;
+}

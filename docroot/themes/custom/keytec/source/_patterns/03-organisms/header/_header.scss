@@ -1,0 +1,35 @@
+.header-wrapper {
+  max-width: $global-width;
+  margin: rem-calc(map_get($grid-column-gutter, small)) auto;
+
+  &__left {
+    display: flex;
+
+    @include breakpoint(large) {
+      position: absolute;
+    }
+  }
+  &__right {
+    width: 100%;
+    float: right;
+    align-items: baseline;
+
+    @include breakpoint(large) {
+      width: auto;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  #main-menu {
+    position: absolute;
+    margin-top: rem-calc(map_get($grid-column-gutter, small));
+    background-color: $white;
+    z-index: 1;
+
+    @include breakpoint(large) {
+      position: relative;
+      margin-top: 0;
+    }
+  }
+}

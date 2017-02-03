@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>play</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="play" fill="#000000">
+            <path d="M479.590054,266.182292 L43.3938172,508.586526 C38.3574149,511.433188 34.0326781,511.761649 30.4196069,509.571909 C26.8065356,507.382168 25,503.440636 25,497.747312 L25,14.2526882 C25,8.5593638 26.8065356,4.61783154 30.4196069,2.4280914 C34.0326781,0.238351254 38.3574149,0.566812276 43.3938172,3.41347446 L479.590054,245.817708 C484.626456,248.664371 487.144657,252.058468 487.144657,256 C487.144657,259.941532 484.626456,263.335629 479.590054,266.182292 L479.590054,266.182292 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

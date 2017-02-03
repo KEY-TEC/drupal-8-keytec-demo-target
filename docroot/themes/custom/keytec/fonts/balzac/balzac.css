@@ -1,0 +1,35 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3237237, 2016-06-23T09:06:18-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: BalzacLine by RodrigoTypo
+ * URL: http://www.myfonts.com/fonts/rodrigotypo/balzac/line/
+ * Copyright: Alejandro Leiva www.rodrigotypo.com
+ * 
+ * Webfont: Balzac by RodrigoTypo
+ * URL: http://www.myfonts.com/fonts/rodrigotypo/balzac/regular/
+ * Copyright: Alejandro Leiva / www.rodrigotypo.com
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3237237
+ * Licensed pageviews: 10,000
+ * 
+ * © 2016 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/316575");
+
+  
+@font-face {font-family: 'BalzacLine';src: url('webfonts/316575_0_0.eot');src: url('webfonts/316575_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/316575_0_0.woff2') format('woff2'),url('webfonts/316575_0_0.woff') format('woff'),url('webfonts/316575_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Balzac';src: url('webfonts/316575_1_0.eot');src: url('webfonts/316575_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/316575_1_0.woff2') format('woff2'),url('webfonts/316575_1_0.woff') format('woff'),url('webfonts/316575_1_0.ttf') format('truetype');}
+ 

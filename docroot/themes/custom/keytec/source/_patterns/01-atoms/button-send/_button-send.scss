@@ -1,0 +1,18 @@
+.send-button{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  display: inline-block;
+  width: 141px;
+  height: 41px;
+  line-height: 0.5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 15px;
+  letter-spacing: 4px;
+  background-image: url("/images/tape_send_button@2x.png");
+  text-align: center;
+  color: white !important;
+  border: none;
+  margin-left: -10px
+}
