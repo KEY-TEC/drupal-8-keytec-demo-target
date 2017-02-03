@@ -25,3 +25,5 @@ services:
     environment:
       - DOMAIN_NAME=test.docksal
       - VIRTUAL_HOST=patternlab.docksal
+    ports:
+      - "3050:3050"
