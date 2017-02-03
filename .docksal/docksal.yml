@@ -23,7 +23,6 @@ services:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
     environment:
-      - DOMAIN_NAME=test.docksal
-      - VIRTUAL_HOST=patternlab.docksal
+      - VIRTUAL_HOST=patternlab.keytec.docksal
     ports:
       - "3050:3050"
