@@ -24,7 +24,9 @@
     "drupal/console": "~1.0",
     "drupal/paragraphs": "^1.0",
     "drupal/ds": "^2.6",
-    "drupal/components": "^1.0"
+    "drupal/components": "^1.0",
+    "burdapraha/drupal_twig_food": "dev-master",
+    "drupal/ui_patterns": "1.x-dev"
   },
   "require-dev": {
     "behat/mink": "~1.7",

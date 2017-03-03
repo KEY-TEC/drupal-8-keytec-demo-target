@@ -1,0 +1,84 @@
+stage:
+  label: Stage
+  description: A simple molecule with title.
+  fields:
+    background_image:
+      type: image
+      label: Bg Image
+      description: The actual image.
+      preview: Background Image
+    label:
+      type: text
+      label: Label
+      description: The image title.
+      preview: Total Drupal
+
+tape:
+  label: Tape
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The image title.
+      preview: Tape
+
+tape_scroll:
+  label: Tape Scroll
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The image title.
+      preview: Tape Scroll
+
+tape_cross:
+  label: Tape Cross
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The tape date.
+      preview: Tape cross
+
+teaser:
+  label: Teaser
+  description: A simple molecule.
+  fields:
+    src:
+      type: image
+      label: src
+      description: The actual image.
+      preview: Teaser Image
+    kicker:
+      type: text
+      label: kicker
+      description: Kicker
+      preview: kicker
+    headline:
+      type: text
+      label: headline
+      description: headline
+      preview: headline
+
+section:
+  label: Section
+  description: An Organism with teaser.
+  fields:
+    headline:
+      type: text
+      label: Headline
+      description: The actual image.
+      preview: Headline of section
+    content:
+      type: text
+      label: Content
+      description: The teaser service.
+      preview: teaser
+
+
+
+
+

@@ -1,4 +1,4 @@
-<div class="stage {{ modifier_class('stage', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }} style="background-image: url('{{ background_image }}')">
+<div class="stage {{ modifier_class('stage', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }} style="background-image: url('{{ background_image|naked_field }}')">
     <div class="stage__layer">
         <div class="row ">
         {% if logo_image != null %}
@@ -10,10 +10,11 @@
         {% if label != null %}
 
             <div class="small-7 columns">
-                {% include "@atoms/tape/tape.twig" with {"modifier":tape_modifier,"label":label,"label2":label2} only %}
+                {{ label }}
             </div>
 
         {% endif %}
+
         </div>
     </div>
 </div>
