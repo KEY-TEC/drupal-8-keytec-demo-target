@@ -1,0 +1,36 @@
+uuid: c0a0f425-b6e0-4832-97af-a302187f46e7
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.first
+  module:
+    - node
+    - system
+  theme:
+    - keytec
+id: first
+theme: keytec
+region: '-1'
+weight: -8
+provider: null
+plugin: 'system_menu_block:first'
+settings:
+  id: 'system_menu_block:first'
+  label: first
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      clients: clients
+      page: page
+      reference: reference
+      service: service
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

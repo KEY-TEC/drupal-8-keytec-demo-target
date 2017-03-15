@@ -1779,7 +1779,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/ui_patterns",
-                "reference": "b2559690feff3a44b3818f5225beeaa218ce8cd2"
+                "reference": "4b3936f78938e14e8aa27f437291428af185444a"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1807,8 +1807,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta5+32-dev",
-                    "datestamp": "1487769482"
+                    "version": "8.x-1.0-beta5+41-dev",
+                    "datestamp": "1489428783"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1858,7 +1858,7 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/ui_patterns"
             },
-            "time": "2017-02-22 15:11:06"
+            "time": "2017-03-14 13:05:27"
         },
         {
             "name": "drush/drush",

@@ -48,25 +48,57 @@
 <header class="content-header clearfix">
 
 
-    {#{{ page.header }}#}
-
-    {% include "@organisms/header/header.twig" with {'src':"/themes/custom/keytec/images/kyt_logo@2x.png"} %}
+    {% embed "@organisms/header/header.twig" with {'src':"/themes/custom/keytec/images/kyt_logo@2x.png"} %}
+        {% block menu %}
+            {{ page.header }}
+        {% endblock %}
+    {% endembed %}
 
 
 </header>
 <content>
-    {#{% include "@molecules/stage/stage.twig" with {} %}#}
 
-{{ page.content }}
+
+    {{ page.content }}
+
 </content>
+<div>
+
+    {% embed "@organisms/section/section.twig" with {
+    "headline_modifier":"left", "space_modifier":"no spacing",
+    "headline":"Kontaktieren Sie uns"} %}
+
+        {% block content %}
+            {% embed "@organisms/two-col/two-col.twig" with {"headline":null,"left_size":6} %}
+                {% block left %}
+                    {{- page.contact_left -}}
+                {% endblock left %}
+
+                {% block right %}
+                    {{- page.contact_right -}}
+                {% endblock right %}
+            {% endembed %}
+        {% endblock %}
+
+    {% endembed %}
+
+
+</div>
+
 <footer>
+
+    {% embed "@organisms/footer/footer.twig" with {'src':"/themes/custom/keytec/images/association_badge_bw@2x.png","primary":primary, "secondary":secondary, "logo":logo,"address":address, "copyright":copyright} %}
+        {% block primary %}
+            {{ page.first_menu }}
+        {% endblock primary %}
+        {% block secondry %}
+            {{ page.second_menu }}
+        {% endblock secondry %}
+        {% block address %}
+            {{ page.footer_text }}
+        {% endblock address %}
+    {% endembed %}
 </footer>
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,21 @@
+uuid: 6c22bf5b-826d-4916-a262-6c324f343e37
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline
+    - node.type.reference
+  module:
+    - text
+id: node.reference.field_headline
+field_name: field_headline
+entity_type: node
+bundle: reference
+label: headline
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

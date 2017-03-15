@@ -1,0 +1,42 @@
+uuid: e55b6f51-d7b9-4e13-a0ee-fdacc36f69ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.association.field_bg_image
+    - field.field.paragraph.association.field_logo_imge
+    - field.field.paragraph.association.field_tape
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.association
+  module:
+    - image
+id: paragraph.association.default
+targetEntityType: paragraph
+bundle: association
+mode: default
+content:
+  field_bg_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_logo_imge:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_tape:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+hidden:
+  created: true
+  status: true
+  uid: true

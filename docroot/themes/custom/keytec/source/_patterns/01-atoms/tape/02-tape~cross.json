@@ -1,6 +1,7 @@
 {
-  "label": "est. 2000",
-  "modifier": "cross",
+  "class": "small-12 columns text-center",
+  "label": "est.2000",
+  "modifier": "cross red",
   "attributes": {
     "Attribute()": {
     }

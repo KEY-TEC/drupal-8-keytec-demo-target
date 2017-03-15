@@ -1,0 +1,51 @@
+uuid: 247cf31d-8304-4f04-90e2-9e8976bed523
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.clients
+    - paragraphs.paragraphs_type.reference
+    - paragraphs.paragraphs_type.service
+    - paragraphs.paragraphs_type.stage
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      stage: stage
+      service: service
+      clients: clients
+      reference: reference
+    target_bundles_drag_drop:
+      healine:
+        weight: 2
+        enabled: false
+      stage:
+        enabled: true
+        weight: 4
+      service:
+        enabled: true
+        weight: 5
+      tape:
+        weight: 6
+        enabled: false
+      clients:
+        enabled: true
+        weight: 7
+      reference:
+        enabled: true
+        weight: 7
+field_type: entity_reference_revisions

@@ -1,5 +1,5 @@
 <a href="#" class="callout teaser {{ modifier_class('teaser', modifier) }} {{ attributes.class }}" {{ attributes|without('class')}}>
-    <img class="teaser__image" src="{{- src|naked_field -}}" alt="">
+    <img class="teaser__image" src="{{- src -}}" alt="">
     <div class="teaser__kicker">{{- kicker -}}</div>
     <div class="teaser__headline">
         {% include "@atoms/headline/headline.twig" with {"modifier":"balzac","text":headline} only %}

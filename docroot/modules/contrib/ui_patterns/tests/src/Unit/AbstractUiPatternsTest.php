@@ -136,19 +136,13 @@ abstract class AbstractUiPatternsTest extends UnitTestCase {
   }
 
   /**
-   * Get UI Pattern validation service mock.
+   * Get fixtures base path.
    *
-   * @return \Drupal\ui_patterns\UiPatternsValidation
-   *    UI Pattern validation service.
+   * @return string
+   *    Fixtures base path.
    */
-  protected function getValidationMock() {
-    $validation = $this->getMockBuilder('Drupal\ui_patterns\UiPatternsValidation')
-      ->disableOriginalConstructor()
-      ->setMethods(['validate'])
-      ->getMock();
-
-    /** @var \Drupal\ui_patterns\UiPatternsValidation $validation */
-    return $validation;
+  protected function getFixturePath() {
+    return realpath(dirname(__FILE__) . '/../fixtures');
   }
 
 }

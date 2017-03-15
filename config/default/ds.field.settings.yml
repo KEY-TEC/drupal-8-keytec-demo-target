@@ -1,0 +1,12 @@
+id: settings
+label: settings
+ui_limit: ''
+properties:
+  content:
+    value: ss
+    format: plain_text
+type: token
+type_label: 'Token field'
+entities:
+  node: node
+  paragraph: paragraph

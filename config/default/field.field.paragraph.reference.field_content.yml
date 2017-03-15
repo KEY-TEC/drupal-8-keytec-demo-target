@@ -1,0 +1,34 @@
+uuid: 268eb592-0f2e-4f18-9178-6a638273ef69
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content
+    - node.type.article
+    - node.type.clients
+    - node.type.reference
+    - node.type.service
+    - paragraphs.paragraphs_type.reference
+id: paragraph.reference.field_content
+field_name: field_content
+entity_type: paragraph
+bundle: reference
+label: content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      clients: clients
+      reference: reference
+      service: service
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

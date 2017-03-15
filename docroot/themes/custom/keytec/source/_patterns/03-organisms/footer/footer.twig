@@ -1,11 +1,23 @@
 <div class="footer {{ modifier_class('footer ', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
     <div class="row">
+        {% block primary %}
         <div class="small-12 medium-2 columns">{{ primary }}</div>
+        {% endblock primary %}
+        {% block secondry %}
         <div class="small-12 medium-2 columns">{{ secondary }}</div>
+        {% endblock secondry%}
+        {% block address %}
         <div class="small-8 medium-3 columns">{{ address }}</div>
-        <div class="small-4 medium-5 columns">{{ logo }}</div>
+        {% endblock address %}
+        {% block logo %}
+        <div class="small-4 medium-5 columns">
+            {% include "@atoms/image/image.twig" with{"attributes": {"class": "logo-footer"}, "src": src} only %}
+        </div>
+        {% endblock logo %}
     </div>
     <div class="row">
+        {% block copyright %}
         {{ copyright }}
+        {% endblock copyright %}
     </div>
 </div>

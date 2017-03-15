@@ -81,12 +81,13 @@ class PatternFormatter extends FieldGroupFormatterBase implements ContainerFacto
     $fields = [];
     $mapping = $this->getSetting('pattern_mapping');
     foreach ($mapping as $field) {
-      $fields[$field['destination']] = $element[$field['source']];
+      $fields[$field['destination']][] = $element[$field['source']];
     }
 
     $element['#type'] = 'pattern';
     $element['#id'] = $this->getSetting('pattern');
     $element['#fields'] = $fields;
+    $element['#multiple_sources'] = TRUE;
 
     // Allow default context values to not override those exposed elsewhere.
     $element['#context']['type'] = 'field_group';
@@ -94,6 +95,14 @@ class PatternFormatter extends FieldGroupFormatterBase implements ContainerFacto
     $element['#context']['entity_type'] = $this->configuration['group']->entity_type;
     $element['#context']['bundle'] = $this->configuration['group']->bundle;
     $element['#context']['view_mode'] = $this->configuration['group']->mode;
+
+    // Pass current entity to pattern context, if any.
+    if (!empty($element['#fields'])) {
+      $field = reset($element['#fields']);
+      if (isset($field['#object'])) {
+        $element['#context']['entity'] = $field['#object'];
+      }
+    }
   }
 
   /**
@@ -151,7 +160,7 @@ class PatternFormatter extends FieldGroupFormatterBase implements ContainerFacto
    */
   public static function defaultContextSettings($context) {
     return [
-      'pattern' => 'none',
+      'pattern' => '',
       'pattern_mapping' => [],
     ] + parent::defaultContextSettings($context);
   }

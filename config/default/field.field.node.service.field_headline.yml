@@ -1,0 +1,21 @@
+uuid: bade2854-a34e-4e6e-9a73-7263daf89fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_headline
+    - node.type.service
+  module:
+    - text
+id: node.service.field_headline
+field_name: field_headline
+entity_type: node
+bundle: service
+label: headline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

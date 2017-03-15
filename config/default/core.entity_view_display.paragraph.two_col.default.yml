@@ -1,0 +1,120 @@
+uuid: 7ec2c686-6539-443c-bef4-49051fbf61d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_col.field__headline
+    - field.field.paragraph.two_col.field_headline_left
+    - field.field.paragraph.two_col.field_headline_right
+    - field.field.paragraph.two_col.field_image_left
+    - field.field.paragraph.two_col.field_image_right
+    - field.field.paragraph.two_col.field_tape
+    - field.field.paragraph.two_col.field_text_left
+    - field.field.paragraph.two_col.field_text_right
+    - paragraphs.paragraphs_type.two_col
+  module:
+    - ds
+    - image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_two_col
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: only_content
+    regions:
+      headline:
+        - field__headline
+      left:
+        - field_tape
+        - field_image_left
+        - field_headline_left
+        - field_text_left
+      right:
+        - field_image_right
+        - field_headline_right
+        - field_text_right
+id: paragraph.two_col.default
+targetEntityType: paragraph
+bundle: two_col
+mode: default
+content:
+  field__headline:
+    type: text_trimmed
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_headline_left:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_headline_right:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_image_left:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_image_right:
+    weight: 5
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_tape:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: tape_small
+            pattern_mapping:
+              'ds_field_template:field_tape':
+                destination: label
+                weight: 0
+                plugin: ds_field_template
+                source: field_tape
+              'ds_field_template:field_tape__value':
+                destination: label
+                weight: 1
+                plugin: ds_field_template
+                source: field_tape__value
+    type: string
+  field_text_left:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_text_right:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

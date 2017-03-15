@@ -6346,7 +6346,7 @@
         "source": {
             "type": "git",
             "url": "https://git.drupal.org/project/ui_patterns",
-            "reference": "b2559690feff3a44b3818f5225beeaa218ce8cd2"
+            "reference": "4b3936f78938e14e8aa27f437291428af185444a"
         },
         "require": {
             "drupal/core": "~8.0"
@@ -6374,8 +6374,8 @@
                 "dev-1.x": "1.x-dev"
             },
             "drupal": {
-                "version": "8.x-1.0-beta5+32-dev",
-                "datestamp": "1487769482"
+                "version": "8.x-1.0-beta5+41-dev",
+                "datestamp": "1489428783"
             }
         },
         "installation-source": "source",

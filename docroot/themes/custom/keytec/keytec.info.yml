@@ -25,4 +25,9 @@ component-libraries:
 regions:
   header: Header
   content: Content  # the content region is required
+  contact_left: Contact left
+  contact_right: Contact Right
   footer: Footer
+  footer_text: Footer Text
+  first_menu: First Menu
+  second_menu: Second Menu

@@ -1,0 +1,37 @@
+uuid: 60e407f9-a10d-450e-b590-ce1d6d90de90
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:d5f461ba-6eff-4224-b46b-cec476e7f2f7'
+  module:
+    - block_content
+    - node
+  theme:
+    - keytec
+id: contact_text
+theme: keytec
+region: '-1'
+weight: 0
+provider: null
+plugin: 'block_content:d5f461ba-6eff-4224-b46b-cec476e7f2f7'
+settings:
+  id: 'block_content:d5f461ba-6eff-4224-b46b-cec476e7f2f7'
+  label: contact_text
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      article: article
+      clients: clients
+      page: page
+      reference: reference
+      service: service
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

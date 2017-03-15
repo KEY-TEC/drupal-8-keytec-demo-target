@@ -11,7 +11,10 @@
         } %}
     </div>
     <div class="header-wrapper__right row small-collapse large-uncollapse">
+        {% block menu %}
+            {{ menu }}
+        {% endblock %}
         {% include "@atoms/tape/tape.twig" with {"class": "shrink column", "label": "089 / 255 44 77 910", "attributes": {"class":"show-for-large"}} %}
-        {% include "@molecules/menu/menu.twig" with {"class": "column", "modifier": "horizontal", "attributes":attributes_object({"id": "main-menu"})} %}
+
     </div>
 </div>
