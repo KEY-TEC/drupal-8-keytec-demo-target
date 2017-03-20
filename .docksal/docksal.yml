@@ -25,4 +25,4 @@ services:
     environment:
       - VIRTUAL_HOST=patternlab.keytec.docksal
     ports:
-      - "3050:3050"fin
+      - "3050:3050"

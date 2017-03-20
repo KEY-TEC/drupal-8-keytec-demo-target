@@ -11,6 +11,9 @@
     line-height: rem-calc(46);
     //margin: rem-calc(84) auto rem-calc(12);
   }
+  &--center{
+    text-align: center;
+  }
   &--left{
     text-align: left;
     margin-right: 0px;

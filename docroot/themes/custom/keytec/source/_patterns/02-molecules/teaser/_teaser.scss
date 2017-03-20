@@ -1,10 +1,12 @@
-.teaser {
 
+.teaser {
+  &.callout {
+    text-align: center;
+  }
   &__image {
     margin-bottom: rem-calc(20);
   }
   &__kicker {
-    text-align: center;
     text-transform: uppercase;
     color: $medium-gray;
     letter-spacing: rem-calc(-1);
@@ -26,11 +28,12 @@
   &__subheadline {
       text-align: left;
       color: #c6c6c6;
-      margin-top: 11px;
       font-size: 18px;
       font-family: Montserrat;
     color: $medium-gray;
-
+    p {
+      margin-bottom: 0px;
+    }
     }
 
   &--center {

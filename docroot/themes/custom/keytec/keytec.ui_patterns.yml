@@ -74,6 +74,16 @@ tape_cross:
       description: The tape date.
       preview: Tape cross
 
+tape_large3:
+  label: Tape Large3
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The tape date.
+      preview: Tape cross
+
 
 tape_small:
   label: Tape Small
@@ -195,6 +205,31 @@ teaser_reference:
       description: Subheadline
       preview: Subheadline
 
+reference_page:
+  label: Reference Page
+  description: A simple molecule.
+  fields:
+    headline:
+      type: text
+      label: headline
+      description: headline
+      preview: headline
+    subheadline:
+      type: text
+      label: Subheadline
+      description: Subheadline
+      preview: Subheadline
+    src:
+      type: image
+      label: src
+      description: The actual image.
+      preview: Teaser
+    section:
+      type: text
+      label: Section
+      description: The actual image.
+      preview: Teaser Image
+
 teaser_clients:
   label: Teaser Clients
   description: A simple molecule.
@@ -225,6 +260,46 @@ two_col:
       label: Headline
       description: The actual image.
       preview: Headline of section
+    headline_left:
+      type: text
+      label: Headline Left
+      description: The actual image.
+      preview: Headline of section
+    headline_right:
+      type: text
+      label: Headline Right
+      description: The actual image.
+      preview: Headline of section
+    image_left:
+      type: image
+      label: Image Left
+      description: The teaser service.
+      preview: teaser
+    image_right:
+      type: image
+      label: Image Right
+      description: The teaser service.
+      preview: teaser
+    text_left:
+      type: text
+      label: Text Left
+      description: The teaser service.
+      preview: form
+    text_right:
+      type: text
+      label: Text Right
+      description: The teaser service.
+      preview: form
+    tape:
+      type: text
+      label: Tape
+      description: The teaser service.
+      preview: form
+
+two_col__:
+  label: Two Col__
+  description: An Organism.
+  fields:
     left:
       type: text
       label: Left
@@ -235,4 +310,3 @@ two_col:
       label: Right
       description: The teaser service.
       preview: teaser
-

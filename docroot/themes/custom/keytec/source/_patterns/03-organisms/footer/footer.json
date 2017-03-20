@@ -1,5 +1,4 @@
 {
-  "src": "/images/association_badge_bw@2x.png",
   "primary": {
     "join()": [
       {
@@ -49,6 +48,23 @@
           "pattern": "atoms-text",
           "with": {
             "text": "<p>KEY-TEC GmbH &Co.KG</br>Blutenburgstr.68</br>80636 München</br>+49(0)89/2554477910</br>patrick.konstantin@key-tec.de</p>",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "logo": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-image-footer",
+          "with": {
+            "class": "logo-footer",
+            "src": "/images/association_badge_bw@2x.png",
             "attributes": {
               "Attribute()": {
               }

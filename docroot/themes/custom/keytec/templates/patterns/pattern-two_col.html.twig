@@ -1,1 +1,22 @@
-{% include "@organisms/two-col/two-col.twig" with {"right_modifier":right_modifier,"left_modifier":left_modifier,"headline":headline, "left":left, "right":right, "left_size":6 } only %}
+{% embed "@organisms/section/section.twig" with {"headline_modifier":"center","headline":headline} %}
+    {% block content %}
+        {% embed "@organisms/two-col/two-col.twig" with {"modifier":"greyed",
+        "left_modifier":"overlapping","right_modifier":"large","headline":null,"left_size":6} %}
+            {% block left %}
+                {% include "@atoms/image/image.twig" with {"src": image_left|naked_field } %}
+            {% endblock left %}
+            {% block right %}
+                {% include "@atoms/headline/headline.twig" with{"modifier":"balzac yellow", "text":headline_right,} %}
+                {% include "@atoms/text/text.twig" with{"text":text_right} %}
+            {% endblock right %}
+        {% endembed %}
+        {#{% embed "@organisms/two-col/two-col.twig" with {"headline": null, "modifier":" large beige","left_size":5} %}#}
+        {#{% block left %}#}
+        {#{% include "@atoms/image/image.twig" with {"src": src_left } %}#}
+        {#{% endblock left %}#}
+        {#{% block right %}#}
+        {#{% include "@atoms/image/image.twig" with {"src": src_right } %}#}
+        {#{% endblock right %}#}
+        {#{% endembed %}#}
+    {% endblock content %}
+{% endembed %}

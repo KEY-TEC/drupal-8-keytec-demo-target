@@ -1,2 +1,5 @@
-{% include "@molecules/stage/stage.twig" with {"modifier": "full-height", "label": label, "label2": label2,"background_image": background_image} only%}
+{% include "@molecules/stage/stage.twig" with {"modifier": "full-height", "label": label, "label2": label2,"background_image": background_image|naked_field } only%}
+{% block label %}
+    {% include "@atoms/tape/tape.twig" with {"modifier": "scroll beige positioned"} only%}
+{% endblock label %}
 {{ section }}

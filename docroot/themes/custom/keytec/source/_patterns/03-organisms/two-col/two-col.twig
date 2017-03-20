@@ -1,10 +1,8 @@
 <div class="two-col {{ modifier_class('two-col', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
-
-
     {% if headline != null and headline != undefined %}
         <div class="row ">
             <div class="two-col__headline small-12 column">
-                {{- headline -}}
+                {% include "@atoms/headline/headline.twig" with {"modifier":headline_modifier, "text": headline} only %}
             </div>
         </div>
     {% endif %}

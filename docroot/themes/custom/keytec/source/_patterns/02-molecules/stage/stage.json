@@ -2,6 +2,7 @@
   "modifier": "full-height",
   "background_image": "/images/kyt_beratung_collage_statisch_160524.jpg",
   "label":"Total Drupal",
-  "tape_modifier":"double red"
+  "tape_modifier":"double red",
+  "scroll_modifier":"scroll beige positioned"
 }
 

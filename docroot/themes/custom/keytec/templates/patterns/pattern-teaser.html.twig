@@ -1,1 +1,1 @@
-{% include "@molecules/teaser/teaser.twig" with {attributes: attributes_object({'class':'small-6 medium-3 columns'}),"modifier":"center", "src" : src, "kicker": kicker, "headline": headline, "subheadline": null} only %}
+{% include "@molecules/teaser/teaser.twig" with {attributes: attributes_object({'class':'small-6 medium-3 columns'}),"modifier":"center", "src" : src|naked_field , "kicker": kicker, "headline": headline, "subheadline": null} only %}

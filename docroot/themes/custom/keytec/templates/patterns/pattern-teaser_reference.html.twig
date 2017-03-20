@@ -1,1 +1,1 @@
-{% include "@molecules/teaser/teaser.twig" with {attributes: attributes_object({"class": "small-12 medium-6 columns"}),"src":src, "headline": headline, "subheadline": subheadline } only %}
+{% include "@molecules/teaser/teaser.twig" with {attributes: attributes_object({"class": "small-12 medium-6 columns"}),"src":src|naked_field, "headline": headline, "subheadline": subheadline } only %}

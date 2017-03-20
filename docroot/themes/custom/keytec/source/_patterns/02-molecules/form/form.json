@@ -39,7 +39,7 @@
       },
       {
         "include()": {
-          "pattern": "atoms-button-send",
+          "pattern": "atoms-button-tape",
           "with": {
             "attributes": {
               "Attribute()": {

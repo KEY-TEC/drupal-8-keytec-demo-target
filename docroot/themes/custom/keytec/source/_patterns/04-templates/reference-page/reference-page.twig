@@ -34,27 +34,3 @@
         {% endembed %}
     </div>
 {% endblock content %}
-
-
-
-
-
-
-
-
-
-
-
-
-{#VARIANTE 1 (Include)#}
-{#{% set two_column %}#}
-    {#{% include "@organisms/two-col/two-col.twig" with {"headline": null, "left": "LEFT content", "right": "right content"} %}#}
-{#{% endset %}#}
-        {#{% include "@organisms/section/section.twig" with {"content": two_column, "headline": null}%}#}
-
-{#VARIANTE 2 (Embed)#}
-{#{% embed "@organisms/section/section.twig" with {"headline": null} %}#}
-    {#{% block content %}#}
-        {#{% include "@organisms/two-col/two-col.twig" with {"headline": null, "left": "LEFT content", "right": "right content"} %}#}
-    {#{% endblock content %}#}
-{#{% endembed %}#}
