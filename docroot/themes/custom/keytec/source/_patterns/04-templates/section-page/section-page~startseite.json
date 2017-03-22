@@ -87,17 +87,6 @@
             }
           }
         }
-      },
-      {
-        "include()": {
-          "pattern": "organisms-section-contact",
-          "with": {
-            "attributes": {
-              "Attribute()": {
-              }
-            }
-          }
-        }
       }
     ]
   }

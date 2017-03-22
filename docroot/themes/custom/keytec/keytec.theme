@@ -1,0 +1,8 @@
+<?php
+
+function keytec_preprocess_paragraph(&$vars){
+
+    if (isset($vars['entity_type']) && $vars['entity_type'] == 'paragraph' ) {
+        kint($vars);
+    }
+}

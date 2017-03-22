@@ -1,10 +1,16 @@
 .two-col {
 
+  &--top{
+    margin-top: 70px;
+  }
   &--large{
     padding: rem-calc(42) 0;
     @include breakpoint(medium){
       padding: rem-calc(84) 0;
     }
+  }
+  &__headline{
+    padding-bottom: 20px
   }
   &--greyed {
     background-color: $keytec-grey;

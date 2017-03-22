@@ -1,3 +1,5 @@
+{% block copyright %}
 <div class="copyright small-12 columns">
     &copy;{{ post.published_at|date_modify("Y")|date("Y") }} KEY-TEC GmbH & Co.KG
 </div>
+    {% endblock copyright %}

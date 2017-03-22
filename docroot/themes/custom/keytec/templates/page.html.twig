@@ -66,10 +66,10 @@
 
     {% embed "@organisms/section/section.twig" with {
     "headline_modifier":"left", "space_modifier":"no spacing",
-    "headline":"Kontaktieren Sie uns"} %}
+    "headline":null} %}
 
         {% block content %}
-            {% embed "@organisms/two-col/two-col.twig" with {"headline":null,"left_size":6} %}
+            {% embed "@organisms/two-col/two-col.twig" with {"modifier":"top","headline":"Kontaktieren Sie uns","left_size":6} %}
                 {% block left %}
                     {{- page.contact_left -}}
                 {% endblock left %}
@@ -87,16 +87,18 @@
 
 <footer>
 
-    {% embed "@organisms/footer/footer.twig" with {'src':"/themes/custom/keytec/images/association_badge_bw@2x.png","primary":primary, "secondary":secondary, "logo":logo,"address":address, "copyright":copyright} %}
-        {% block primary %}
-            {{ page.first_menu }}
-        {% endblock primary %}
-        {% block secondry %}
-            {{ page.second_menu }}
-        {% endblock secondry %}
-        {% block address %}
-            {{ page.footer_text }}
-        {% endblock address %}
+    {% embed "@organisms/footer/footer.twig" with {"primary":page.first_menu, "secondary":page.second_menu, "address":page.footer_text, "copyright":copyright} %}
+
+
+        {% block logo %}
+            <div class="small-4 medium-5 columns">
+                {% include "@atoms/image/image.twig" with{"src": "/themes/custom/keytec/images/association_badge_bw@2x.png"} only %}
+            </div>
+        {% endblock logo %}
+        {% block copyright %}
+            {% include "@atoms/copyright/copyright.twig" with{} only %}
+        {% endblock copyright %}
+
     {% endembed %}
 </footer>
 

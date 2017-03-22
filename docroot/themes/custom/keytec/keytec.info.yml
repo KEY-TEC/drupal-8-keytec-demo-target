@@ -28,6 +28,6 @@ regions:
   contact_left: Contact left
   contact_right: Contact Right
   footer: Footer
-  footer_text: Footer Text
   first_menu: First Menu
   second_menu: Second Menu
+  footer_text: Footer Text
