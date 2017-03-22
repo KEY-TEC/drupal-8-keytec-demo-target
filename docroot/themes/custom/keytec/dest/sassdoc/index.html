@@ -1,0 +1,442 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Patternlabstarter - v8.0.0</title><link rel="stylesheet" href="assets/css/main.css"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700" rel="stylesheet" type="text/css"><meta name="viewport" content="width=device-width"><meta content="IE=edge, chrome=1" http-equiv="X-UA-Compatible"><!-- Open Graph tags --><meta property="og:title" content="Patternlabstarter - SassDoc"><meta property="og:type" content="website"><meta property="og:description" content="<p>Pattern Lab Starter</p>
+"><!-- Thanks to Sass-lang.com for the icons --><link href="assets/images/favicon.png" rel="shortcut icon"></head><body><aside class="sidebar" role="nav"><div class="sidebar__header"><h1 class="sidebar__title">Patternlabstarter - 8.0.0</h1></div><div class="sidebar__body"><button type="button" class="btn-toggle js-btn-toggle" data-alt="Open all">Close all</button><p class="sidebar__item sidebar__item--heading" data-slug="undefined"><a href="#undefined">General</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="undefined-function"><a href="#undefined-function">functions</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="undefined" data-name="str-replace" data-type="function"><a href="#undefined-function-str-replace">str-replace</a></li></ul></div><p class="sidebar__item sidebar__item--heading" data-slug="global"><a href="#global">global</a></p><div><p class="sidebar__item sidebar__item--sub-heading" data-slug="global-mixin"><a href="#global-mixin">mixins</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="global" data-name="-zf-normalize" data-type="mixin"><a href="#global-mixin--zf-normalize">-zf-normalize</a></li></ul><p class="sidebar__item sidebar__item--sub-heading" data-slug="global-variable"><a href="#global-variable">variables</a></p><ul class="list-unstyled"><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-flexbox" data-type="variable"><a href="#global-variable-global-flexbox">global-flexbox</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-text-direction" data-type="variable"><a href="#global-variable-global-text-direction">global-text-direction</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-radius" data-type="variable"><a href="#global-variable-global-radius">global-radius</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-weight-bold" data-type="variable"><a href="#global-variable-global-weight-bold">global-weight-bold</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-weight-normal" data-type="variable"><a href="#global-variable-global-weight-normal">global-weight-normal</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-padding" data-type="variable"><a href="#global-variable-global-padding">global-padding</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-margin" data-type="variable"><a href="#global-variable-global-margin">global-margin</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="body-antialiased" data-type="variable"><a href="#global-variable-body-antialiased">body-antialiased</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="body-font-family" data-type="variable"><a href="#global-variable-body-font-family">body-font-family</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="body-font-color" data-type="variable"><a href="#global-variable-body-font-color">body-font-color</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="body-background" data-type="variable"><a href="#global-variable-body-background">body-background</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="white" data-type="variable"><a href="#global-variable-white">white</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="black" data-type="variable"><a href="#global-variable-black">black</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="dark-gray" data-type="variable"><a href="#global-variable-dark-gray">dark-gray</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="medium-gray" data-type="variable"><a href="#global-variable-medium-gray">medium-gray</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="light-gray" data-type="variable"><a href="#global-variable-light-gray">light-gray</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="foundation-palette" data-type="variable"><a href="#global-variable-foundation-palette">foundation-palette</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-lineheight" data-type="variable"><a href="#global-variable-global-lineheight">global-lineheight</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-width" data-type="variable"><a href="#global-variable-global-width">global-width</a></li><li class="sidebar__item sassdoc__item" data-group="global" data-name="global-font-size" data-type="variable"><a href="#global-variable-global-font-size">global-font-size</a></li></ul></div></div></aside><article class="main" role="main"><header class="header" role="banner"><div class="container"><div class="sassdoc__searchbar searchbar"><label for="js-search-input" class="visually-hidden">Search</label><div class="searchbar__form" id="js-search"><input name="search" type="search" class="searchbar__field" autocomplete="off" autofocus id="js-search-input" placeholder="Search"><ul class="searchbar__suggestions" id="js-search-suggestions"></ul></div></div></div></header><section class="main__section"><h1 class="main__heading" id="undefined"><div class="container">General</div></h1><section class="main__sub-section" id="undefined-function"><h2 class="main__heading--secondary"><div class="container">functions</div></h2><section class="main__item container item" id="undefined-function-str-replace"><h3 class="item__heading"><a class="item__name" href="#function-str-replace">str-replace</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@function str-replace($string, $search, $replace) { 
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+ }" data-collapsed="@function str-replace($string, $search, $replace) { ... }"><code>@function str-replace($string, $search, $replace) { ... }</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_functions.scss#L7-L15" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Replace <code>$search</code> with <code>$replace</code> in <code>$string</code></p></div><h3 class="item__sub-heading">Parameters</h3><table class="item__parameters"><thead><tr><th scope="col"><span class="visually-hidden">parameter</span>Name</th><th scope="col"><span class="visually-hidden">parameter</span>Description</th><th scope="col"><span class="visually-hidden">parameter</span>Type</th><th scope="col"><span class="visually-hidden">parameter</span>Default value</th></tr></thead><tbody><tr class="item__parameter"><th scope="row" data-label="name"><code>$string</code></th><td data-label="desc"><p>Initial string</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$search</code></th><td data-label="desc"><p>Substring to replace</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr><tr class="item__parameter"><th scope="row" data-label="name"><code>$replace</code></th><td data-label="desc"><p>(&#39;&#39;) - New value</p></td><td data-label="type"><code>String</code></td><td data-label="default">&mdash;<span class="visually-hidden">none</span></td></tr></tbody></table><h3 class="item__sub-heading">Returns</h3><div class="item__description item__description--inline"><code>String</code> &mdash;<p>Updated string</p></div><h3 class="item__sub-heading">Author</h3><ul class="list-unstyled"><li><p>Hugo Giraudel</p></li></ul></section></section></section><section class="main__section"><h1 class="main__heading" id="global"><div class="container">global</div></h1><section class="main__sub-section" id="global-mixin"><h2 class="main__heading--secondary"><div class="container">mixins</div></h2><section class="main__item container item" id="global-mixin--zf-normalize"><h3 class="item__heading"><span class="item__access">[private]</span> <a class="item__name" href="#mixin--zf-normalize">-zf-normalize</a></h3><div class="item__code-wrapper"><pre class="item__code item__code--togglable language-scss" data-current-state="collapsed" data-expanded="@mixin -zf-normalize() { 
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+  /**
+   * 1. Set default font family to sans-serif.
+   * 2. Prevent iOS and IE text size adjust after device orientation change,
+   *    without disabling user zoom.
+   */
+
+  html {
+    font-family: sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+
+  /**
+   * Remove default margin.
+   */
+
+  body {
+    margin: 0;
+  }
+
+  /* HTML5 display definitions
+     ========================================================================== */
+
+  /**
+   * Correct `block` display not defined for any HTML5 element in IE 8/9.
+   * Correct `block` display not defined for `details` or `summary` in IE 10/11
+   * and Firefox.
+   * Correct `block` display not defined for `main` in IE 11.
+   */
+
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  menu,
+  nav,
+  section,
+  summary {
+    display: block;
+  }
+
+  /**
+   * 1. Correct `inline-block` display not defined in IE 8/9.
+   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+   */
+
+  audio,
+  canvas,
+  progress,
+  video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+  }
+
+  /**
+   * Prevent modern browsers from displaying `audio` without controls.
+   * Remove excess height in iOS 5 devices.
+   */
+
+  audio:not([controls]) {
+    display: none;
+    height: 0;
+  }
+
+  /**
+   * Address `[hidden]` styling not present in IE 8/9/10.
+   * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox &lt; 22.
+   */
+
+  [hidden],
+  template {
+    display: none;
+  }
+
+  /* Links
+     ========================================================================== */
+
+  /**
+   * Remove the gray background color from active links in IE 10.
+   */
+
+  a {
+    background-color: transparent;
+  }
+
+  /**
+   * Improve readability of focused elements when they are also in an
+   * active/hover state.
+   */
+
+  a:active,
+  a:hover {
+    outline: 0;
+  }
+
+  /* Text-level semantics
+     ========================================================================== */
+
+  /**
+   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+   */
+
+  abbr[title] {
+    border-bottom: 1px dotted;
+  }
+
+  /**
+   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+   */
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  /**
+   * Address styling not present in Safari and Chrome.
+   */
+
+  dfn {
+    font-style: italic;
+  }
+
+  /**
+   * Address variable `h1` font-size and margin within `section` and `article`
+   * contexts in Firefox 4+, Safari, and Chrome.
+   */
+
+  h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+
+  /**
+   * Address styling not present in IE 8/9.
+   */
+
+  mark {
+    background: #ff0;
+    color: #000;
+  }
+
+  /**
+   * Address inconsistent and variable font size in all browsers.
+   */
+
+  small {
+    font-size: 80%;
+  }
+
+  /**
+   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+   */
+
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  /* Embedded content
+     ========================================================================== */
+
+  /**
+   * Remove border when inside `a` element in IE 8/9/10.
+   */
+
+  img {
+    border: 0;
+  }
+
+  /**
+   * Correct overflow not hidden in IE 9/10/11.
+   */
+
+  svg:not(:root) {
+    overflow: hidden;
+  }
+
+  /* Grouping content
+     ========================================================================== */
+
+  /**
+   * Address margin not present in IE 8/9 and Safari.
+   */
+
+  figure {
+    margin: 1em 40px;
+  }
+
+  /**
+   * Address differences between Firefox and other browsers.
+   */
+
+  hr {
+    box-sizing: content-box;
+    height: 0;
+  }
+
+  /**
+   * Contain overflow in all browsers.
+   */
+
+  pre {
+    overflow: auto;
+  }
+
+  /**
+   * Address odd `em`-unit font size rendering in all browsers.
+   */
+
+  code,
+  kbd,
+  pre,
+  samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+  }
+
+  /* Forms
+     ========================================================================== */
+
+  /**
+   * Known limitation: by default, Chrome and Safari on OS X allow very limited
+   * styling of `select`, unless a `border` property is set.
+   */
+
+  /**
+   * 1. Correct color not being inherited.
+   *    Known issue: affects color of disabled elements.
+   * 2. Correct font properties not being inherited.
+   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+   */
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    color: inherit; /* 1 */
+    font: inherit; /* 2 */
+    margin: 0; /* 3 */
+  }
+
+  /**
+   * Address `overflow` set to `hidden` in IE 8/9/10/11.
+   */
+
+  button {
+    overflow: visible;
+  }
+
+  /**
+   * Address inconsistent `text-transform` inheritance for `button` and `select`.
+   * All other form control elements do not inherit `text-transform` values.
+   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+   * Correct `select` style inheritance in Firefox.
+   */
+
+  button,
+  select {
+    text-transform: none;
+  }
+
+  /**
+   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+   *    and `video` controls.
+   * 2. Correct inability to style clickable `input` types in iOS.
+   * 3. Improve usability and consistency of cursor style between image-type
+   *    `input` and others.
+   */
+
+  button,
+  html input[type=&quot;button&quot;], /* 1 */
+  input[type=&quot;reset&quot;],
+  input[type=&quot;submit&quot;] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+  }
+
+  /**
+   * Re-set default cursor for disabled elements.
+   */
+
+  button[disabled],
+  html input[disabled] {
+    cursor: not-allowed;
+  }
+
+  /**
+   * Remove inner padding and border in Firefox 4+.
+   */
+
+  button::-moz-focus-inner,
+  input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  /**
+   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+   * the UA stylesheet.
+   */
+
+  input {
+    line-height: normal;
+  }
+
+  /**
+   * It&#39;s recommended that you don&#39;t attempt to style these elements.
+   * Firefox&#39;s implementation doesn&#39;t respect box-sizing, padding, or width.
+   *
+   * 1. Address box sizing set to `content-box` in IE 8/9/10.
+   * 2. Remove excess padding in IE 8/9/10.
+   */
+
+  input[type=&quot;checkbox&quot;],
+  input[type=&quot;radio&quot;] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+
+  /**
+   * Fix the cursor style for Chrome&#39;s increment/decrement buttons. For certain
+   * `font-size` values of the `input`, it causes the cursor style of the
+   * decrement button to change from `default` to `text`.
+   */
+
+  input[type=&quot;number&quot;]::-webkit-inner-spin-button,
+  input[type=&quot;number&quot;]::-webkit-outer-spin-button {
+    height: auto;
+  }
+
+  /**
+   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+   */
+
+  input[type=&quot;search&quot;] {
+    -webkit-appearance: textfield; /* 1 */
+    box-sizing: content-box; /* 2 */
+  }
+
+  /**
+   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+   * Safari (but not Chrome) clips the cancel button when the search input has
+   * padding (and `textfield` appearance).
+   */
+
+  input[type=&quot;search&quot;]::-webkit-search-cancel-button,
+  input[type=&quot;search&quot;]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+
+  /**
+   * Define consistent border, margin, and padding.
+   * [NOTE] We don&#39;t enable this ruleset in Foundation, because we want the &lt;fieldset&gt; element to have plain styling.
+   */
+
+  /* fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+  } */
+
+  /**
+   * 1. Correct `color` not being inherited in IE 8/9/10/11.
+   * 2. Remove padding so people aren&#39;t caught out if they zero out fieldsets.
+   */
+
+  legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+  }
+
+  /**
+   * Remove default vertical scrollbar in IE 8/9/10/11.
+   */
+
+  textarea {
+    overflow: auto;
+  }
+
+  /**
+   * Don&#39;t inherit the `font-weight` (applied by a rule above).
+   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+   */
+
+  optgroup {
+    font-weight: bold;
+  }
+
+  /* Tables
+     ========================================================================== */
+
+  /**
+   * Remove most spacing between table cells.
+   */
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  td,
+  th {
+    padding: 0;
+  }
+ }" data-collapsed="@mixin -zf-normalize() { ... }"><code>@mixin -zf-normalize() { ... }</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L212-L638" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Loads normalize.css.</p></div><h3 class="item__sub-heading">Parameters</h3><p>None.</p></section></section><section class="main__sub-section" id="global-variable"><h2 class="main__heading--secondary"><div class="container">variables</div></h2><section class="main__item container item" id="global-variable-global-flexbox"><h3 class="item__heading"><a class="item__name" href="#variable-global-flexbox">global-flexbox</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-flexbox: false !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L95-L95" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Enables flexbox for components that support it.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Boolean</code></p></section><section class="main__item container item" id="global-variable-global-text-direction"><h3 class="item__heading"><a class="item__name" href="#variable-global-text-direction">global-text-direction</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-text-direction: ltr !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L91-L91" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Sets the text direction of the CSS. Can be either <code>ltr</code> or <code>rtl</code>.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Keyword</code></p></section><section class="main__item container item" id="global-variable-global-radius"><h3 class="item__heading"><a class="item__name" href="#variable-global-radius">global-radius</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-radius: 0 !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L87-L87" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global value used for all elements that have a border radius.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="global-variable-global-weight-bold"><h3 class="item__heading"><a class="item__name" href="#variable-global-weight-bold">global-weight-bold</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-weight-bold: bold !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L83-L83" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global font weight used for bold type.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Keyword</code> or <code>Number</code></p></section><section class="main__item container item" id="global-variable-global-weight-normal"><h3 class="item__heading"><a class="item__name" href="#variable-global-weight-normal">global-weight-normal</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-weight-normal: normal !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L79-L79" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global font weight used for normal type.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Keyword</code> or <code>Number</code></p></section><section class="main__item container item" id="global-variable-global-padding"><h3 class="item__heading"><a class="item__name" href="#variable-global-padding">global-padding</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-padding: 1rem !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L75-L75" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global value used for padding on components.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="global-variable-global-margin"><h3 class="item__heading"><a class="item__name" href="#variable-global-margin">global-margin</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-margin: 1rem !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L71-L71" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global value used for margin on components.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="global-variable-body-antialiased"><h3 class="item__heading"><a class="item__name" href="#variable-body-antialiased">body-antialiased</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-antialiased: true !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L67-L67" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Set to <code>true</code> to enable antialiased type, using the <code>-webkit-font-smoothing</code> and <code>-moz-osx-font-smoothing</code> CSS properties.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Boolean</code></p></section><section class="main__item container item" id="global-variable-body-font-family"><h3 class="item__heading"><a class="item__name" href="#variable-body-font-family">body-font-family</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-font-family: &#39;Helvetica Neue&#39;, Helvetica, Roboto, Arial, sans-serif !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L63-L63" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Font stack of the body.</p></div><h3 class="item__sub-heading">Type</h3><p><code>List</code></p></section><section class="main__item container item" id="global-variable-body-font-color"><h3 class="item__heading"><a class="item__name" href="#variable-body-font-color">body-font-color</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-font-color: $black !default;</code></pre><span class="color-preview--block" style="background: #0a0a0a"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L59-L59" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Text color of the body.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-body-background"><h3 class="item__heading"><a class="item__name" href="#variable-body-background">body-background</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$body-background: $white !default;</code></pre><span class="color-preview--block" style="background: #fefefe"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L55-L55" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Background color of the body.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-white"><h3 class="item__heading"><a class="item__name" href="#variable-white">white</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$white: #fefefe !default;</code></pre><span class="color-preview--block" style="background: #fefefe"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L51-L51" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for white ui items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-black"><h3 class="item__heading"><a class="item__name" href="#variable-black">black</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$black: #0a0a0a !default;</code></pre><span class="color-preview--block" style="background: #0a0a0a"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L47-L47" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for black ui items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-dark-gray"><h3 class="item__heading"><a class="item__name" href="#variable-dark-gray">dark-gray</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$dark-gray: #8a8a8a !default;</code></pre><span class="color-preview--block" style="background: #8a8a8a"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L43-L43" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for dark gray UI items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-medium-gray"><h3 class="item__heading"><a class="item__name" href="#variable-medium-gray">medium-gray</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$medium-gray: #cacaca !default;</code></pre><span class="color-preview--block" style="background: #cacaca"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L39-L39" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for medium gray UI items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-light-gray"><h3 class="item__heading"><a class="item__name" href="#variable-light-gray">light-gray</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$light-gray: #e6e6e6 !default;</code></pre><span class="color-preview--block" style="background: #e6e6e6"></span> <a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L35-L35" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Color used for light gray UI items.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Color</code></p></section><section class="main__item container item" id="global-variable-foundation-palette"><h3 class="item__heading"><a class="item__name" href="#variable-foundation-palette">foundation-palette</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$foundation-palette: (
+  primary: #2199e8,
+  secondary: #777,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #ec5840,
+) !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L25-L31" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Colors used for buttons, callouts, links, etc. There must always be a color called <code>primary</code>.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Map</code></p></section><section class="main__item container item" id="global-variable-global-lineheight"><h3 class="item__heading"><a class="item__name" href="#variable-global-lineheight">global-lineheight</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-lineheight: 1.5 !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L21-L21" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Default line height for all type. <code>$global-lineheight</code> is 24px while <code>$global-font-size</code> is 16px</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="global-variable-global-width"><h3 class="item__heading"><a class="item__name" href="#variable-global-width">global-width</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-width: rem-calc(1200) !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L17-L17" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Global width of your site. Used by the grid to determine row width.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section><section class="main__item container item" id="global-variable-global-font-size"><h3 class="item__heading"><a class="item__name" href="#variable-global-font-size">global-font-size</a></h3><div class="item__code-wrapper"><pre class="item__code language-scss"><code>$global-font-size: 100% !default;</code></pre><a href="https://github.com/phase2/pattern-lab-starter/blob/master/scss/00-config/_global.scss#L13-L13" class="item__source-link" target="_blank">View source</a></div><h3 class="item__sub-heading">Description</h3><div class="item__description"><p>Font size attribute applied to <code>&lt;html&gt;</code> and <code>&lt;body&gt;</code>. We use 100% by default so the value is inherited from the user&#39;s browser settings.</p></div><h3 class="item__sub-heading">Type</h3><p><code>Number</code></p></section></section></section><footer class="footer" role="contentinfo"><div class="container"><div class="footer__project-info project-info"><!-- Name and URL --><span class="project-info__name">Patternlabstarter</span><!-- Version --> <span class="project-info__version">- v8.0.0</span><!-- License --></div><a class="footer__watermark" href="http://sassdoc.com"><img src="assets/images/logo_light_inline.svg" alt="SassDoc Logo"></a></div></footer></article><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script><script src="assets/js/main.min.js"></script></body></html>
