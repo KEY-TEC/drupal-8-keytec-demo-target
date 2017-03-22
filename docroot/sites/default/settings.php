@@ -746,6 +746,10 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+if (file_exists('/var/www/site-php')) {
+ require '/var/www/site-php/keytec/keytec-settings.inc';
+}
+
 /**
  * Load local development override configuration, if available.
  *
@@ -756,6 +760,7 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
+
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
