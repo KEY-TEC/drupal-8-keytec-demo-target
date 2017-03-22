@@ -6309,37 +6309,6 @@
         }
     },
     {
-        "name": "burdapraha/drupal_twig_food",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/BurdaPraha/DrupalTwigFood.git",
-            "reference": "690bde7cda116e8345825796f245d9424d3c16a5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/BurdaPraha/DrupalTwigFood/zipball/690bde7cda116e8345825796f245d9424d3c16a5",
-            "reference": "690bde7cda116e8345825796f245d9424d3c16a5",
-            "shasum": ""
-        },
-        "time": "2017-02-08 19:50:54",
-        "type": "drupal-module",
-        "installation-source": "source",
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Michal Landsman",
-                "email": "michal.landsman@burda.cz"
-            }
-        ],
-        "description": "Useful functions, filters for twig @ Drupal 8",
-        "homepage": "https://github.com/BurdaPraha/DrupalTwigFood"
-    },
-    {
         "name": "drupal/ui_patterns",
         "version": "dev-1.x",
         "version_normalized": "dev-1.x",
@@ -6426,5 +6395,36 @@
         "support": {
             "source": "http://cgit.drupalcode.org/ui_patterns"
         }
+    },
+    {
+        "name": "burdapraha/drupal_twig_food",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/BurdaPraha/DrupalTwigFood.git",
+            "reference": "690bde7cda116e8345825796f245d9424d3c16a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/BurdaPraha/DrupalTwigFood/zipball/690bde7cda116e8345825796f245d9424d3c16a5",
+            "reference": "690bde7cda116e8345825796f245d9424d3c16a5",
+            "shasum": ""
+        },
+        "time": "2017-02-08 19:50:54",
+        "type": "drupal-module",
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Michal Landsman",
+                "email": "michal.landsman@burda.cz"
+            }
+        ],
+        "description": "Useful functions, filters for twig @ Drupal 8",
+        "homepage": "https://github.com/BurdaPraha/DrupalTwigFood"
     }
 ]
