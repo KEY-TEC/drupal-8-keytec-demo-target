@@ -11,7 +11,3 @@ function keytec_preprocess_form_element_label(&$vars){
     $x = $vars;
     $vars['title'] = null;
 }
-function keytec_preprocess_input__submit(&$vars){
-    $x = $vars;
-    $vars['attributes'] = null;
-}

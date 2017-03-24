@@ -19,8 +19,8 @@ stage:
       preview: Total Drupal
 
 
-stage_association:
-  label: Stage Association
+small_stage:
+  label: Small Stage
   description: A simple molecule with title.
   fields:
     background_image:
@@ -29,7 +29,7 @@ stage_association:
       description: The actual image.
       preview: Background Image
     logo_image:
-      type: imge
+      type: image
       label: Logo Image
       description: The image title.
       preview: Total Drupal
@@ -76,6 +76,16 @@ tape_cross:
 
 tape_large3:
   label: Tape Large3
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The tape date.
+      preview: Tape cross
+
+tape_association:
+  label: Tape Association
   description: A simple Atom.
   fields:
     label:

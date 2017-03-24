@@ -9,20 +9,13 @@
       "role": ""
     }
   ],
-  "repositories": [
-    {
-      "type": "composer",
-      "url": "https://packages.drupal.org/8"
-    }
-  ],
   "require": {
     "composer/installers": "^1.2",
-    "drupal-composer/drupal-scaffold": "^2.2",
     "cweagans/composer-patches": "~1.0",
-    "drupal/core": "~8.0",
+    "drupal/core": "8.2.6",
     "drush/drush": "~8.0",
     "drupal/console": "~1.0",
-    "drupal/paragraphs": "^1.0",
+    "drupal/paragraphs": "1.x-dev",
     "drupal/ds": "^2.6",
     "drupal/components": "^1.0",
     "burdapraha/drupal_twig_food": "dev-master",

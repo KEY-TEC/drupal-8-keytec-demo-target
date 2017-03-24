@@ -106,7 +106,6 @@ class ComposerStaticInitd54e744c0c59ac3c5f55fa0468eb4691
             'Drupal\\Console\\Core\\' => 20,
             'Drupal\\Console\\' => 15,
             'Drupal\\Component\\' => 17,
-            'DrupalComposer\\DrupalScaffold\\' => 30,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Common\\Cache\\' => 22,
         ),
@@ -340,10 +339,6 @@ class ComposerStaticInitd54e744c0c59ac3c5f55fa0468eb4691
         'Drupal\\Component\\' => 
         array (
             0 => __DIR__ . '/../..' . '/docroot/core/lib/Drupal/Component',
-        ),
-        'DrupalComposer\\DrupalScaffold\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/drupal-composer/drupal-scaffold/src',
         ),
         'Doctrine\\Instantiator\\' => 
         array (

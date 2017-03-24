@@ -59,7 +59,6 @@ return array(
     'Drupal\\Console\\Core\\' => array($vendorDir . '/drupal/console-core/src'),
     'Drupal\\Console\\' => array($vendorDir . '/drupal/console/src'),
     'Drupal\\Component\\' => array($baseDir . '/docroot/core/lib/Drupal/Component'),
-    'DrupalComposer\\DrupalScaffold\\' => array($vendorDir . '/drupal-composer/drupal-scaffold/src'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'Doctrine\\Common\\Cache\\' => array($vendorDir . '/doctrine/cache/lib/Doctrine/Common/Cache'),
     'Consolidation\\OutputFormatters\\' => array($vendorDir . '/consolidation/output-formatters/src'),

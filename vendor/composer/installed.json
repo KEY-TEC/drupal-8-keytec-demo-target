@@ -1,48 +1,5 @@
 [
     {
-        "name": "drupal-composer/drupal-scaffold",
-        "version": "2.2.0",
-        "version_normalized": "2.2.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/drupal-composer/drupal-scaffold.git",
-            "reference": "3ad465ac853c2e52e6a808f5529859917662c256"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/drupal-composer/drupal-scaffold/zipball/3ad465ac853c2e52e6a808f5529859917662c256",
-            "reference": "3ad465ac853c2e52e6a808f5529859917662c256",
-            "shasum": ""
-        },
-        "require": {
-            "composer-plugin-api": "^1.0.0",
-            "php": ">=5.4.5"
-        },
-        "require-dev": {
-            "composer/composer": "dev-master",
-            "phpunit/phpunit": "^4.4.0"
-        },
-        "time": "2016-11-05 10:46:44",
-        "type": "composer-plugin",
-        "extra": {
-            "class": "DrupalComposer\\DrupalScaffold\\Plugin",
-            "branch-alias": {
-                "dev-master": "2.0.x-dev"
-            }
-        },
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "DrupalComposer\\DrupalScaffold\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "description": "Composer Plugin for updating the Drupal scaffold files when using drupal/core"
-    },
-    {
         "name": "cweagans/composer-patches",
         "version": "1.6.0",
         "version_normalized": "1.6.0.0",
@@ -65,7 +22,7 @@
             "composer/composer": "~1.0",
             "phpunit/phpunit": "~4.6"
         },
-        "time": "2016-12-01 01:19:32",
+        "time": "2016-12-01T01:19:32+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "cweagans\\Composer\\Patches"
@@ -114,7 +71,7 @@
             "composer/composer": "1.0.*@dev",
             "phpunit/phpunit": "4.1.*"
         },
-        "time": "2016-08-13 20:53:52",
+        "time": "2016-08-13T20:53:52+00:00",
         "type": "composer-plugin",
         "extra": {
             "class": "Composer\\Installers\\Plugin",
@@ -218,7 +175,7 @@
         "suggest": {
             "ext-mbstring": "For best performance"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -276,7 +233,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.*"
         },
-        "time": "2014-11-20 16:49:30",
+        "time": "2014-11-20T16:49:30+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -321,7 +278,7 @@
             "ircmaxell/password-compat": "~1.0",
             "php": ">=5.3.3"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -378,7 +335,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -444,7 +401,7 @@
         "require-dev": {
             "symfony/expression-language": "~2.4|~3.0.0"
         },
-        "time": "2017-01-08 20:43:03",
+        "time": "2017-01-08T20:43:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -495,7 +452,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-08-06 14:39:51",
+        "time": "2016-08-06T14:39:51+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -555,7 +512,7 @@
         "suggest": {
             "zendframework/zend-diactoros": "To use the Zend Diactoros factory"
         },
-        "time": "2015-05-29 17:57:12",
+        "time": "2015-05-29T17:57:12+00:00",
         "type": "symfony-bridge",
         "installation-source": "dist",
         "autoload": {
@@ -603,7 +560,7 @@
         "require": {
             "php": ">=5.3.0"
         },
-        "time": "2016-10-10 12:19:37",
+        "time": "2016-10-10T12:19:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -660,7 +617,7 @@
             "symfony/class-loader": "~2.2|~3.0.0",
             "symfony/http-kernel": "~2.3.24|~2.5.9|~2.6,>=2.6.2|~3.0.0"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -722,7 +679,7 @@
             "symfony/dependency-injection": "",
             "symfony/http-kernel": ""
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -806,7 +763,7 @@
             "symfony/finder": "",
             "symfony/var-dumper": ""
         },
-        "time": "2017-01-12 20:27:24",
+        "time": "2017-01-12T20:27:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -859,7 +816,7 @@
             "symfony/http-foundation": "~2.1|~3.0",
             "symfony/http-kernel": "~2.1|~3.0"
         },
-        "time": "2016-08-01 12:05:04",
+        "time": "2016-08-01T12:05:04+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -906,7 +863,7 @@
             "phpunit/phpunit": "^4.5 || ^5.0.5",
             "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
         },
-        "time": "2016-08-30 16:08:34",
+        "time": "2016-08-30T16:08:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -966,7 +923,7 @@
         "require": {
             "php": ">=5.3.2"
         },
-        "time": "2014-09-09 13:34:57",
+        "time": "2014-09-09T13:34:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1025,7 +982,7 @@
         "require-dev": {
             "phpunit/phpunit": "4.*"
         },
-        "time": "2015-11-06 14:35:42",
+        "time": "2015-11-06T14:35:42+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1094,7 +1051,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2015-04-14 22:21:58",
+        "time": "2015-04-14T22:21:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1167,7 +1124,7 @@
             "predis/predis": "~1.0",
             "satooshi/php-coveralls": "~0.6"
         },
-        "time": "2016-10-29 11:16:17",
+        "time": "2016-10-29T11:16:17+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1236,7 +1193,7 @@
             "doctrine/cache": "1.*",
             "phpunit/phpunit": "4.*"
         },
-        "time": "2015-08-31 12:32:49",
+        "time": "2015-08-31T12:32:49+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1309,7 +1266,7 @@
         "require-dev": {
             "phpunit/phpunit": "~3.7"
         },
-        "time": "2015-12-25 13:10:16",
+        "time": "2015-12-25T13:10:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1386,7 +1343,7 @@
         "suggest": {
             "ml/json-ld": "~1.0"
         },
-        "time": "2015-02-27 09:45:49",
+        "time": "2015-02-27T09:45:49+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1444,7 +1401,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8.24"
         },
-        "time": "2016-07-03 21:52:18",
+        "time": "2016-07-03T21:52:18+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1500,7 +1457,7 @@
             "sami/sami": "~2.0",
             "satooshi/php-coveralls": "1.0.*"
         },
-        "time": "2016-09-22 11:01:11",
+        "time": "2016-09-22T11:01:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1567,7 +1524,7 @@
         "suggest": {
             "ext-libsodium": "Provides a modern crypto API that can be used to generate random bytes."
         },
-        "time": "2016-11-07 23:38:38",
+        "time": "2016-11-07T23:38:38+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -1616,7 +1573,7 @@
         "require-dev": {
             "silex/silex": "~1.0"
         },
-        "time": "2016-06-02 06:58:42",
+        "time": "2016-06-02T06:58:42+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1682,7 +1639,7 @@
             "symfony/http-foundation": "For using a Symfony Request object",
             "symfony/yaml": "For using the YAML loader"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1752,7 +1709,7 @@
         "suggest": {
             "symfony/event-dispatcher": "DynamicRouter can optionally trigger an event at the start of matching. Minimal version (~2.1)"
         },
-        "time": "2016-03-31 09:11:39",
+        "time": "2016-03-31T09:11:39+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1800,7 +1757,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1859,7 +1816,7 @@
         "require-dev": {
             "symfony/finder": "~2.0,>=2.0.5|~3.0.0"
         },
-        "time": "2017-01-10 14:03:07",
+        "time": "2017-01-10T14:03:07+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1913,7 +1870,7 @@
         "suggest": {
             "ext-iconv": "For best performance"
         },
-        "time": "2016-11-14 01:06:16",
+        "time": "2016-11-14T01:06:16+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -1986,7 +1943,7 @@
             "symfony/property-access": "For using the ObjectNormalizer.",
             "symfony/yaml": "For using the default YAML mapping loader."
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2052,7 +2009,7 @@
             "symfony/config": "",
             "symfony/yaml": ""
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2127,7 +2084,7 @@
             "symfony/property-access": "For using the 2.4 Validator API",
             "symfony/yaml": ""
         },
-        "time": "2017-01-12 19:24:25",
+        "time": "2017-01-12T19:24:25+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2186,7 +2143,7 @@
             "phpunit/phpunit": "^4.6 || ^5.5",
             "zendframework/zend-coding-standard": "~1.0.0"
         },
-        "time": "2017-01-23 04:53:24",
+        "time": "2017-01-23T04:53:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2235,7 +2192,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "^2.6.2"
         },
-        "time": "2016-09-13 14:38:50",
+        "time": "2016-09-13T14:38:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2281,7 +2238,7 @@
             "fabpot/php-cs-fixer": "1.7.*",
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2016-06-30 19:48:38",
+        "time": "2016-06-30T19:48:38+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2343,7 +2300,7 @@
             "zendframework/zend-servicemanager": "Zend\\ServiceManager component, for easily extending ExtensionManager implementations",
             "zendframework/zend-validator": "Zend\\Validator component, for validating email addresses used in Atom feeds and entries ehen using the Writer subcomponent"
         },
-        "time": "2016-02-11 18:54:29",
+        "time": "2016-02-11T18:54:29+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2390,7 +2347,7 @@
             "phpunit/phpunit": "^4.6",
             "sebastian/version": "^1.0.1"
         },
-        "time": "2016-11-23 20:04:58",
+        "time": "2016-11-23T20:04:58+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2443,7 +2400,7 @@
             "phpunit/phpunit": "^4.6",
             "sebastian/version": "^1.0.1"
         },
-        "time": "2015-12-17 08:42:14",
+        "time": "2015-12-17T08:42:14+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2486,7 +2443,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-01-03 13:49:52",
+        "time": "2017-01-03T13:49:52+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2544,7 +2501,7 @@
         "suggest": {
             "ext-symfony_debug": ""
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2602,7 +2559,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2665,7 +2622,7 @@
             "symfony/event-dispatcher": "",
             "symfony/process": ""
         },
-        "time": "2017-01-08 20:43:03",
+        "time": "2017-01-08T20:43:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -2723,7 +2680,7 @@
             "phpunit/phpunit": "3.7.*",
             "squizlabs/php_codesniffer": "1.*"
         },
-        "time": "2014-04-08 15:00:19",
+        "time": "2014-04-08T15:00:19+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2769,7 +2726,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~1.5"
         },
-        "time": "2015-04-20 18:58:01",
+        "time": "2015-04-20T18:58:01+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -2810,7 +2767,7 @@
         "require-dev": {
             "phpunit/phpunit": "@stable"
         },
-        "time": "2014-10-24 07:27:01",
+        "time": "2014-10-24T07:27:01+00:00",
         "type": "project",
         "installation-source": "dist",
         "autoload": {
@@ -2846,7 +2803,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0|~5.0"
         },
-        "time": "2016-12-06 11:30:35",
+        "time": "2016-12-06T11:30:35+00:00",
         "bin": [
             "bin/php-parse"
         ],
@@ -2913,7 +2870,7 @@
             "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history.",
             "hoa/console": "A pure PHP readline implementation. You'll want this if your PHP install doesn't already support readline or libedit."
         },
-        "time": "2016-12-07 17:15:07",
+        "time": "2016-12-07T17:15:07+00:00",
         "bin": [
             "bin/psysh"
         ],
@@ -2977,7 +2934,7 @@
             "dflydev/markdown": "~1.0",
             "erusev/parsedown": "~1.0"
         },
-        "time": "2015-02-03 12:10:50",
+        "time": "2015-02-03T12:10:50+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3024,7 +2981,7 @@
         "suggest": {
             "pear/Console_Color2": ">=0.1.2"
         },
-        "time": "2016-01-21 16:14:31",
+        "time": "2016-01-21T16:14:31+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3086,7 +3043,7 @@
             "squizlabs/php_codesniffer": "2.*",
             "victorjonsson/markdowndocs": "^1.3"
         },
-        "time": "2017-01-21 06:26:40",
+        "time": "2017-01-21T06:26:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3140,7 +3097,7 @@
             "satooshi/php-coveralls": "^1.0",
             "squizlabs/php_codesniffer": "^2.7"
         },
-        "time": "2017-01-30 22:46:53",
+        "time": "2017-01-30T22:46:53+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3203,7 +3160,7 @@
             "drush/config-extra": "Provides configuration workflow commands, such as config-merge.",
             "ext-pcntl": "*"
         },
-        "time": "2017-01-14 17:17:30",
+        "time": "2017-01-14T17:17:30+00:00",
         "bin": [
             "drush",
             "drush.launcher",
@@ -3290,7 +3247,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3348,7 +3305,7 @@
         "suggest": {
             "symfony/css-selector": ""
         },
-        "time": "2017-01-02 20:32:22",
+        "time": "2017-01-02T20:32:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3399,7 +3356,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3457,7 +3414,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.0"
         },
-        "time": "2016-12-20 10:07:11",
+        "time": "2016-12-20T10:07:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3514,7 +3471,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.0"
         },
-        "time": "2016-06-24 23:00:38",
+        "time": "2016-06-24T23:00:38+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3574,7 +3531,7 @@
             "phpunit/phpunit": "^4.0",
             "psr/log": "^1.0"
         },
-        "time": "2016-10-08 15:01:37",
+        "time": "2016-10-08T15:01:37+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3631,7 +3588,7 @@
         "require": {
             "php": ">=5.3.4"
         },
-        "time": "2016-10-03 21:25:17",
+        "time": "2016-10-03T21:25:17+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3675,7 +3632,7 @@
             "mikey179/vfsstream": "^1.6",
             "phpunit/phpunit": "^4.8"
         },
-        "time": "2016-11-28 18:50:45",
+        "time": "2016-11-28T18:50:45+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -3717,7 +3674,7 @@
             "symfony/debug": "~2.7",
             "symfony/phpunit-bridge": "~3.2"
         },
-        "time": "2017-01-11 19:36:15",
+        "time": "2017-01-11T19:36:15+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3776,7 +3733,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3827,7 +3784,7 @@
         "require": {
             "php": ">=5.3.9"
         },
-        "time": "2017-01-08 20:43:03",
+        "time": "2017-01-08T20:43:03+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3892,7 +3849,7 @@
             "symfony/proxy-manager-bridge": "Generate service proxies to lazy load them",
             "symfony/yaml": ""
         },
-        "time": "2017-01-10 14:27:01",
+        "time": "2017-01-10T14:27:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -3950,7 +3907,7 @@
         "suggest": {
             "symfony/yaml": "To use the yaml reference dumper"
         },
-        "time": "2017-01-02 20:30:24",
+        "time": "2017-01-02T20:30:24+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4005,7 +3962,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2016-02-24 05:08:54",
+        "time": "2016-02-24T05:08:54+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4045,7 +4002,7 @@
             "reference": "87a886d5084d33f813e0d7c0547534ac43e75da8",
             "shasum": ""
         },
-        "time": "2017-01-23 14:59:05",
+        "time": "2017-01-23T14:59:05+00:00",
         "type": "drupal-console-language",
         "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
@@ -4104,7 +4061,7 @@
         "require": {
             "php": ">=5.3.2"
         },
-        "time": "2012-10-28 21:08:28",
+        "time": "2012-10-28T21:08:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4158,7 +4115,7 @@
         "require": {
             "php": ">=5.3.2"
         },
-        "time": "2017-01-20 21:14:22",
+        "time": "2017-01-20T21:14:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4227,7 +4184,7 @@
         "suggest": {
             "symfony/yaml": "Required for using the YAML Configuration Builders"
         },
-        "time": "2014-11-14 03:26:12",
+        "time": "2014-11-14T03:26:12+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4296,7 +4253,7 @@
             "twig/twig": "^1.23.1",
             "webflo/drupal-finder": "0.*"
         },
-        "time": "2017-01-23 18:02:51",
+        "time": "2017-01-23T18:02:51+00:00",
         "type": "project",
         "installation-source": "dist",
         "autoload": {
@@ -4380,7 +4337,7 @@
             "guzzle/guzzle": "To use the GuzzleTeleporter with Guzzle 3",
             "guzzlehttp/guzzle": "To use the GuzzleTeleporter with Guzzle 6"
         },
-        "time": "2016-11-03 16:10:31",
+        "time": "2016-11-03T16:10:31+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4442,7 +4399,7 @@
             "symfony/expression-language": ">=2.7 <3.0",
             "symfony/http-foundation": ">=2.7 <3.0"
         },
-        "time": "2017-01-23 19:34:20",
+        "time": "2017-01-23T19:34:20+00:00",
         "bin": [
             "bin/drupal"
         ],
@@ -4492,185 +4449,6 @@
         ]
     },
     {
-        "name": "drupal/core",
-        "version": "8.2.5",
-        "version_normalized": "8.2.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/drupal-composer/drupal-core.git",
-            "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/fbf10f63dba6b312e1d1b67bac521db1648384f3",
-            "reference": "fbf10f63dba6b312e1d1b67bac521db1648384f3",
-            "shasum": ""
-        },
-        "require": {
-            "asm89/stack-cors": "~1.0",
-            "composer/semver": "~1.0",
-            "doctrine/annotations": "1.2.*",
-            "doctrine/common": "2.5.*",
-            "easyrdf/easyrdf": "0.9.*",
-            "egulias/email-validator": "1.2.*",
-            "guzzlehttp/guzzle": "^6.2.1",
-            "masterminds/html5": "~2.1",
-            "paragonie/random_compat": "^1|^2",
-            "php": ">=5.5.9",
-            "stack/builder": "1.0.*",
-            "symfony-cmf/routing": "~1.4",
-            "symfony/class-loader": "~2.8",
-            "symfony/console": "~2.8",
-            "symfony/dependency-injection": "~2.8",
-            "symfony/event-dispatcher": "~2.8",
-            "symfony/http-foundation": "~2.8",
-            "symfony/http-kernel": "~2.8",
-            "symfony/polyfill-iconv": "~1.0",
-            "symfony/process": "~2.8",
-            "symfony/psr-http-message-bridge": "v0.2",
-            "symfony/routing": "~2.8",
-            "symfony/serializer": "~2.8",
-            "symfony/translation": "~2.8",
-            "symfony/validator": "~2.8",
-            "symfony/yaml": "~2.8",
-            "twig/twig": "^1.23.1",
-            "zendframework/zend-diactoros": "~1.1",
-            "zendframework/zend-feed": "~2.4"
-        },
-        "replace": {
-            "drupal/action": "self.version",
-            "drupal/aggregator": "self.version",
-            "drupal/automated_cron": "self.version",
-            "drupal/ban": "self.version",
-            "drupal/bartik": "self.version",
-            "drupal/basic_auth": "self.version",
-            "drupal/big_pipe": "self.version",
-            "drupal/block": "self.version",
-            "drupal/block_content": "self.version",
-            "drupal/block_place": "self.version",
-            "drupal/book": "self.version",
-            "drupal/breakpoint": "self.version",
-            "drupal/ckeditor": "self.version",
-            "drupal/classy": "self.version",
-            "drupal/color": "self.version",
-            "drupal/comment": "self.version",
-            "drupal/config": "self.version",
-            "drupal/config_translation": "self.version",
-            "drupal/contact": "self.version",
-            "drupal/content_moderation": "self.version",
-            "drupal/content_translation": "self.version",
-            "drupal/contextual": "self.version",
-            "drupal/core-annotation": "self.version",
-            "drupal/core-assertion": "self.version",
-            "drupal/core-bridge": "self.version",
-            "drupal/core-datetime": "self.version",
-            "drupal/core-dependency-injection": "self.version",
-            "drupal/core-diff": "self.version",
-            "drupal/core-discovery": "self.version",
-            "drupal/core-event-dispatcher": "self.version",
-            "drupal/core-file-cache": "self.version",
-            "drupal/core-filesystem": "self.version",
-            "drupal/core-gettext": "self.version",
-            "drupal/core-graph": "self.version",
-            "drupal/core-http-foundation": "self.version",
-            "drupal/core-php-storage": "self.version",
-            "drupal/core-plugin": "self.version",
-            "drupal/core-proxy-builder": "self.version",
-            "drupal/core-render": "self.version",
-            "drupal/core-serialization": "self.version",
-            "drupal/core-transliteration": "self.version",
-            "drupal/core-utility": "self.version",
-            "drupal/core-uuid": "self.version",
-            "drupal/datetime": "self.version",
-            "drupal/datetime_range": "self.version",
-            "drupal/dblog": "self.version",
-            "drupal/dynamic_page_cache": "self.version",
-            "drupal/editor": "self.version",
-            "drupal/entity_reference": "self.version",
-            "drupal/field": "self.version",
-            "drupal/field_ui": "self.version",
-            "drupal/file": "self.version",
-            "drupal/filter": "self.version",
-            "drupal/forum": "self.version",
-            "drupal/hal": "self.version",
-            "drupal/help": "self.version",
-            "drupal/history": "self.version",
-            "drupal/image": "self.version",
-            "drupal/inline_form_errors": "self.version",
-            "drupal/language": "self.version",
-            "drupal/link": "self.version",
-            "drupal/locale": "self.version",
-            "drupal/menu_link_content": "self.version",
-            "drupal/menu_ui": "self.version",
-            "drupal/migrate": "self.version",
-            "drupal/migrate_drupal": "self.version",
-            "drupal/migrate_drupal_ui": "self.version",
-            "drupal/minimal": "self.version",
-            "drupal/node": "self.version",
-            "drupal/options": "self.version",
-            "drupal/outside_in": "self.version",
-            "drupal/page_cache": "self.version",
-            "drupal/path": "self.version",
-            "drupal/quickedit": "self.version",
-            "drupal/rdf": "self.version",
-            "drupal/responsive_image": "self.version",
-            "drupal/rest": "self.version",
-            "drupal/search": "self.version",
-            "drupal/serialization": "self.version",
-            "drupal/seven": "self.version",
-            "drupal/shortcut": "self.version",
-            "drupal/simpletest": "self.version",
-            "drupal/standard": "self.version",
-            "drupal/stark": "self.version",
-            "drupal/statistics": "self.version",
-            "drupal/syslog": "self.version",
-            "drupal/system": "self.version",
-            "drupal/taxonomy": "self.version",
-            "drupal/telephone": "self.version",
-            "drupal/text": "self.version",
-            "drupal/toolbar": "self.version",
-            "drupal/tour": "self.version",
-            "drupal/tracker": "self.version",
-            "drupal/update": "self.version",
-            "drupal/user": "self.version",
-            "drupal/views": "self.version",
-            "drupal/views_ui": "self.version"
-        },
-        "require-dev": {
-            "behat/mink": "~1.7",
-            "behat/mink-goutte-driver": "~1.2",
-            "jcalderonzumba/gastonjs": "~1.0.2",
-            "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-            "mikey179/vfsstream": "~1.2",
-            "phpunit/phpunit": "~4.8",
-            "symfony/css-selector": "~2.8"
-        },
-        "time": "2017-01-04 11:31:35",
-        "type": "drupal-core",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Drupal\\Core\\": "lib/Drupal/Core",
-                "Drupal\\Component\\": "lib/Drupal/Component",
-                "Drupal\\Driver\\": "../drivers/lib/Drupal/Driver"
-            },
-            "classmap": [
-                "lib/Drupal.php",
-                "lib/Drupal/Component/Utility/Timer.php",
-                "lib/Drupal/Component/Utility/Unicode.php",
-                "lib/Drupal/Core/Database/Database.php",
-                "lib/Drupal/Core/DrupalKernel.php",
-                "lib/Drupal/Core/DrupalKernelInterface.php",
-                "lib/Drupal/Core/Site/Settings.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "description": "Drupal is an open source content management platform powering millions of websites and applications."
-    },
-    {
         "name": "sebastian/version",
         "version": "1.0.6",
         "version_normalized": "1.0.6.0",
@@ -4685,7 +4463,7 @@
             "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
             "shasum": ""
         },
-        "time": "2015-06-21 13:59:46",
+        "time": "2015-06-21T13:59:46+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -4728,7 +4506,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2015-11-11 19:50:13",
+        "time": "2015-11-11T19:50:13+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4786,7 +4564,7 @@
         "suggest": {
             "ext-uopz": "*"
         },
-        "time": "2015-10-12 03:26:01",
+        "time": "2015-10-12T03:26:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4838,7 +4616,7 @@
             "ext-mbstring": "*",
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2016-06-17 09:04:28",
+        "time": "2016-06-17T09:04:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4905,7 +4683,7 @@
         "require-dev": {
             "phpunit/phpunit": "^4.8 || ^5.0"
         },
-        "time": "2016-08-18 05:49:44",
+        "time": "2016-08-18T05:49:44+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4957,7 +4735,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.8"
         },
-        "time": "2015-12-08 07:14:41",
+        "time": "2015-12-08T07:14:41+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5013,7 +4791,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.4"
         },
-        "time": "2017-01-29 09:50:25",
+        "time": "2017-01-29T09:50:25+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5081,7 +4859,7 @@
             "phpunit/phpunit": "~4.0",
             "squizlabs/php_codesniffer": "~2.0"
         },
-        "time": "2015-06-14 21:17:01",
+        "time": "2015-06-14T21:17:01+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5130,7 +4908,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2015-06-21 13:50:34",
+        "time": "2015-06-21T13:50:34+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -5182,7 +4960,7 @@
         "suggest": {
             "ext-soap": "*"
         },
-        "time": "2015-10-02 06:51:40",
+        "time": "2015-10-02T06:51:40+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5234,7 +5012,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4|~5"
         },
-        "time": "2016-05-12 18:03:57",
+        "time": "2016-05-12T18:03:57+00:00",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -5281,7 +5059,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.2"
         },
-        "time": "2016-11-15 14:06:22",
+        "time": "2016-11-15T14:06:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5328,7 +5106,7 @@
         "require": {
             "php": ">=5.3.3"
         },
-        "time": "2016-10-03 07:40:28",
+        "time": "2016-10-03T07:40:28+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5391,7 +5169,7 @@
             "ext-xdebug": ">=2.2.1",
             "ext-xmlwriter": "*"
         },
-        "time": "2015-10-06 15:47:00",
+        "time": "2015-10-06T15:47:00+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5444,7 +5222,7 @@
         "require-dev": {
             "phpunit/phpunit": "~4.5"
         },
-        "time": "2016-07-18 14:02:57",
+        "time": "2016-07-18T14:02:57+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5497,7 +5275,7 @@
         "suggest": {
             "symfony/process": ""
         },
-        "time": "2017-01-02 20:32:22",
+        "time": "2017-01-02T20:32:22+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5552,7 +5330,7 @@
             "symfony/css-selector": "~2.1|~3.0",
             "symfony/dom-crawler": "~2.1|~3.0"
         },
-        "time": "2017-01-03 13:21:43",
+        "time": "2017-01-03T13:21:43+00:00",
         "type": "application",
         "extra": {
             "branch-alias": {
@@ -5609,7 +5387,7 @@
             "behat/mink-selenium2-driver": "slow, but JS-enabled driver for any app (requires Selenium2)",
             "behat/mink-zombie-driver": "fast and JS-enabled headless driver for any app (requires node.js)"
         },
-        "time": "2016-03-05 08:26:18",
+        "time": "2016-03-05T08:26:18+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5666,7 +5444,7 @@
             "silex/silex": "~1.2",
             "symfony/phpunit-bridge": "~2.7|~3.0"
         },
-        "time": "2016-03-05 08:59:47",
+        "time": "2016-03-05T08:59:47+00:00",
         "type": "mink-driver",
         "extra": {
             "branch-alias": {
@@ -5723,7 +5501,7 @@
         "require-dev": {
             "symfony/phpunit-bridge": "~2.7|~3.0"
         },
-        "time": "2016-03-05 09:04:22",
+        "time": "2016-03-05T09:04:22+00:00",
         "type": "mink-driver",
         "extra": {
             "branch-alias": {
@@ -5782,7 +5560,7 @@
             "phpspec/phpspec": "^2.0",
             "phpunit/phpunit": "^4.8 || ^5.6.5"
         },
-        "time": "2016-11-21 14:58:47",
+        "time": "2016-11-21T14:58:47+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -5878,70 +5656,6 @@
         }
     },
     {
-        "name": "drupal/paragraphs",
-        "version": "1.0.0",
-        "version_normalized": "1.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://git.drupal.org/project/paragraphs",
-            "reference": "8.x-1.0"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://ftp.drupal.org/files/projects/paragraphs-8.x-1.0.zip",
-            "reference": "8.x-1.0",
-            "shasum": "4fcbd6a50f5b725a9ba66ee105d6f8a1385ff2c8"
-        },
-        "require": {
-            "drupal/core": "~8.0",
-            "drupal/entity_reference_revisions": "*"
-        },
-        "require-dev": {
-            "drupal/diff": "*",
-            "drupal/replicate": "*",
-            "drupal/search_api": "*",
-            "drupal/search_api_db": "*"
-        },
-        "type": "drupal-module",
-        "extra": {
-            "branch-alias": {
-                "dev-1.x": "1.x-dev"
-            },
-            "drupal": {
-                "version": "8.x-1.0",
-                "datestamp": "1469726249"
-            }
-        },
-        "installation-source": "dist",
-        "notification-url": "https://packages.drupal.org/8/downloads",
-        "license": [
-            "GPL-2.0+"
-        ],
-        "authors": [
-            {
-                "name": "Berdir",
-                "homepage": "https://www.drupal.org/user/214652"
-            },
-            {
-                "name": "Frans",
-                "homepage": "https://www.drupal.org/user/514222"
-            },
-            {
-                "name": "jeroen.b",
-                "homepage": "https://www.drupal.org/user/1853532"
-            },
-            {
-                "name": "miro_dietiker",
-                "homepage": "https://www.drupal.org/user/227761"
-            }
-        ],
-        "description": "Enables the creation of paragraphs entities. To safely uninstall, go first to Structure > Paragraphs types > Settings.",
-        "homepage": "https://www.drupal.org/project/paragraphs",
-        "support": {
-            "source": "http://cgit.drupalcode.org/paragraphs"
-        }
-    },
-    {
         "name": "jcalderonzumba/gastonjs",
         "version": "v1.0.3",
         "version_normalized": "1.0.3.0",
@@ -5966,7 +5680,7 @@
             "symfony/phpunit-bridge": "~2.7",
             "symfony/process": "~2.1"
         },
-        "time": "2016-05-04 16:27:07",
+        "time": "2016-05-04T16:27:07+00:00",
         "type": "phantomjs-api",
         "extra": {
             "branch-alias": {
@@ -6025,7 +5739,7 @@
             "mink/driver-testsuite": "dev-master",
             "phpunit/phpunit": "~4.6"
         },
-        "time": "2016-12-01 10:57:30",
+        "time": "2016-12-01T10:57:30+00:00",
         "type": "mink-driver",
         "extra": {
             "branch-alias": {
@@ -6099,7 +5813,7 @@
         "suggest": {
             "phpunit/php-invoker": "~1.1"
         },
-        "time": "2017-01-26 16:15:36",
+        "time": "2017-01-26T16:15:36+00:00",
         "bin": [
             "phpunit"
         ],
@@ -6411,7 +6125,7 @@
             "reference": "690bde7cda116e8345825796f245d9424d3c16a5",
             "shasum": ""
         },
-        "time": "2017-02-08 19:50:54",
+        "time": "2017-02-08T19:50:54+00:00",
         "type": "drupal-module",
         "installation-source": "source",
         "notification-url": "https://packagist.org/downloads/",
@@ -6426,5 +6140,248 @@
         ],
         "description": "Useful functions, filters for twig @ Drupal 8",
         "homepage": "https://github.com/BurdaPraha/DrupalTwigFood"
+    },
+    {
+        "name": "drupal/paragraphs",
+        "version": "dev-1.x",
+        "version_normalized": "dev-1.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupal.org/project/paragraphs",
+            "reference": "754f74eb305e36c1a52306a5ca17a2d67df7a833"
+        },
+        "require": {
+            "drupal/core": "~8.0",
+            "drupal/entity_reference_revisions": "*"
+        },
+        "require-dev": {
+            "drupal/diff": "*",
+            "drupal/field_group": "*",
+            "drupal/inline_entity_form": "*",
+            "drupal/replicate": "*",
+            "drupal/search_api": "*",
+            "drupal/search_api_db": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1+8-dev",
+                "datestamp": "1489052883"
+            }
+        },
+        "installation-source": "source",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Berdir",
+                "homepage": "https://www.drupal.org/user/214652"
+            },
+            {
+                "name": "Frans",
+                "homepage": "https://www.drupal.org/user/514222"
+            },
+            {
+                "name": "Primsi",
+                "homepage": "https://www.drupal.org/user/282629"
+            },
+            {
+                "name": "jeroen.b",
+                "homepage": "https://www.drupal.org/user/1853532"
+            },
+            {
+                "name": "miro_dietiker",
+                "homepage": "https://www.drupal.org/user/227761"
+            }
+        ],
+        "description": "Enables the creation of paragraphs entities.",
+        "homepage": "https://www.drupal.org/project/paragraphs",
+        "support": {
+            "source": "http://cgit.drupalcode.org/paragraphs"
+        }
+    },
+    {
+        "name": "drupal/core",
+        "version": "8.2.6",
+        "version_normalized": "8.2.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/drupal-composer/drupal-core.git",
+            "reference": "6cd5d296125a4584d470d75d8e5218ff17c39c22"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/drupal-composer/drupal-core/zipball/6cd5d296125a4584d470d75d8e5218ff17c39c22",
+            "reference": "6cd5d296125a4584d470d75d8e5218ff17c39c22",
+            "shasum": ""
+        },
+        "require": {
+            "asm89/stack-cors": "~1.0",
+            "composer/semver": "~1.0",
+            "doctrine/annotations": "1.2.*",
+            "doctrine/common": "2.5.*",
+            "easyrdf/easyrdf": "0.9.*",
+            "egulias/email-validator": "1.2.*",
+            "guzzlehttp/guzzle": "^6.2.1",
+            "masterminds/html5": "~2.1",
+            "paragonie/random_compat": "^1|^2",
+            "php": ">=5.5.9",
+            "stack/builder": "1.0.*",
+            "symfony-cmf/routing": "~1.4",
+            "symfony/class-loader": "~2.8",
+            "symfony/console": "~2.8",
+            "symfony/dependency-injection": "~2.8",
+            "symfony/event-dispatcher": "~2.8",
+            "symfony/http-foundation": "~2.8",
+            "symfony/http-kernel": "~2.8",
+            "symfony/polyfill-iconv": "~1.0",
+            "symfony/process": "~2.8",
+            "symfony/psr-http-message-bridge": "v0.2",
+            "symfony/routing": "~2.8",
+            "symfony/serializer": "~2.8",
+            "symfony/translation": "~2.8",
+            "symfony/validator": "~2.8",
+            "symfony/yaml": "~2.8",
+            "twig/twig": "^1.23.1",
+            "zendframework/zend-diactoros": "~1.1",
+            "zendframework/zend-feed": "~2.4"
+        },
+        "replace": {
+            "drupal/action": "self.version",
+            "drupal/aggregator": "self.version",
+            "drupal/automated_cron": "self.version",
+            "drupal/ban": "self.version",
+            "drupal/bartik": "self.version",
+            "drupal/basic_auth": "self.version",
+            "drupal/big_pipe": "self.version",
+            "drupal/block": "self.version",
+            "drupal/block_content": "self.version",
+            "drupal/block_place": "self.version",
+            "drupal/book": "self.version",
+            "drupal/breakpoint": "self.version",
+            "drupal/ckeditor": "self.version",
+            "drupal/classy": "self.version",
+            "drupal/color": "self.version",
+            "drupal/comment": "self.version",
+            "drupal/config": "self.version",
+            "drupal/config_translation": "self.version",
+            "drupal/contact": "self.version",
+            "drupal/content_moderation": "self.version",
+            "drupal/content_translation": "self.version",
+            "drupal/contextual": "self.version",
+            "drupal/core-annotation": "self.version",
+            "drupal/core-assertion": "self.version",
+            "drupal/core-bridge": "self.version",
+            "drupal/core-datetime": "self.version",
+            "drupal/core-dependency-injection": "self.version",
+            "drupal/core-diff": "self.version",
+            "drupal/core-discovery": "self.version",
+            "drupal/core-event-dispatcher": "self.version",
+            "drupal/core-file-cache": "self.version",
+            "drupal/core-filesystem": "self.version",
+            "drupal/core-gettext": "self.version",
+            "drupal/core-graph": "self.version",
+            "drupal/core-http-foundation": "self.version",
+            "drupal/core-php-storage": "self.version",
+            "drupal/core-plugin": "self.version",
+            "drupal/core-proxy-builder": "self.version",
+            "drupal/core-render": "self.version",
+            "drupal/core-serialization": "self.version",
+            "drupal/core-transliteration": "self.version",
+            "drupal/core-utility": "self.version",
+            "drupal/core-uuid": "self.version",
+            "drupal/datetime": "self.version",
+            "drupal/datetime_range": "self.version",
+            "drupal/dblog": "self.version",
+            "drupal/dynamic_page_cache": "self.version",
+            "drupal/editor": "self.version",
+            "drupal/entity_reference": "self.version",
+            "drupal/field": "self.version",
+            "drupal/field_ui": "self.version",
+            "drupal/file": "self.version",
+            "drupal/filter": "self.version",
+            "drupal/forum": "self.version",
+            "drupal/hal": "self.version",
+            "drupal/help": "self.version",
+            "drupal/history": "self.version",
+            "drupal/image": "self.version",
+            "drupal/inline_form_errors": "self.version",
+            "drupal/language": "self.version",
+            "drupal/link": "self.version",
+            "drupal/locale": "self.version",
+            "drupal/menu_link_content": "self.version",
+            "drupal/menu_ui": "self.version",
+            "drupal/migrate": "self.version",
+            "drupal/migrate_drupal": "self.version",
+            "drupal/migrate_drupal_ui": "self.version",
+            "drupal/minimal": "self.version",
+            "drupal/node": "self.version",
+            "drupal/options": "self.version",
+            "drupal/outside_in": "self.version",
+            "drupal/page_cache": "self.version",
+            "drupal/path": "self.version",
+            "drupal/quickedit": "self.version",
+            "drupal/rdf": "self.version",
+            "drupal/responsive_image": "self.version",
+            "drupal/rest": "self.version",
+            "drupal/search": "self.version",
+            "drupal/serialization": "self.version",
+            "drupal/seven": "self.version",
+            "drupal/shortcut": "self.version",
+            "drupal/simpletest": "self.version",
+            "drupal/standard": "self.version",
+            "drupal/stark": "self.version",
+            "drupal/statistics": "self.version",
+            "drupal/syslog": "self.version",
+            "drupal/system": "self.version",
+            "drupal/taxonomy": "self.version",
+            "drupal/telephone": "self.version",
+            "drupal/text": "self.version",
+            "drupal/toolbar": "self.version",
+            "drupal/tour": "self.version",
+            "drupal/tracker": "self.version",
+            "drupal/update": "self.version",
+            "drupal/user": "self.version",
+            "drupal/views": "self.version",
+            "drupal/views_ui": "self.version"
+        },
+        "require-dev": {
+            "behat/mink": "~1.7",
+            "behat/mink-goutte-driver": "~1.2",
+            "jcalderonzumba/gastonjs": "~1.0.2",
+            "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+            "mikey179/vfsstream": "~1.2",
+            "phpunit/phpunit": "~4.8",
+            "symfony/css-selector": "~2.8"
+        },
+        "time": "2017-02-01T17:03:36+00:00",
+        "type": "drupal-core",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Drupal\\Core\\": "lib/Drupal/Core",
+                "Drupal\\Component\\": "lib/Drupal/Component",
+                "Drupal\\Driver\\": "../drivers/lib/Drupal/Driver"
+            },
+            "classmap": [
+                "lib/Drupal.php",
+                "lib/Drupal/Component/Utility/Timer.php",
+                "lib/Drupal/Component/Utility/Unicode.php",
+                "lib/Drupal/Core/Database/Database.php",
+                "lib/Drupal/Core/DrupalKernel.php",
+                "lib/Drupal/Core/DrupalKernelInterface.php",
+                "lib/Drupal/Core/Site/Settings.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "description": "Drupal is an open source content management platform powering millions of websites and applications."
     }
 ]

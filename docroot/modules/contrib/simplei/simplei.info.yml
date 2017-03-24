@@ -1,0 +1,11 @@
+name: Simple Environment Indicator
+description: Environment Indicator, Super Light.
+package: Administration
+type: module
+# core: 8.x
+
+# Information added by Drupal.org packaging script on 2016-08-04
+version: '8.x-1.0+1-dev'
+core: '8.x'
+project: 'simplei'
+datestamp: 1470288540

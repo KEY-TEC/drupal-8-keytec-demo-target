@@ -761,6 +761,8 @@ if (file_exists('/var/www/site-php')) {
  * Keep this code block at the end of this file to take full effect.
  */
 
+
 if (file_exists(__DIR__ . '/settings.local.php')) {
   include __DIR__ . '/settings.local.php';
 }
+$settings['simple_environment_indicator'] = 'DarkRed PRD';

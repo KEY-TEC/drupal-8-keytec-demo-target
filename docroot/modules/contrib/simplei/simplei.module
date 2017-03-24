@@ -1,0 +1,90 @@
+<?php
+
+use Drupal\Core\Site\Settings;
+use Drupal\user\Entity;
+
+/**
+ * @file
+ * Simple Environment indicator.
+ */
+
+/*
+ * Implements hook_page_attachments()
+ */
+function simplei_page_attachments(array &$attachments)  {
+  $indicator = trim(Settings::get('simple_environment_indicator', ''));
+
+  if ($indicator) {
+    list($color, $env) = _simplei_parse_indicator($indicator);
+
+    if ((\Drupal::moduleHandler()->moduleExists('toolbar')) and \Drupal::currentUser()->hasPermission('access toolbar')) {
+      $css = ".toolbar #toolbar-bar { background-color: $color; }";
+
+      if (!empty($env)) {
+        $css .= "#toolbar-home a span { display: none; }";
+        $css .= ".toolbar #toolbar-bar #toolbar-item-administration:after { content: ' ($env)'; }";
+      }
+    }
+    elseif (\Drupal::currentUser()->isAnonymous() and $anon = Settings::get('simple_environment_anonymous', FALSE)) {
+      if (is_string($anon)) {
+        $css = $anon;
+      }
+      elseif (is_bool($anon)) {
+        $css = "body:after { 
+          content: \"[$env]\";
+          position: fixed;
+          top: 0;
+          left: 0;
+          padding: 0.1em 0.5em;
+          font-family: monospace;
+          font-weight: bold;
+          color: #fff;
+          background: $color;
+          border: 1px solid #fff; }";
+      }
+    }
+
+    if (!empty($css)) {
+      $attachments['#attached']['html_head'][] = [
+        [
+          '#type' => 'html_tag',
+          '#tag' => 'style',
+          '#value' => $css,
+          '#attributes' => array('media' => 'all', 'type' => 'text/css'),
+          '#weight' => 100
+        ],
+        'simpleicss'  // the key (for hook_page_attachments_alter)
+      ];
+    }
+  }
+}
+
+function _simplei_parse_indicator($indicator) {
+  $color = $env = '';
+
+  if (strpos($indicator, '@') === 0) {
+    $env = substr($indicator, 1);
+
+    switch (strtolower(substr($env, 0, 2))) {
+      // production, prod, prd, live
+      case 'pr':
+      case 'li':
+        $color = 'FireBrick';
+        break;
+      // staging, stage, stg, test
+      case 'st':
+      case 'te':
+        $color = 'GoldenRod';
+        break;
+      // development
+      default:
+        $color = 'DodgerBlue';
+    }
+  }
+  elseif (preg_match('/(\S+)\s*(.*)/', $indicator, $match)) {
+    $color = $match[1];
+    $env = $match[2];
+  }
+
+  return array($color, $env);
+}
