@@ -1,0 +1,33 @@
+uuid: 569c7356-4bbb-4ec5-a02b-81fc61832a0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_header.field__headline
+    - field.field.paragraph.text_header.field_subheadline
+    - paragraphs.paragraphs_type.text_header
+  module:
+    - text
+id: paragraph.text_header.default
+targetEntityType: paragraph
+bundle: text_header
+mode: default
+content:
+  field__headline:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_subheadline:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

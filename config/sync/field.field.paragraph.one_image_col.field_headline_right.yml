@@ -1,0 +1,21 @@
+uuid: ec14aa94-8eea-4dfd-94a1-223e2d4b97ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_right
+    - paragraphs.paragraphs_type.one_image_col
+  module:
+    - text
+id: paragraph.one_image_col.field_headline_right
+field_name: field_headline_right
+entity_type: paragraph
+bundle: one_image_col
+label: headline_right
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

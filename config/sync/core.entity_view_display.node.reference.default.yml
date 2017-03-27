@@ -1,0 +1,103 @@
+uuid: bd7f0ab8-6ef0-46b5-b98a-696eebd9748b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.reference.field_headline
+    - field.field.node.reference.field_paragraph
+    - field.field.node.reference.field_subheadline
+    - field.field.node.reference.field_tape
+    - field.field.node.reference.field_teaser_image
+    - node.type.reference
+  module:
+    - ds
+    - entity_reference_revisions
+    - image_url_formatter
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_reference_page
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      headline:
+        - field_headline
+      subheadline:
+        - field_subheadline
+      src:
+        - field_teaser_image
+      section:
+        - field_paragraph
+id: node.reference.default
+targetEntityType: node
+bundle: reference
+mode: default
+content:
+  field_headline:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: tape_large3
+            pattern_mapping:
+              'ds_field_template:field_headline':
+                destination: label
+                weight: 0
+                plugin: ds_field_template
+                source: field_headline
+    type: text_default
+  field_paragraph:
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+  field_subheadline:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: text_default
+  field_tape:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_teaser_image:
+    weight: 2
+    label: hidden
+    settings:
+      url_type: '0'
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: image_url
+hidden:
+  links: true

@@ -1,0 +1,82 @@
+uuid: 84fa8eee-4c6e-41b7-a041-cf943658a575
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.one_image_col.field_date_left
+    - field.field.paragraph.one_image_col.field_date_right
+    - field.field.paragraph.one_image_col.field_headline_left
+    - field.field.paragraph.one_image_col.field_headline_right
+    - field.field.paragraph.one_image_col.field_image_left
+    - field.field.paragraph.one_image_col.field_image_right
+    - field.field.paragraph.one_image_col.field_text_left
+    - field.field.paragraph.one_image_col.field_text_right
+    - paragraphs.paragraphs_type.one_image_col
+  module:
+    - image
+    - text
+id: paragraph.one_image_col.default
+targetEntityType: paragraph
+bundle: one_image_col
+mode: default
+content:
+  field_date_left:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_date_right:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_headline_left:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_headline_right:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_image_left:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_image_right:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_text_left:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_text_right:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: 8b626e9f-f5b0-4453-8301-6ebfb0de8dfb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_headline_left
+    - paragraphs.paragraphs_type.one_image_col
+id: paragraph.one_image_col.field_headline_left
+field_name: field_headline_left
+entity_type: paragraph
+bundle: one_image_col
+label: headline_left
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

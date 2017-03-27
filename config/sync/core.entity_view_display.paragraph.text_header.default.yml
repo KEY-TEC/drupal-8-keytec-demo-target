@@ -1,0 +1,47 @@
+uuid: 4169d597-db86-4ec4-a147-6a812d680dbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_header.field__headline
+    - field.field.paragraph.text_header.field_subheadline
+    - paragraphs.paragraphs_type.text_header
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_reference_page
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      headline:
+        - field__headline
+      subheadline:
+        - field_subheadline
+id: paragraph.text_header.default
+targetEntityType: paragraph
+bundle: text_header
+mode: default
+content:
+  field__headline:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_subheadline:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

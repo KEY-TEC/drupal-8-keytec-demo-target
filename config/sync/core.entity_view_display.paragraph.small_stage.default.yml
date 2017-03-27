@@ -1,0 +1,92 @@
+uuid: c0ce55e2-47ef-4236-97d4-052bd95b5e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.small_stage.field_bg_image
+    - field.field.paragraph.small_stage.field_image_left
+    - field.field.paragraph.small_stage.field_tape
+    - field.field.paragraph.small_stage.field_tape_subheadline
+    - paragraphs.paragraphs_type.small_stage
+  module:
+    - ds
+    - image_url_formatter
+third_party_settings:
+  ds:
+    layout:
+      id: pattern_small_stage
+      path: ''
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        pattern:
+          field_templates: default
+    regions:
+      label:
+        - field_tape
+      label2:
+        - field_tape_subheadline
+      background_image:
+        - field_bg_image
+      logo_image:
+        - field_image_left
+id: paragraph.small_stage.default
+targetEntityType: paragraph
+bundle: small_stage
+mode: default
+content:
+  field_bg_image:
+    weight: 4
+    label: hidden
+    settings:
+      url_type: '0'
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: image_url
+  field_image_left:
+    weight: 5
+    label: hidden
+    settings:
+      url_type: '0'
+      image_style: ''
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: image_url
+  field_tape:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: tape_association
+            pattern_mapping:
+              'ds_field_template:field_tape__value':
+                destination: label
+                weight: 0
+                plugin: ds_field_template
+                source: field_tape__value
+    type: string
+  field_tape_subheadline:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+hidden: {  }
