@@ -9,7 +9,7 @@ id: paragraph.two_col.field_date_left
 field_name: field_date_left
 entity_type: paragraph
 bundle: two_col
-label: '(Date (left))'
+label: 'Date (left)'
 description: ''
 required: false
 translatable: false

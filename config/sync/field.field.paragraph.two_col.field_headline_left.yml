@@ -9,7 +9,7 @@ id: paragraph.two_col.field_headline_left
 field_name: field_headline_left
 entity_type: paragraph
 bundle: two_col
-label: '(Headline (left))'
+label: 'Headline (left)'
 description: ''
 required: false
 translatable: false

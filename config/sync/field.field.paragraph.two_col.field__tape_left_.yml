@@ -9,7 +9,7 @@ id: paragraph.two_col.field__tape_left_
 field_name: field__tape_left_
 entity_type: paragraph
 bundle: two_col
-label: '(Tape (left))'
+label: 'Tape (left)'
 description: ''
 required: false
 translatable: false

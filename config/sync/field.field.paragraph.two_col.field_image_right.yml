@@ -11,7 +11,7 @@ id: paragraph.two_col.field_image_right
 field_name: field_image_right
 entity_type: paragraph
 bundle: two_col
-label: '(Image (right))'
+label: 'Image (right)'
 description: ''
 required: false
 translatable: false
