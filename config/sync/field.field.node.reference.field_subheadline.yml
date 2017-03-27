@@ -1,12 +1,10 @@
-uuid: 902c46bc-9c13-4f30-9652-8f5fd03fa020
+uuid: b84fd790-10c8-40c4-ad73-43da100a6a74
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_subheadline
     - node.type.reference
-  module:
-    - text
 id: node.reference.field_subheadline
 field_name: field_subheadline
 entity_type: node
@@ -14,8 +12,8 @@ bundle: reference
 label: subheadline
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: text_long
+field_type: string

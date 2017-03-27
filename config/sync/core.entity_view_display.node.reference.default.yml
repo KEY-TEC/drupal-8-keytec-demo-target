@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.reference.field_headline
+    - field.field.node.reference.field__headline
     - field.field.node.reference.field_paragraph
     - field.field.node.reference.field_subheadline
     - field.field.node.reference.field_tape
@@ -13,7 +13,6 @@ dependencies:
     - ds
     - entity_reference_revisions
     - image_url_formatter
-    - text
     - user
 third_party_settings:
   ds:
@@ -40,23 +39,13 @@ targetEntityType: node
 bundle: reference
 mode: default
 content:
-  field_headline:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: pattern
-          settings:
-            pattern: tape_large3
-            pattern_mapping:
-              'ds_field_template:field_headline':
-                destination: label
-                weight: 0
-                plugin: ds_field_template
-                source: field_headline
-    type: text_default
+  field__headline:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_paragraph:
     weight: 3
     label: hidden
@@ -66,18 +55,12 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
   field_subheadline:
-    weight: 1
-    label: hidden
-    settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    type: text_default
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_tape:
     weight: 4
     label: above

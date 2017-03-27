@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.service.field_headline
+    - field.field.node.service.field__headline
     - field.field.node.service.field_kicker
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
@@ -12,7 +12,6 @@ dependencies:
     - image
     - paragraphs
     - path
-    - text
 id: node.service.default
 targetEntityType: node
 bundle: service
@@ -23,13 +22,13 @@ content:
     weight: 10
     settings: {  }
     third_party_settings: {  }
-  field_headline:
-    weight: 34
+  field__headline:
+    weight: 37
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: text_textfield
+    type: string_textfield
   field_kicker:
     weight: 33
     settings:
