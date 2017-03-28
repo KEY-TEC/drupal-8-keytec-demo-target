@@ -3956,6 +3956,11 @@ table.hover tr:nth-of-type(even):hover {
       transform: translateY(-50%);
 }
 
+.teaser:hover .teaser__headline {
+  text-decoration: underline;
+  color: #98b6b8;
+}
+
 .teaser.callout {
   text-align: center;
 }
@@ -3969,9 +3974,13 @@ table.hover tr:nth-of-type(even):hover {
   color: #c7c7c7;
   letter-spacing: -0.0625rem;
   margin-top: 0.6875rem;
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.6875rem;
   font-size: 1.0625rem;
   line-height: 1;
+}
+
+.teaser:hover {
+  text-decoration: none;
 }
 
 .teaser__headline {
@@ -3979,16 +3988,12 @@ table.hover tr:nth-of-type(even):hover {
   text-align: left;
 }
 
-.teaser[href]:hover__headline {
-  text-decoration: underline;
-}
-
 .teaser__subheadline {
   text-align: left;
-  color: #c6c6c6;
+  color: #a2a0a1;
   font-size: 18px;
   font-family: Montserrat;
-  color: #c7c7c7;
+  text-decoration: none;
 }
 
 .teaser__subheadline p {
@@ -4008,8 +4013,11 @@ table.hover tr:nth-of-type(even):hover {
     font-size: 1.125rem;
     margin-top: 0.6875rem;
   }
-  .teaser__headline {
-    font-size: 2.4375rem;
+  .teaser__headline .headline {
+    font-size: 1.9375rem;
+  }
+  .teaser.callout {
+    padding: 0rem;
   }
 }
 
@@ -4100,8 +4108,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .section__headline {
   text-align: center;
-  padding-bottom: 3.125rem;
-  padding: 5.25rem 0 8px;
+  padding: 5.25rem 0 0px;
 }
 
 .section__headline--no-spacing {
