@@ -1,9 +1,7 @@
 <div class="header-wrapper clearfix">
     <div class="header-wrapper__left">
         {% include "@atoms/image/image.twig" with{"attributes": {"class":"logo shrink column"},"modifier": "small", "src": src} only %}
-        {% include "@molecules/burger-toggle/burger-toggle.twig" with{
-
-            "attributes": attributes_object({
+        {% include "@molecules/burger-toggle/burger-toggle.twig" with{ "attributes": attributes_object({
                 "class": "text-right column hide-for-large",
                 "data-responsive-toggle": "main-menu",
                 "data-hide-for": "large"

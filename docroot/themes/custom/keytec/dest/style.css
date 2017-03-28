@@ -7,7 +7,7 @@
   font-weight: 400;
   src: local("Montserrat-Regular"), url("../fonts/montserrat/montserrat.woff2") format("woff2"), url("../fonts/montserrat/montserrat.woff") format("woff"), url("../fonts/montserrat/montserrat.ttf") format("truetype");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-} asdf asdf
+}
 
 /**
  * Foundation for Sites by ZURB
@@ -1689,11 +1689,6 @@ textarea[rows] {
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #c7c7c7;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder {
   color: #c7c7c7;
 }
 
@@ -3552,7 +3547,7 @@ table.hover tr:nth-of-type(even):hover {
   margin: auto;
   right: 0;
   left: 0;
-  margin-top: -4.6875rem;
+  margin-top: -4.75rem;
 }
 
 .tape--double {
@@ -4106,7 +4101,7 @@ table.hover tr:nth-of-type(even):hover {
 .section__headline {
   text-align: center;
   padding-bottom: 3.125rem;
-  padding: 5.25rem 0;
+  padding: 5.25rem 0 10px;
 }
 
 .section__headline--no-spacing {
