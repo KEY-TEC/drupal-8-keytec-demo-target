@@ -1,8 +1,16 @@
 
 .teaser {
+
+  &:hover {
+    .teaser__headline {
+      text-decoration: underline;
+      color: #98b6b8;
+    }
+  }
   &.callout {
     text-align: center;
   }
+
   &__image {
     margin-bottom: rem-calc(20);
   }
@@ -11,27 +19,42 @@
     color: $medium-gray;
     letter-spacing: rem-calc(-1);
     margin-top: rem-calc(11);
-    margin-bottom: rem-calc(2);
+    margin-bottom: rem-calc(11);
     font-size: rem-calc(17);
     line-height: 1;
+
+  }
+  &:hover {
+    text-decoration: none;
   }
   &__headline {
     font-size: rem-calc(39);
     text-align: left;
 
   }
-  &[href]:hover {
-    &__headline {
-      text-decoration: underline;
-    }
-  }
+  //&[href]:hover {
+  //  &__headline {
+  //text-decoration: underline;
+  //color: #98b6b8;
+  //}
+
+  //}
+  //&.headline:focus {
+  //  &__headline {
+  //    text-decoration: underline;
+  //    color: #98b6b8;
+  //  }
+  //
+  //}
   &__subheadline {
       text-align: left;
-      color: #c6c6c6;
+    color: #a2a0a1;
       font-size: 18px;
       font-family: Montserrat;
-    color: $medium-gray;
+    //color: $medium-gray;
+    text-decoration: none;
     p {
+      //text-decoration: none;
       margin-bottom: 0px;
     }
     }
@@ -46,12 +69,18 @@
   }
 
   @include breakpoint(medium down) {
+
     &__subheadline {
       font-size: rem-calc(18);
       margin-top: rem-calc(11);
     }
     &__headline {
-      font-size: rem-calc(39);
+      .headline {
+        font-size: rem-calc(31);
+      }
+    }
+    &.callout {
+      padding: 0rem;
     }
   }
 
