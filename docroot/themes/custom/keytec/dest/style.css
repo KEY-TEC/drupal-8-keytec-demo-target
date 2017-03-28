@@ -4101,7 +4101,7 @@ table.hover tr:nth-of-type(even):hover {
 .section__headline {
   text-align: center;
   padding-bottom: 3.125rem;
-  padding: 5.25rem 0 10px;
+  padding: 5.25rem 0 8px;
 }
 
 .section__headline--no-spacing {
