@@ -3,18 +3,6 @@
     "join()": [
       {
         "include()": {
-          "pattern": "molecules-text-header-center",
-          "with": {
-            "scroll":true,
-            "attributes": {
-              "Attribute()": {
-              }
-            }
-          }
-        }
-      },
-      {
-        "include()": {
           "pattern": "atoms-tape",
           "with": {
             "class": "show-for-medium",

@@ -4,10 +4,11 @@ global-styling:
     theme:
       dest/style.css: {}
   js:
-    theme:
-      dest/script.js: {}
-#      bower_components/slick.js/slick/slick.min.js: {}
-#    js/slider.js: {}
+    bower_components/foundation-sites/dist/foundation.js: {}
+    dest/script.js: {}
+#     js/foundation.js.js: {}
+#     js/scrolling.js: {}
+#     js/slider.js: {}
 #  dependencies:
 #    - core/jquery
 

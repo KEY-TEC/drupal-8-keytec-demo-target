@@ -13,8 +13,14 @@
     width: 100%;
     float: right;
     align-items: baseline;
+    .tape-wrapper {
+      display: none;
+    }
 
     @include breakpoint(large) {
+      .tape-wrapper {
+        display: inline;
+      }
       width: auto;
       display: flex;
       flex-direction: row;

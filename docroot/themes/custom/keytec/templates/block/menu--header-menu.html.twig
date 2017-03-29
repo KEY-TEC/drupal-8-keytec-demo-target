@@ -28,7 +28,7 @@
 
 {% macro menu_links(items, attributes) %}
     <nav class="menu-wrapper {{ class }}">
-        <ul class="menu menu--horizontal"{{ attributes|without('class') }}>
+        <ul class="menu menu--horizontal" id="main-menu" {{ attributes|without('class') }}>
             {% for item in items %}
                 <li>
                     <a href="{{ item.link }}">{{ item.title }}</a>

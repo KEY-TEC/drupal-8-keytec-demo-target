@@ -4078,6 +4078,10 @@ table.hover tr:nth-of-type(even):hover {
       align-items: baseline;
 }
 
+.header-wrapper__right .tape-wrapper {
+  display: none;
+}
+
 @media screen and (min-width: 64em) {
   .header-wrapper__right {
     width: auto;
@@ -4085,6 +4089,9 @@ table.hover tr:nth-of-type(even):hover {
     display: flex;
     -ms-flex-direction: row;
         flex-direction: row;
+  }
+  .header-wrapper__right .tape-wrapper {
+    display: inline;
   }
 }
 

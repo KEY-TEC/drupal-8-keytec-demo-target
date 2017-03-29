@@ -1,18 +1,19 @@
 <div class="header-wrapper clearfix">
     <div class="header-wrapper__left">
-        {% include "@atoms/image/image.twig" with{"attributes": {"class":"logo shrink column"},"modifier": "small", "src": src} only %}
+        {% include "@atoms/image/image.twig" with{"modifier": "small", "src": src} only %}
         {% include "@molecules/burger-toggle/burger-toggle.twig" with{ "attributes": attributes_object({
-                "class": "text-right column hide-for-large",
-                "data-responsive-toggle": "main-menu",
-                "data-hide-for": "large"
-            })
+        "class": "text-right column hide-for-large",
+        "data-responsive-toggle": "main-menu",
+        "data-hide-for": "large"
+        })
         } %}
+
     </div>
     <div class="header-wrapper__right row small-collapse large-uncollapse">
         {% block menu %}
             {{ menu }}
         {% endblock %}
-        {% include "@atoms/tape/tape.twig" with {"class": "shrink column", "label": "089 / 255 44 77 910", "attributes": {"class":"show-for-large"}} %}
+        {% include "@atoms/tape/tape.twig" with {"modifier":"number", "label": "089 / 255 44 77 910"}%}
 
     </div>
 </div>
