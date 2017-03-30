@@ -8,9 +8,10 @@ dependencies:
     - field.field.paragraph.stage.field_tape_scroll
     - field.field.paragraph.stage.field_tape_subheadline
     - paragraphs.paragraphs_type.stage
+    - responsive_image.styles.stage
   module:
     - ds
-    - image_url_formatter
+    - responsive_image
 third_party_settings:
   ds:
     layout:
@@ -33,13 +34,12 @@ bundle: stage
 mode: default
 content:
   field_bg_image:
-    type: image_url
+    type: responsive_image
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: stage
       image_link: ''
-      url_type: ''
     third_party_settings:
       ds:
         ft:
@@ -59,13 +59,13 @@ content:
         ft:
           id: pattern
           settings:
-            pattern: tape
+            pattern: tape_double
             pattern_mapping:
-              'ds_field_template:field_tape':
+              'ds_field_template:field_tape__value':
                 destination: label
                 weight: 0
                 plugin: ds_field_template
-                source: field_tape
+                source: field_tape__value
 hidden:
   created: true
   field_tape_scroll: true

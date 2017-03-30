@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.service.field__headline
     - field.field.node.service.field_kicker
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
@@ -29,12 +30,19 @@ third_party_settings:
       kicker:
         - field_kicker
       headline:
-        - field_headline
+        - field__headline
 id: node.service.teaser
 targetEntityType: node
 bundle: service
 mode: teaser
 content:
+  field__headline:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_kicker:
     type: string
     weight: 1

@@ -1,0 +1,23 @@
+uuid: 5cffd3ef-5656-4446-b200-b771d8076568
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.16_9_l
+  theme:
+    - keytec
+_core:
+  default_config_hash: waBU_eXNHzwqmAXPugM2-ZD5Cuvzw_OGwPfSITxymOE
+id: wide
+label: Wide
+image_style_mappings:
+  -
+    breakpoint_id: keytec.wide
+    multiplier: 1x
+    image_mapping_type: sizes
+    image_mapping:
+      sizes: 100vw
+      sizes_image_styles:
+        - 16_9_l
+breakpoint_group: keytec
+fallback_image_style: 16_9_l
