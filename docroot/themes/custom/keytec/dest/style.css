@@ -3413,6 +3413,10 @@ table.hover tr:nth-of-type(even):hover {
   color: #b7cf95;
 }
 
+.image img {
+  width: 100%;
+}
+
 .image--right {
   text-align: right;
 }
@@ -3423,6 +3427,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .image--center {
   text-align: center;
+}
+
+.responsive-image img {
+  width: 100%;
 }
 
 .tape {
@@ -3930,23 +3938,16 @@ table.hover tr:nth-of-type(even):hover {
 
 .stage {
   position: relative;
-  display: inline-block;
+}
+
+.stage .image img {
   width: 100%;
-  height: 100px;
-  min-height: 15rem;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .stage .stage__layer {
   position: absolute;
   top: 5.5rem;
   width: 100%;
-}
-
-.stage--full-height {
-  height: 100vh;
 }
 
 .stage--center .stage__layer {

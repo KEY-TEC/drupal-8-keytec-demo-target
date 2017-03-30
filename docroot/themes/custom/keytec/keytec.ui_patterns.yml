@@ -44,8 +44,8 @@ small_stage:
       description: The image title.
       preview: Total Drupal
 
-tape:
-  label: Tape
+tape_double:
+  label: Tape Double
   description: A simple Atom.
   fields:
     label:

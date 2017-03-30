@@ -1,5 +1,5 @@
 {
-  "src":"/images/kyt_logo@2x.png",
+  "img":"/images/kyt_logo@2x.png",
   "menu": {
     "include()": {
       "pattern": "molecules-menu",

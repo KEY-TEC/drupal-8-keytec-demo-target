@@ -1,5 +1,7 @@
 .image{
-
+  img {
+    width: 100%;
+  }
   &--right{
     text-align: right;
   }
@@ -11,4 +13,5 @@
   &--center{
     text-align: center;
   }
+
 }

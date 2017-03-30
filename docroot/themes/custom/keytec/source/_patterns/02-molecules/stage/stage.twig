@@ -1,14 +1,13 @@
-<div class="stage {{ modifier_class('stage', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }} style=" background-image: url('{{ background_image }}')">
+<div class="stage {{ modifier_class('stage', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
+    {% if src != null %}
+    {% include "@atoms/responsive-image/responsive-image.twig" with{"src": src} only %}
+    {% endif %}
+    {% if img != null %}
+    {% include "@atoms/image/image.twig" with{"img": img} only %}
+   {% endif %}
     <div class="stage__layer">
         <div class="row ">
-        {% if scroll_tape != null %}
-
-            <div class="hide-for-small-only stage__image small-5 columns">
-                {% include "@atoms/tape/tape.twig" with {"modifier":scroll_modifier, "src":scroll_tape} only %}
-            </div>
-        {% endif %}
-        {% if label != null %}
-
+            {% if label != null %}
             <div class="small-7 columns">
                 {{ label }}
             </div>
