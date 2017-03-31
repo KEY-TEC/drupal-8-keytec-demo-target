@@ -3957,7 +3957,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .stage .stage__layer {
   position: absolute;
-  top: 5.5rem;
+  top: 10%;
   width: 100%;
 }
 
