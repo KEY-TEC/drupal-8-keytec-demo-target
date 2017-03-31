@@ -7,7 +7,7 @@
   }
   .stage__layer {
     position: absolute;
-    top: 10%;
+    top: rem-calc(88);
     width: 100%;
   }
   &--center {
