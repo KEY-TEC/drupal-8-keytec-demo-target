@@ -2,29 +2,29 @@
 {% block content %}
     <div class="reference-page">
 
-        {% include "@molecules/text-header/text-header.twig" with {"label": page_title, "text": field_stage, "tape_modifier": tape_modifier } %}
+        {% include "@molecules/text-header/text-header.twig" with {"label": page_title, "text_modifier":text_modifier,"text": field_stage, "tape_modifier": tape_modifier } %}
         {% embed "@molecules/one-col/one-col.twig" with {"modifier":"overlapping"} %}
             {% block content %}
-                {% include "@atoms/image/image.twig" with {"src": source, "modifier":"center" } %}
+                {% include "@atoms/image/image.twig" with {"img": source, "modifier":"center" } %}
             {% endblock content %}
         {% endembed %}
         {% embed "@organisms/section/section.twig" with {"headline": null} %}
             {% block content %}
                 {% embed "@organisms/two-col/two-col.twig" with {"headline": null, "modifier":"greyed large","left_size":7} %}
                     {% block left %}
-                    {% include "@atoms/text/text.twig" with {"text": text_left } %}
+                    {% include "@atoms/text/text.twig" with {"modifier":"dark-color left-size","text": text_left } %}
                     {% endblock left %}
                     {% block right %}
                         {% include "@atoms/tape/tape.twig" with{"label": "Leistungen", "modifier": "small beige", "class": "small-12 columns",} %}
-                        {% include "@atoms/text/text.twig" with{"text":text_right} %}
+                        {% include "@atoms/text/text.twig" with{"text":text_right, "modifier":"color"} %}
                     {% endblock right %}
                 {% endembed %}
-                {% embed "@organisms/two-col/two-col.twig" with {"headline": null, "modifier":" large beige","left_size":5} %}
+                {% embed "@organisms/two-col/two-col.twig" with {"headline": null, "modifier":" large orange","left_size":5} %}
                     {% block left %}
-                        {% include "@atoms/image/image.twig" with {"src": src_left } %}
+                        {% include "@atoms/image/image.twig" with {"img": src_left } %}
                     {% endblock left %}
                     {% block right %}
-                        {% include "@atoms/image/image.twig" with {"src": src_right } %}
+                        {% include "@atoms/image/image.twig" with {"img": src_right } %}
                     {% endblock right %}
                 {% endembed %}
             {% endblock content %}
