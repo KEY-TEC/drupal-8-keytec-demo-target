@@ -1,12 +1,17 @@
 .text{
   &--color {
-    p {
     color: $text-grey;
   }
-  }
   &--dark-color {
-    p {
-      color: $text-grey;
-    }
+    color: #494949;
+  }
+  &--center {
+    max-width: 362px;
+    text-align: center;
+    margin: auto;
+    font-size: 20px;
+  }
+  &--left-size {
+    max-width: 555px;
   }
 }

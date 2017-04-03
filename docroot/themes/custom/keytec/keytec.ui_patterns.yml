@@ -219,9 +219,9 @@ reference_page:
   label: Reference Page
   description: A simple molecule.
   fields:
-    headline:
+    label:
       type: text
-      label: headline
+      label: label
       description: headline
       preview: headline
     subheadline:
