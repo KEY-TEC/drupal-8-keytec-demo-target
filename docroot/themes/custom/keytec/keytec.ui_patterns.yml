@@ -184,6 +184,11 @@ teaser:
       label: src
       description: The actual image.
       preview: Teaser Image
+    hover_src:
+      type: image
+      label: hover_src
+      description: The actual hover image.
+      preview: Teaser Hover Image
     kicker:
       type: text
       label: kicker
