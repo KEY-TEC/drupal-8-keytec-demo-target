@@ -18,7 +18,7 @@ dependencies:
     - paragraphs.paragraphs_type.two_col
   module:
     - ds
-    - image
+    - image_url_formatter
     - options
     - text
 third_party_settings:
@@ -36,128 +36,40 @@ third_party_settings:
       format:
         - field_format
       left:
+        - field_tape
         - field_image_left
-        - field_date_left
         - field_headline_left
-        - field__tape_left_
         - field_text_left
       right:
         - field_image_right
-        - field__text_right_
-        - field_date_right
-        - field_headline_right_
+        - field_headline_right
         - field_text_right
 id: paragraph.two_col.default
 targetEntityType: paragraph
 bundle: two_col
 mode: default
 content:
-  field__tape_left_:
-    weight: 4
-    label: hidden
+  field___headline:
+    weight: 10
+    label: above
     settings:
       link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: pattern
-          settings:
-            pattern: tape_small
-            pattern_mapping:
-              'ds_field_template:field__tape_left___value':
-                destination: label
-                weight: 0
-                plugin: ds_field_template
-                source: field__tape_left___value
+    third_party_settings: {  }
+    type: string
+  field__tape_left_:
+    weight: 8
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     type: string
   field__text_right_:
-    weight: 7
-    label: hidden
+    weight: 9
+    label: above
     settings:
       link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: pattern
-          settings:
-            pattern: tape_small
-            pattern_mapping:
-              'ds_field_template:field__text_right___value':
-                destination: label
-                weight: 0
-                plugin: ds_field_template
-                source: field__text_right___value
+    third_party_settings: {  }
     type: string
-  field_date_left:
-    type: string
-    weight: 2
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: media-object-section__kicker
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
-  field_date_right:
-    type: string
-    weight: 8
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: media-object-section__kicker
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
   field_format:
     weight: 0
     label: hidden
@@ -176,75 +88,20 @@ content:
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: 'headline headline--balzac '
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
+    third_party_settings: {  }
     type: string
   field_headline_right_:
-    weight: 9
-    label: hidden
+    weight: 11
+    label: above
     settings:
       link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: 'headline headline--balzac '
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
+    third_party_settings: {  }
     type: string
   field_image_left:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
+      url_type: '0'
       image_style: ''
       image_link: ''
     third_party_settings:
@@ -253,89 +110,35 @@ content:
           id: reset
           settings:
             lb: ''
-    type: image
+    type: image_url
   field_image_right:
-    weight: 6
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings:
-      ds:
-        ft:
-          id: reset
-          settings:
-            lb: ''
-    type: image
-  field_text_left:
     weight: 5
     label: hidden
-    settings: {  }
+    settings:
+      url_type: '0'
+      image_style: ''
+      image_link: ''
     third_party_settings:
       ds:
         ft:
-          id: expert
+          id: reset
           settings:
             lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: 'text text--dark-color text--left-size '
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
-    type: text_default
-  field_text_right:
-    weight: 10
+    type: image_url
+  field_text_left:
+    weight: 4
     label: hidden
     settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: expert
-          settings:
-            lb: ''
-            prefix: ''
-            lbw-el: ''
-            lbw-cl: ''
-            lbw-at: ''
-            ow-el: ''
-            ow-cl: ''
-            ow-at: ''
-            fis-el: ''
-            fis-cl: ''
-            fis-at: ''
-            fi: true
-            fi-el: div
-            fi-cl: 'text text--dark-color text--left-size '
-            fi-at: ''
-            suffix: ''
-            lbw: false
-            lb-col: false
-            ow: false
-            ow-def-at: false
-            ow-def-cl: false
-            fis: false
-            fis-def-at: false
-            fi-def-at: false
+    third_party_settings: {  }
+    type: text_default
+  field_text_right:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
     type: text_default
 hidden:
   created: true
-  field___headline: true
+  field_date_left: true
+  field_date_right: true
   uid: true
