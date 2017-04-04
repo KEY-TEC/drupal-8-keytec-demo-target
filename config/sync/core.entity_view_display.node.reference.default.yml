@@ -12,7 +12,7 @@ dependencies:
   module:
     - ds
     - entity_reference_revisions
-    - image
+    - image_url_formatter
     - user
 third_party_settings:
   ds:
@@ -26,10 +26,11 @@ third_party_settings:
         pattern:
           field_templates: default
     regions:
-      label:
-        - field_tape
+      headline:
+        - field__headline
       subheadline:
         - field_subheadline
+        - field_tape
       src:
         - field_teaser_image
       section:
@@ -39,8 +40,15 @@ targetEntityType: node
 bundle: reference
 mode: default
 content:
+  field__headline:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_paragraph:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       view_mode: default
@@ -49,38 +57,31 @@ content:
     type: entity_reference_revisions_entity_view
   field_subheadline:
     weight: 1
-    label: hidden
+    label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_tape:
     type: string
-    weight: 0
-    label: hidden
+    weight: 2
+    label: above
     settings:
       link_to_entity: false
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
+    third_party_settings: {  }
   field_teaser_image:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
-      image_link: ''
+      url_type: '0'
       image_style: ''
+      image_link: ''
     third_party_settings:
       ds:
         ft:
           id: reset
           settings:
             lb: ''
-    type: image
+    type: image_url
 hidden:
-  field__headline: true
   links: true

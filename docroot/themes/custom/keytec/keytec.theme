@@ -1,13 +1,17 @@
 <?php
 
-function keytec_preprocess_paragraph(&$vars){
-
-    if (isset($vars['entity_type']) && $vars['entity_type'] == 'paragraph' ) {
-        kint($vars);
-    }
+function keytec_preprocess_pattern_teaser_reference(&$vars) {
+    $nid = $vars['context']->getProperty('entity_id');
+    $vars['teaser_link'] = _keytec_generate_node_url($nid);
 }
 
-function keytec_preprocess_form_element_label(&$vars){
-    $x = $vars;
-    $vars['title'] = null;
+function keytec_preprocess_pattern_teaser(&$vars) {
+    $nid = $vars['context']->getProperty('entity_id');
+    $vars['teaser_link'] = _keytec_generate_node_url($nid);
+}
+
+function _keytec_generate_node_url ($nid){
+    $options = ['absolute' => TRUE];
+    $url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], $options);
+    return $url->toString();
 }

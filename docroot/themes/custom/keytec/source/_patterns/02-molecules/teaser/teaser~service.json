@@ -4,6 +4,7 @@
     "Attribute()": {}
   },
   "src": "/images/ref_brockhaus_active.jpg",
+  "hover_src": "/images/ref_brockhaus_active.jpg",
   "kicker":"Beratung",
   "headline": "Total Spezial",
   "subheadline": null

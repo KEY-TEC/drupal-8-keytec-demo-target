@@ -7,12 +7,13 @@ dependencies:
     - field.field.node.service.field_kicker
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
+    - field.field.node.service.field_teaser_image_hover
     - node.type.service
-    - responsive_image.styles.stage
   module:
     - ds
     - entity_reference_revisions
-    - responsive_image
+    - image
+    - image_url_formatter
     - user
 third_party_settings:
   ds:
@@ -30,6 +31,8 @@ third_party_settings:
         - field_teaser_image
       label:
         - field_kicker
+        - field_headline
+        - field_tape
       section:
         - field_paragraph
 id: node.service.default
@@ -37,6 +40,13 @@ targetEntityType: node
 bundle: service
 mode: default
 content:
+  field__headline:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   field_kicker:
     type: string
     weight: 1
@@ -48,13 +58,13 @@ content:
         ft:
           id: pattern
           settings:
-            pattern: tape_double
+            pattern: tape
             pattern_mapping:
-              'ds_field_template:field_kicker__value':
+              'ds_field_template:field_kicker':
                 destination: label
                 weight: 0
                 plugin: ds_field_template
-                source: field_kicker__value
+                source: field_kicker
   field_paragraph:
     type: entity_reference_revisions_entity_view
     weight: 4
@@ -72,20 +82,26 @@ content:
             lb-col: false
             classes: {  }
   field_teaser_image:
-    type: responsive_image
+    type: image_url
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: stage
+      url_type: '0'
+      image_style: ''
       image_link: ''
     third_party_settings:
       ds:
         ft:
-          id: default
+          id: reset
           settings:
             lb: ''
-            lb-col: false
-            classes: {  }
+  field_teaser_image_hover:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
 hidden:
-  field__headline: true
   links: true
