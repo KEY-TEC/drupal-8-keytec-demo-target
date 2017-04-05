@@ -1,21 +1,23 @@
 <div class="two-col {{ modifier_class('two-col', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
-    {% if headline != null and headline != undefined %}
-        <div class="row ">
-            <div class="two-col__headline small-12 column">
-                {% include "@atoms/headline/headline.twig" with {"modifier":headline_modifier, "text": headline} only %}
-            </div>
-        </div>
-    {% endif %}
+  {% if headline != null and headline != undefined %}
     <div class="row ">
-    <div class="two-col__column {{ modifier_class('two-col__column', left_modifier) }} small-12 medium-{{ left_size|default('8') }} columns">
+      <div class="two-col__headline small-12 column">
+        {% include "@atoms/headline/headline.twig" with {"modifier":headline_modifier, "text": headline} only %}
+      </div>
+    </div>
+  {% endif %}
+  <div class="two-col__content">
+    <div class="row">
+      <div class="two-col__column {{ modifier_class('two-col__column', left_modifier) }} small-12 medium-{{ left_size|default('8') }} columns">
         {% block left %}
-        {{- left -}}
+          {{- left -}}
         {% endblock left %}
-    </div>
-    <div class="two-col__column {{ modifier_class('two-col__column', right_modifier) }} columns ">
+      </div>
+      <div class="two-col__column {{ modifier_class('two-col__column', right_modifier) }} columns ">
         {% block right %}
-        {{- right -}}
+          {{- right -}}
         {% endblock right %}
+      </div>
     </div>
-    </div>
+  </div>
 </div>

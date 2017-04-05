@@ -1,1 +1,16 @@
-{% include "@organisms/two-col/two-col.twig" with {"right_modifier":right_modifier,"left_modifier":left_modifier,"headline":headline, "left":left, "right":right, "left_size":6 } only %}
+{%- set trimed_headline -%}
+  {{- headline -}}
+{% endset %}
+{% if color %}
+  {%- set has_color -%}{{ color }} {{ 'has-color' }}{% endset %}
+{% endif %}
+
+{% include "@organisms/two-col/two-col.twig" with {
+"right_modifier":right_modifier,
+"left_modifier":left_modifier,
+"headline":trimed_headline,
+"headline_modifier":'spacer',
+"modifier": has_color ~' '~ image_indent,
+"left":left,
+"right":right,
+"left_size": format } only %}

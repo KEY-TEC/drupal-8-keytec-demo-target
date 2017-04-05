@@ -88,4 +88,5 @@ content:
             classes: {  }
 hidden:
   field__headline: true
+  field_teaser_image_hover: true
   links: true

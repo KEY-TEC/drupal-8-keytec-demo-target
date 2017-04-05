@@ -1,17 +1,25 @@
 <?php
 
-function keytec_preprocess_pattern_teaser_reference(&$vars) {
-    $nid = $vars['context']->getProperty('entity_id');
-    $vars['teaser_link'] = _keytec_generate_node_url($nid);
-}
-
-function keytec_preprocess_pattern_teaser(&$vars) {
-    $nid = $vars['context']->getProperty('entity_id');
-    $vars['teaser_link'] = _keytec_generate_node_url($nid);
-}
-
-function _keytec_generate_node_url ($nid){
-    $options = ['absolute' => TRUE];
-    $url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $nid], $options);
-    return $url->toString();
+function keytec_preprocess(&$vars, $hook) {
+  if (isset($vars['context'])) {
+    $entity_id = $vars['context']->getProperty('entity_id');
+    $entity_type = $vars['context']->getProperty('entity_type');
+    if (!empty($entity_type)  && !empty($entity_id)) {
+      $entity = entity_load($entity_type, $entity_id);
+      if ($entity_type == 'node') {
+        $options = ['absolute' => TRUE];
+        $url = \Drupal\Core\Url::fromRoute('entity.node.canonical', ['node' => $entity_id], $options);
+        $vars['teaser_link'] = $url->toString();
+      }
+      if ($entity->hasField('field_color')) {
+        $vars['color'] = $entity->field_color->value;
+      }
+      if ($entity->hasField('field_image_indent')) {
+        $vars['image_indent'] = $entity->field_image_indent->value;
+      }
+      if ($entity->hasField('field_format')) {
+        $vars['format'] = $entity->field_format->value;
+      }
+    }
+  }
 }

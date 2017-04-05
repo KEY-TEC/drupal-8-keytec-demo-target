@@ -315,11 +315,11 @@ two_col:
   label: Two Col
   description: An Organism.
   fields:
-    format:
+    headline:
       type: text
-      label: Format
-      description: The teaser service.
-      preview: teaser
+      label: Headline
+      description: The Two Col Headline.
+      preview: Headline of section
     left:
       type: text
       label: Left

@@ -1,7 +1,19 @@
 .two-col {
-
+  &__content {
+    padding: 0 0 rem-calc(60) 0;
+  }
   &--top{
-    margin-top: 70px;
+    margin-top: rem-calc(70);
+  }
+  &--no-padding{
+    .two-col__content {
+      padding: 0;
+    }
+  }
+  &--top-indent {
+    img {
+      margin-top: rem-calc(-90);
+    }
   }
   &--large{
     padding: rem-calc(42) 0;
@@ -9,8 +21,24 @@
       padding: rem-calc(84) 0;
     }
   }
+  &--grey {
+    .two-col__content {
+      padding-top: 60px;
+      margin-bottom: 60px;
+      background-color: $keytec-grey;
+    }
+  }
+
+  &--has-color {
+    .two-col__content {
+      padding-top: 60px;
+      margin-bottom: 60px;
+    }
+  }
+
   &__headline{
-    padding-bottom: 20px
+    text-align: center;
+    padding-bottom: 20px;
   }
   &--greyed {
     background-color: $keytec-grey;

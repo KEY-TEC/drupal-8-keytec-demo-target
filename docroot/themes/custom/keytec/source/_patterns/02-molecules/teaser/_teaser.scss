@@ -47,17 +47,18 @@
   //
   //}
   &__subheadline {
-      text-align: left;
+    text-align: left;
     color: #a2a0a1;
-      font-size: 18px;
-      font-family: Montserrat;
+    font-size: 18px;
+    font-family: Montserrat;
     //color: $medium-gray;
     text-decoration: none;
+    margin-bottom: rem-calc(65);
     p {
       //text-decoration: none;
       margin-bottom: 0px;
     }
-    }
+  }
 
   &--center {
     .teaser__kicker {

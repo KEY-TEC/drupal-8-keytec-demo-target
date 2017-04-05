@@ -768,3 +768,4 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 $settings['simple_environment_indicator'] = 'DarkRed PRD';
 
 $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+
