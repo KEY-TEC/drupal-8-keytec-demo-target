@@ -4018,6 +4018,10 @@ table.hover tr:nth-of-type(even):hover {
   margin-bottom: 0px;
 }
 
+.teaser--center {
+  text-align: center;
+}
+
 .teaser--center .teaser__kicker {
   text-align: center;
 }

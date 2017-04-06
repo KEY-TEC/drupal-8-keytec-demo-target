@@ -1,13 +1,14 @@
 <div class="header-wrapper clearfix">
     <div class="header-wrapper__left">
-        {% include "@atoms/image/image.twig" with{"modifier": "small", "img": img} only %}
-        {% include "@molecules/burger-toggle/burger-toggle.twig" with{ "attributes": attributes_object({
-        "class": "text-right column hide-for-large",
-        "data-responsive-toggle": "main-menu",
-        "data-hide-for": "large"
-        })
-        } %}
-
+        <a href="/">
+            {% include "@atoms/image/image.twig" with{"modifier": "small", "img": img} only %}
+            {% include "@molecules/burger-toggle/burger-toggle.twig" with{ "attributes": attributes_object({
+            "class": "text-right column hide-for-large",
+            "data-responsive-toggle": "main-menu",
+            "data-hide-for": "large"
+            })
+            } %}
+        </a>
     </div>
     <div class="header-wrapper__right row small-collapse large-uncollapse">
         {% block menu %}

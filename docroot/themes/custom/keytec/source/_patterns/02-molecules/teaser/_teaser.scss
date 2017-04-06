@@ -1,6 +1,5 @@
 
 .teaser {
-
   &:hover {
     .teaser__headline {
       text-decoration: underline;
@@ -67,6 +66,7 @@
     .teaser__headline {
       text-align: center;
     }
+    text-align: center;
   }
 
   @include breakpoint(medium down) {
