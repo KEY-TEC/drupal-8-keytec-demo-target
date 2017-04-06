@@ -3,8 +3,7 @@
   font-size: rem-calc(25);
   line-height: rem-calc(30);
   letter-spacing: rem-calc(-0.2);
-  //max-width: rem-calc(700);
-  //margin: rem-calc(84) auto 0;
+  font-family: $base-font-bold;
 
   @include breakpoint(medium) {
     font-size: rem-calc(36);

@@ -36,6 +36,7 @@
     @include breakpoint(large) {
       position: relative;
       margin-top: 0;
+      margin-right: rem-calc(20);
     }
   }
 }

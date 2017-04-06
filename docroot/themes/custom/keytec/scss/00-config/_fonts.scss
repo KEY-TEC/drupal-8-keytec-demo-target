@@ -3,21 +3,24 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: local('Montserrat-Regular'),
+  src: local('Montserrat-Light'),
   url('../fonts/montserrat/montserrat-v10-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('../fonts/montserrat/montserrat-v10-latin-300.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   url('../fonts/montserrat/montserrat-v10-latin-300.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-//@font-face{
-//  src: local('balzac'),
-//  url('../fonts/balzac/webfonts/316575-0-0.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//  url('../fonts/balzac/webfonts/316575-0-0.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-//  url('../fonts/balzac/webfonts/316575-0-0.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-//}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Montserrat-Regular'),
+  url('../fonts/montserrat/montserrat.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../fonts/montserrat/montserrat.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../fonts/montserrat/montserrat.ttf') format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
 $base-font: 'Montserrat';
+$base-font-bold: 'Montserrat-Bold';
 $alt-font: "Balzac";
 
 @import "../fonts/balzac/balzac.css";
-
-

@@ -5,7 +5,15 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: local("Montserrat-Regular"), url("../fonts/montserrat/montserrat-v10-latin-300.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v10-latin-300.woff") format("woff"), url("../fonts/montserrat/montserrat-v10-latin-300.ttf") format("truetype");
+  src: local("Montserrat-Light"), url("../fonts/montserrat/montserrat-v10-latin-300.woff2") format("woff2"), url("../fonts/montserrat/montserrat-v10-latin-300.woff") format("woff"), url("../fonts/montserrat/montserrat-v10-latin-300.ttf") format("truetype");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Montserrat-Regular"), url("../fonts/montserrat/montserrat.woff2") format("woff2"), url("../fonts/montserrat/montserrat.woff") format("woff"), url("../fonts/montserrat/montserrat.ttf") format("truetype");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -3381,6 +3389,7 @@ table.hover tr:nth-of-type(even):hover {
   font-size: 1.5625rem;
   line-height: 1.875rem;
   letter-spacing: -0.0125rem;
+  font-family: "Montserrat-Bold";
 }
 
 @media screen and (min-width: 40em) {
@@ -3874,6 +3883,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .menu li a {
   color: #747474;
+  font-family: "Montserrat-Bold";
   font-size: 0.9375rem;
   padding: 0 0 0.9375rem 0;
   letter-spacing: 0.0625rem;
@@ -4128,6 +4138,7 @@ table.hover tr:nth-of-type(even):hover {
   .header-wrapper #main-menu {
     position: relative;
     margin-top: 0;
+    margin-right: 1.25rem;
   }
 }
 
