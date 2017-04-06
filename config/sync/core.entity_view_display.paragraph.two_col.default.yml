@@ -6,11 +6,13 @@ dependencies:
     - field.field.paragraph.two_col.field___headline
     - field.field.paragraph.two_col.field__tape_left_
     - field.field.paragraph.two_col.field__text_right_
+    - field.field.paragraph.two_col.field_color
     - field.field.paragraph.two_col.field_date_left
     - field.field.paragraph.two_col.field_date_right
     - field.field.paragraph.two_col.field_format
     - field.field.paragraph.two_col.field_headline_left
     - field.field.paragraph.two_col.field_headline_right_
+    - field.field.paragraph.two_col.field_image_indent
     - field.field.paragraph.two_col.field_image_left
     - field.field.paragraph.two_col.field_image_right
     - field.field.paragraph.two_col.field_text_left
@@ -33,8 +35,8 @@ third_party_settings:
         pattern:
           field_templates: default
     regions:
-      format:
-        - field_format
+      headline:
+        - field___headline
       left:
         - field_image_left
         - field_date_left
@@ -52,8 +54,20 @@ targetEntityType: paragraph
 bundle: two_col
 mode: default
 content:
+  field___headline:
+    type: string
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
   field__tape_left_:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
@@ -71,7 +85,7 @@ content:
                 source: field__tape_left___value
     type: string
   field__text_right_:
-    weight: 7
+    weight: 8
     label: hidden
     settings:
       link_to_entity: false
@@ -88,9 +102,15 @@ content:
                 plugin: ds_field_template
                 source: field__text_right___value
     type: string
+  field_color:
+    weight: 12
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_date_left:
     type: string
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       link_to_entity: false
@@ -125,7 +145,7 @@ content:
             fi-def-at: false
   field_date_right:
     type: string
-    weight: 8
+    weight: 9
     label: hidden
     settings:
       link_to_entity: false
@@ -158,21 +178,8 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
-  field_format:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: default
-          settings:
-            lb: ''
-            lb-col: false
-            classes: {  }
-    type: list_default
   field_headline_left:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link_to_entity: false
@@ -207,7 +214,7 @@ content:
             fi-def-at: false
     type: string
   field_headline_right_:
-    weight: 9
+    weight: 10
     label: hidden
     settings:
       link_to_entity: false
@@ -241,8 +248,14 @@ content:
             fis-def-at: false
             fi-def-at: false
     type: string
+  field_image_indent:
+    weight: 13
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
   field_image_left:
-    weight: 1
+    weight: 2
     label: hidden
     settings:
       image_style: ''
@@ -255,7 +268,7 @@ content:
             lb: ''
     type: image
   field_image_right:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       image_style: ''
@@ -268,7 +281,7 @@ content:
             lb: ''
     type: image
   field_text_left:
-    weight: 5
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings:
@@ -302,7 +315,7 @@ content:
             fi-def-at: false
     type: text_default
   field_text_right:
-    weight: 10
+    weight: 11
     label: hidden
     settings: {  }
     third_party_settings:
@@ -337,5 +350,5 @@ content:
     type: text_default
 hidden:
   created: true
-  field___headline: true
+  field_format: true
   uid: true

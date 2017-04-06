@@ -6,11 +6,13 @@ dependencies:
     - field.field.paragraph.two_col.field___headline
     - field.field.paragraph.two_col.field__tape_left_
     - field.field.paragraph.two_col.field__text_right_
+    - field.field.paragraph.two_col.field_color
     - field.field.paragraph.two_col.field_date_left
     - field.field.paragraph.two_col.field_date_right
     - field.field.paragraph.two_col.field_format
     - field.field.paragraph.two_col.field_headline_left
     - field.field.paragraph.two_col.field_headline_right_
+    - field.field.paragraph.two_col.field_image_indent
     - field.field.paragraph.two_col.field_image_left
     - field.field.paragraph.two_col.field_image_right
     - field.field.paragraph.two_col.field_text_left
@@ -27,7 +29,7 @@ third_party_settings:
         - group_left
         - group_right
       parent_name: ''
-      weight: 2
+      weight: 1
       format_type: tabs
       format_settings:
         id: ''
@@ -37,6 +39,7 @@ third_party_settings:
     group_left:
       children:
         - field_image_left
+        - field_image_indent
         - field__tape_left_
         - field_headline_left
         - field_text_left
@@ -81,7 +84,7 @@ content:
     third_party_settings: {  }
     type: string_textfield
   field__tape_left_:
-    weight: 15
+    weight: 16
     settings:
       size: 60
       placeholder: ''
@@ -94,8 +97,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_color:
+    weight: 19
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_date_left:
-    weight: 18
+    weight: 19
     settings:
       size: 60
       placeholder: ''
@@ -109,12 +117,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
   field_format:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select
   field_headline_left:
-    weight: 16
+    weight: 17
     settings:
       size: 60
       placeholder: ''
@@ -127,6 +135,11 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_image_indent:
+    weight: 15
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
   field_image_left:
     weight: 14
     settings:
@@ -142,7 +155,7 @@ content:
     third_party_settings: {  }
     type: image_image
   field_text_left:
-    weight: 17
+    weight: 18
     settings:
       rows: 5
       placeholder: ''

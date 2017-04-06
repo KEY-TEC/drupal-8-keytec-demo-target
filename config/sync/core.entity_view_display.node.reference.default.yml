@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.reference.field__headline
     - field.field.node.reference.field_paragraph
     - field.field.node.reference.field_subheadline
     - field.field.node.reference.field_tape
@@ -82,5 +81,4 @@ content:
             lb: ''
     type: image
 hidden:
-  field__headline: true
   links: true

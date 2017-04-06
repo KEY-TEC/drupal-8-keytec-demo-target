@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.reference.field__headline
     - field.field.node.reference.field_paragraph
     - field.field.node.reference.field_subheadline
     - field.field.node.reference.field_tape
@@ -37,13 +36,6 @@ targetEntityType: node
 bundle: reference
 mode: teaser
 content:
-  field__headline:
-    type: string
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
   field_subheadline:
     type: string
     weight: 2

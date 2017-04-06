@@ -7,11 +7,13 @@ dependencies:
     - field.field.node.service.field_kicker
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
+    - field.field.node.service.field_teaser_image_hover
     - node.type.service
     - responsive_image.styles.stage
   module:
     - ds
     - entity_reference_revisions
+    - field_group
     - responsive_image
     - user
 third_party_settings:
@@ -29,15 +31,40 @@ third_party_settings:
       background_image:
         - field_teaser_image
       label:
+        - field__headline
+        - group_tape_double
         - field_kicker
       section:
         - field_paragraph
+  field_group:
+    group_tape_double:
+      children:
+        - field__headline
+        - field_kicker
+      parent_name: ''
+      weight: 2
+      format_type: pattern_formatter
+      format_settings:
+        label: 'Tape Double'
+        pattern: tape_double_kicker
+        pattern_mapping:
+          'fields:field__headline':
+            destination: label
+            weight: 0
+            plugin: fields
+            source: field__headline
+          'fields:field_kicker':
+            destination: label2
+            weight: 1
+            plugin: fields
+            source: field_kicker
+      label: 'Tape Double'
 id: node.service.default
 targetEntityType: node
 bundle: service
 mode: default
 content:
-  field_kicker:
+  field__headline:
     type: string
     weight: 1
     label: hidden
@@ -46,9 +73,21 @@ content:
     third_party_settings:
       ds:
         ft:
+          id: reset
+          settings:
+            lb: ''
+  field_kicker:
+    type: string
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
           id: pattern
           settings:
-            pattern: tape_double
+            pattern: tape_subheadline
             pattern_mapping:
               'ds_field_template:field_kicker__value':
                 destination: label
@@ -57,7 +96,7 @@ content:
                 source: field_kicker__value
   field_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       view_mode: default
@@ -87,6 +126,5 @@ content:
             lb-col: false
             classes: {  }
 hidden:
-  field__headline: true
   field_teaser_image_hover: true
   links: true
