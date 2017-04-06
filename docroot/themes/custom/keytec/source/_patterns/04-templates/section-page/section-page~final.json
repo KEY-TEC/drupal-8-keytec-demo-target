@@ -3,17 +3,6 @@
     "join()": [
       {
         "include()": {
-          "pattern": "organisms-header",
-          "with": {
-            "attributes": {
-              "Attribute()": {
-              }
-            }
-          }
-        }
-      },
-      {
-        "include()": {
           "pattern": "molecules-stage-total-final",
           "with": {
             "attributes": {

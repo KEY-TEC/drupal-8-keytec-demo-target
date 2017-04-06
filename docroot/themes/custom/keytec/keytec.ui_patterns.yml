@@ -54,6 +54,21 @@ tape_double:
       description: The image title.
       preview: Tape
 
+tape_double_kicker:
+  label: Tape Double Kicker
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The image title.
+      preview: Tape
+    label2:
+      type: text
+      label: Label2
+      description: The image title.
+      preview: Tape
+
 tape_scroll:
   label: Tape Scroll
   description: A simple Atom.

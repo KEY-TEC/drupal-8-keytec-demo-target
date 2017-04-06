@@ -4,8 +4,8 @@
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
-  src: local("Montserrat-Regular"), url("../fonts/montserrat/montserrat.woff2") format("woff2"), url("../fonts/montserrat/montserrat.woff") format("woff"), url("../fonts/montserrat/montserrat.ttf") format("truetype");
+  font-weight: 300;
+  src: local("Montserrat-Regular"), url("../fonts/montserrat/montserrat-v10-latin-300") format("woff2"), url("../fonts/montserrat/montserrat-v10-latin-300") format("woff"), url("../fonts/montserrat/montserrat-v10-latin-300") format("truetype");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -3823,7 +3823,7 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .text--center {
-  max-width: 362px;
+  max-width: 37.5rem;
   text-align: center;
   margin: auto;
   font-size: 20px;
