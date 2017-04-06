@@ -23,8 +23,8 @@ third_party_settings:
     regions:
       headline:
         - field_headline
-      content:
         - field_tape
+      content:
         - field_teaser
 id: paragraph.service.default
 targetEntityType: paragraph
