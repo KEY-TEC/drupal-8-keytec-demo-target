@@ -11,12 +11,14 @@
     width: 100%;
   }
   &--center {
-
     .stage__layer {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
     }
+  }
+  &--padding {
+    margin: 0 0 rem-calc(60) 0;
   }
   @include breakpoint(medium up) {
   }

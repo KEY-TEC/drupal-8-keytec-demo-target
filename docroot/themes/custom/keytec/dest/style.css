@@ -3983,6 +3983,10 @@ table.hover tr:nth-of-type(even):hover {
       transform: translateY(-50%);
 }
 
+.stage--padding {
+  margin: 0 0 3.75rem 0;
+}
+
 .teaser:hover .teaser__headline {
   text-decoration: underline;
   color: #98b6b8;

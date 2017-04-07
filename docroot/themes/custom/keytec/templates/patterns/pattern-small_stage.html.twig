@@ -1,1 +1,6 @@
-{% include "@molecules/stage/stage.twig" with {"modifier":"center", "src": background_image, "logo_image": logo_image|naked_field, "label": label,"label2": label2, "tape_modifier":"large1 green"} only%}
+{% include "@molecules/stage/stage.twig" with {"modifier":"center padding",
+"src": background_image,
+"img": logo_image|naked_field,
+"label": label,
+"rowcenter": 'align-center',
+"tape_modifier":"large1 green"} only%}

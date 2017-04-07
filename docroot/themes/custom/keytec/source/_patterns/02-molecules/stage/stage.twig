@@ -1,19 +1,21 @@
 <div class="stage {{ modifier_class('stage', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
-    {% if src != null %}
+  {% if src != null %}
     {% include "@atoms/responsive-image/responsive-image.twig" with{"src": src} only %}
-    {% endif %}
-    {% if img != null %}
-    {% include "@atoms/image/image.twig" with{"img": img} only %}
-   {% endif %}
-    <div class="stage__layer">
-        <div class="row ">
-            {% if label != null %}
-            <div class="small-7 columns">
-                {{ label }}
-            </div>
-
-        {% endif %}
-
+  {% endif %}
+  <div class="stage__layer">
+    <div class="row {{ rowcenter }}">
+      {% if img != null %}
+        <div class="medium-2 show-for-medium align-self-middle columns">
+          {% include "@atoms/image/image.twig" with{"img": img} only %}
         </div>
+      {% endif %}
+      {% if label != null %}
+        <div class="medium-7 large-6 small-10 columns">
+          {{ label }}
+        </div>
+
+      {% endif %}
+
     </div>
+  </div>
 </div>
