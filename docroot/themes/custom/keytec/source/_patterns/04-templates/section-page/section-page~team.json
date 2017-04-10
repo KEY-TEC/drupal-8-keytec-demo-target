@@ -1,0 +1,47 @@
+{
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-stage-total-final",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "class": "show-for-medium",
+            "modifier": "scroll blue positioned",
+            "attributes": {
+              "Attribute()": {
+                "data-scrollto": "next"
+              }
+            }
+          },
+          "only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "class": "show-for-medium",
+            "modifier": "scroll blue positioned",
+            "attributes": {
+              "Attribute()": {
+                "data-scrollto": "next"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
+

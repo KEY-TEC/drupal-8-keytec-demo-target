@@ -4,7 +4,10 @@
             {% if tape_modifier != null %}
             {% include "@atoms/tape/tape.twig" with {"modifier":tape_modifier ,"label":label} only %}
             {% endif %}
-
+            {% if kicker != null %}
+            {% include "@atoms/text/text.twig" with {"text":kicker, "modifier":"dark-color center"} only %}
+            {% endif %}
+            {% include "@atoms/headline/headline.twig" with {"text":headline, "modifier":"center"} only %}
             {% include "@atoms/text/text.twig" with {"text":text, "modifier":"dark-color center"} only %}
         </div>
     </div>
