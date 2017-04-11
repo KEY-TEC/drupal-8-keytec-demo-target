@@ -1,3 +1,7 @@
 <div class="image {{ modifier_class('image', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
-    <img src="{{- img -}}" alt="">
+    {% if src != null %}
+        <img src="{{- src -}}" alt="">
+    {% else %}
+       {{ img }}
+    {% endif %}
 </div>

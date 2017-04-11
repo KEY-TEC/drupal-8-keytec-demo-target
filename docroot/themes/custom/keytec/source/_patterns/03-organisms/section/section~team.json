@@ -1,0 +1,93 @@
+{
+  "headline":"Meet the Pack",
+  "modifier": "greyed",
+  "content_has_row": true,
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "molecules-media-object",
+          "with": {
+            "attributes": {
+              "Attribute()": {
+                "class": "medium-6 column"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

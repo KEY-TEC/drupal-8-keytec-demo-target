@@ -2,8 +2,16 @@
   padding-top: rem-calc(95);
   padding-bottom: rem-calc(175);
   background-color: $keytec-grey;
+
   &--small {
     padding-bottom: rem-calc(100);
     margin-bottom: rem-calc(100);
+  }
+
+  &--no-color {
+    background-color: transparent;
+  }
+  .headline--center {
+    padding: 20px 0 20px 0;
   }
  }

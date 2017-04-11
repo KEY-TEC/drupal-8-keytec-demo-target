@@ -1,6 +1,6 @@
 {
-  "modifier": "blue",
-  "label": "Meine Label",
+  "label": "Hosting",
+  "modifier": "small white",
   "attributes": {
     "Attribute()": {
     }
