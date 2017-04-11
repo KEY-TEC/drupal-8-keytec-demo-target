@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
     - field.field.node.service.field_teaser_image_hover
+    - field.field.node.service.field_teaser_text
     - node.type.service
     - responsive_image.styles.stage
   module:
@@ -125,6 +126,12 @@ content:
             lb: ''
             lb-col: false
             classes: {  }
+  field_teaser_text:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
 hidden:
   field_teaser_image_hover: true
   links: true

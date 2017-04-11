@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_header.field__headline
+    - field.field.paragraph.text_header.field_headline
     - field.field.paragraph.text_header.field_subheadline
     - paragraphs.paragraphs_type.text_header
   module:
@@ -21,7 +22,7 @@ third_party_settings:
         pattern:
           field_templates: default
     regions:
-      headline:
+      label:
         - field__headline
       subheadline:
         - field_subheadline
@@ -31,11 +32,12 @@ bundle: text_header
 mode: default
 content:
   field__headline:
+    type: text_trimmed
     weight: 0
-    label: hidden
-    settings: {  }
+    label: above
+    settings:
+      trim_length: 600
     third_party_settings: {  }
-    type: text_default
   field_subheadline:
     weight: 1
     label: hidden
@@ -44,4 +46,5 @@ content:
     type: text_default
 hidden:
   created: true
+  field_headline: true
   uid: true

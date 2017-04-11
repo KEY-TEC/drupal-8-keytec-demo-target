@@ -6,8 +6,10 @@ dependencies:
     - field.storage.node.field_paragraph
     - node.type.page
     - paragraphs.paragraphs_type.clients
+    - paragraphs.paragraphs_type.header_simplepage
     - paragraphs.paragraphs_type.reference
     - paragraphs.paragraphs_type.service
+    - paragraphs.paragraphs_type.services
     - paragraphs.paragraphs_type.small_stage
     - paragraphs.paragraphs_type.stage
     - paragraphs.paragraphs_type.tape
@@ -28,9 +30,11 @@ settings:
   handler_settings:
     target_bundles:
       clients: clients
+      header_simplepage: header_simplepage
       reference: reference
       service: service
       small_stage: small_stage
+      services: services
       stage: stage
       tape: tape
     target_bundles_drag_drop:
@@ -40,6 +44,9 @@ settings:
       healine:
         weight: 12
         enabled: false
+      header_simplepage:
+        enabled: true
+        weight: 13
       one_image_col:
         weight: 13
         enabled: false
@@ -52,6 +59,9 @@ settings:
       small_stage:
         enabled: true
         weight: 16
+      services:
+        enabled: true
+        weight: 17
       stage:
         enabled: true
         weight: 17
