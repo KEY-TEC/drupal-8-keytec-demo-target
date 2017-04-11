@@ -22,12 +22,19 @@
     font-family: balzac;
     color: #98b6b8;
   }
+  &--small {
+    font-size: rem-calc(20);
+    font-family: $base-font-bold;
+  }
   &--yellow{
     color: #e7c78a;
 
   }
   &--green{
     color: #b7cf95;
+  }
+  &--lightgray {
+    color: #c7c7c7;
   }
   &--spacer{
     padding-top: 95px;

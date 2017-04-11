@@ -3414,12 +3414,21 @@ table.hover tr:nth-of-type(even):hover {
   color: #98b6b8;
 }
 
+.headline--small {
+  font-size: 1.25rem;
+  font-family: "Montserrat-Bold";
+}
+
 .headline--yellow {
   color: #e7c78a;
 }
 
 .headline--green {
   color: #b7cf95;
+}
+
+.headline--lightgray {
+  color: #c7c7c7;
 }
 
 .headline--spacer {
@@ -4058,9 +4067,14 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .text-header {
-  padding-top: 95px;
-  padding-bottom: 175px;
+  padding-top: 5.9375rem;
+  padding-bottom: 10.9375rem;
   background-color: #f2f0f1;
+}
+
+.text-header--small {
+  padding-bottom: 6.25rem;
+  margin-bottom: 6.25rem;
 }
 
 .footer {
@@ -4234,6 +4248,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .two-col--orange {
   background-color: #e9ca91;
+}
+
+.two-col a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

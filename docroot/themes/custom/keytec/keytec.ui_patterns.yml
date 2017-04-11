@@ -260,6 +260,46 @@ reference_page:
       description: The actual image.
       preview: Teaser Image
 
+header_simplepage:
+  label: Header simplepage
+  description: A simple molecule.
+  fields:
+    label:
+      type: text
+      label: label
+      description: headline
+      preview: headline
+    text:
+      type: text
+      label: Text
+      description: Text
+      preview: Text
+
+services_teaser:
+  label: Services teaser
+  description: A simple molecule.
+  fields:
+    kicker:
+      type: text
+      label: kicker
+      description: kicker
+      preview: kicker
+    headline:
+      type: text
+      label: headline
+      description: headline
+      preview: headline
+    teaser_text:
+      type: text
+      label: teaser_text
+      description: text
+      preview: text
+    readmore:
+      type: text
+      label: readmore
+      description: readmore
+      preview: readmore
+
 teaser_clients:
   label: Teaser Clients
   description: A simple molecule.

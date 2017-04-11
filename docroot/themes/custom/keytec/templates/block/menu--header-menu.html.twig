@@ -31,7 +31,7 @@
         <ul class="menu menu--horizontal" id="main-menu" {{ attributes|without('class') }}>
             {% for item in items %}
                 <li>
-                    <a href="{{ item.link }}">{{ item.title }}</a>
+                    {{ link(item.title, item.url) }}
                 </li>
             {% endfor %}
         </ul>

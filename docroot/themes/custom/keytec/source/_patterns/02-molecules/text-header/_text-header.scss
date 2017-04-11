@@ -1,6 +1,9 @@
 .text-header{
-  padding-top: 95px;
-  padding-bottom: 175px;
+  padding-top: rem-calc(95);
+  padding-bottom: rem-calc(175);
   background-color: $keytec-grey;
-
+  &--small {
+    padding-bottom: rem-calc(100);
+    margin-bottom: rem-calc(100);
+  }
  }

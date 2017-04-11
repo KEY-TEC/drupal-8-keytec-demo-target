@@ -23,3 +23,28 @@ function keytec_preprocess(&$vars, $hook) {
     }
   }
 }
+
+function keytec_preprocess_pattern_two_col(&$vars, $hook){
+  static $count = array();
+  $count[$hook] = isset($count[$hook]) && is_int($count[$hook]) ? $count[$hook] : 1;
+  $vars['zebra'] = ($count[$hook] % 2) ? 'odd' : 'even';
+  $count[$hook]++;
+
+  if (isset($vars['context'])) {
+    $view_mode = $vars['context']->getProperty('view_mode');
+    $entity_type = $vars['context']->getProperty('entity_type');
+    if (!empty($entity_type)  && !empty($view_mode)) {
+      if ($view_mode == 'overview') {
+        if($vars['zebra'] == 'even'){
+          $left_tmp = $vars['left'];
+          $vars['left'] =  $vars['right'];
+          $vars['right'] = $left_tmp;
+          $vars['format'] = 9;
+          $vars['has_color'] = "greyed";
+        }else {
+          $vars['format'] = 3;
+        }
+      }
+    }
+  }
+}
