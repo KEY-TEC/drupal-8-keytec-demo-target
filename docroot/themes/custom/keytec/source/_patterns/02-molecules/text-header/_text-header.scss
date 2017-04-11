@@ -3,4 +3,10 @@
   padding-bottom: 175px;
   background-color: $keytec-grey;
 
+&--no-color{
+  background-color:transparent;
+}
+  .headline--center{
+    padding: 20px 0 20px 0;
+  }
  }

@@ -1,0 +1,45 @@
+{
+  "src":"/images/01_ueber-uns_startingup@2x.png",
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-headline",
+          "with": {
+            "text":"el chefe",
+            "headline":"Starting up",
+            "subheadline":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-tape-nr",
+          "with": {
+            "label":"Geschäftsführer",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "subheadline":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

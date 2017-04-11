@@ -2,8 +2,11 @@
   padding-bottom: rem-calc(70);
   &__headline{
     text-align: center;
-    //padding-bottom: $spacer3;
+    padding-bottom: $spacer3;
     padding: rem-calc(84) 0 rem-calc(60);
+    &--left{
+      text-align: left;
+    }
   &--no-spacing{
     padding: rem-calc(0) 0;
   }

@@ -3,11 +3,10 @@
   "tape_modifier":"large3 beige",
   "page_title": "Brockhaus",
   "field_stage": "Recherche- uns Refernzenportlfür alle.die es genau wissen wollen",
-  "source": "/images/ref_header_macbook.png",
+  "src": "/images/ref_header_macbook.png",
   "text_left": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,</p><a href=\"#\" >www.flixbus.de</a></p>",
   "text_right": "<ul><li>Drupal 7</li><li>Erweiterung der Search API</li><li>Frontent mit backbones.js</li><li>fehlertolerante Suche</li><li>Abo-Modelle / Nutzerverwaltung</li><li>Abo-Modelle / Nutzerverwaltung</li><li>Responsive HTML5 Drupaltheme</li><li>Second Level Support</li></ul>",
   "label":"Leistungen",
-  "hahahah":"small red",
   "src_left": "/images/ref_header_iphone.png",
   "src_right": "/images/ref_detail_ipad_horizontal.png"
 }

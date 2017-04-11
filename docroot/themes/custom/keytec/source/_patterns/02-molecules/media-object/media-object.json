@@ -1,0 +1,47 @@
+{
+"src":"/images/Team_icon.jpg",
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-headline",
+          "with": {
+            "modifier":"balzac pink",
+            "text":"el chefe",
+            "headline":"Starting up",
+            "subheadline":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "modifier":"beige",
+            "label":"Geschäftsführer",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

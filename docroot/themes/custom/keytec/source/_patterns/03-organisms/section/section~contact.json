@@ -1,6 +1,5 @@
 {
 
-  "headline_modifier":"left",
   "space_modifier":"no-spacing",
   "headline": null,
   "content": {
@@ -8,7 +7,7 @@
       "pattern": "organisms-two-col",
       "with": {
         "headline":"Kontaktieren Sie uns",
-        "modifier":"top",
+        "modifier":"top left",
         "left": {
           "include()": {
             "pattern": "atoms-text",
