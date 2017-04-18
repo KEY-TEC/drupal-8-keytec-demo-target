@@ -4077,6 +4077,52 @@ table.hover tr:nth-of-type(even):hover {
   margin-bottom: 6.25rem;
 }
 
+.media-object-section--dotted__kicker {
+  color: #c7c7c7;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.media-object-section--dotted--right {
+  border-right: 2px dotted #cecece;
+  border-bottom: 2px dotted #cecece;
+  padding-top: 50px;
+  padding: 50px;
+  margin-left: 150px;
+  margin-bottom: 0;
+  margin-right: 150px;
+}
+
+.media-object-section--dotted--right .main-section {
+  margin-left: -150px;
+}
+
+.media-object-section--dotted--right .thumbnail {
+  margin-right: -170px;
+}
+
+.media-object-section--dotted--left {
+  border-left: 2px dotted #cecece;
+  border-bottom: 2px dotted #cecece;
+  padding-top: 50px;
+  padding: 50px;
+  margin-left: 150px;
+  margin-bottom: 0;
+  margin-right: 150px;
+}
+
+.media-object-section--dotted--left .main-section {
+  margin-right: -150px;
+}
+
+.media-object-section--dotted--left .thumbnail {
+  margin-left: -190px;
+}
+
+.media-object-section--dotted img {
+  max-width: 100%;
+}
+
 .footer {
   background: #f2f0f1;
   padding-top: 3.125rem;
