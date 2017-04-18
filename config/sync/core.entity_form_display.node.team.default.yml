@@ -1,54 +1,39 @@
-uuid: 153a5ad0-9106-401f-894a-4996f38add5e
+uuid: 4aafc8c5-f18f-42be-9dfc-9538e0ca154a
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.service.field__headline
-    - field.field.node.service.field_image
-    - field.field.node.service.field_kicker
-    - field.field.node.service.field_paragraph
-    - field.field.node.service.field_teaser_image
-    - field.field.node.service.field_teaser_image_hover
-    - field.field.node.service.field_teaser_text
-    - node.type.service
+    - field.field.node.team.field_image
+    - field.field.node.team.field_paragraph_section
+    - field.field.node.team.field_paragraph_text_header
+    - field.field.node.team.field_subheadline
+    - field.field.node.team.field_tape
+    - image.style.thumbnail
+    - node.type.team
   module:
     - image
     - paragraphs
     - path
-id: node.service.default
+id: node.team.default
 targetEntityType: node
-bundle: service
+bundle: team
 mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 8
+    weight: 10
     settings: {  }
     third_party_settings: {  }
-  field__headline:
-    weight: 1
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
   field_image:
-    weight: 26
+    weight: 31
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-  field_kicker:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-  field_paragraph:
+  field_paragraph_section:
     type: entity_reference_paragraphs
-    weight: 6
+    weight: 35
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -57,54 +42,58 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-  field_teaser_image:
-    weight: 3
+  field_paragraph_text_header:
+    type: entity_reference_paragraphs
+    weight: 34
     settings:
-      progress_indicator: throbber
-      preview_image_style: ''
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
     third_party_settings: {  }
-    type: image_image
-  field_teaser_image_hover:
-    weight: 4
+  field_subheadline:
+    weight: 33
     settings:
-      preview_image_style: ''
-      progress_indicator: throbber
-    third_party_settings: {  }
-    type: image_image
-  field_teaser_text:
-    weight: 5
-    settings:
-      rows: 5
+      size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: string_textarea
+    type: string_textfield
+  field_tape:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
   path:
     type: path
-    weight: 11
+    weight: 30
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 10
+    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 7
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60

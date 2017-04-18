@@ -3464,10 +3464,6 @@ table.hover tr:nth-of-type(even):hover {
   text-align: center;
 }
 
-.responsive-image img {
-  width: 100%;
-}
-
 .tape {
   display: inline-block;
   min-width: 12.90625rem;

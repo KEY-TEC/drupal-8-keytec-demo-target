@@ -1,0 +1,69 @@
+{
+  "content" : [
+    {
+      "address_components" : [
+        {
+          "long_name" : "68",
+          "short_name" : "68",
+          "types" : [ "street_number" ]
+        },
+        {
+          "long_name" : "Blutenburgstraße",
+          "short_name" : "Blutenburgstraße",
+          "types" : [ "route" ]
+        },
+        {
+          "long_name" : "Neuhausen-Nymphenburg",
+          "short_name" : "Neuhausen-Nymphenburg",
+          "types" : [ "political", "sublocality", "sublocality_level_1" ]
+        },
+        {
+          "long_name" : "München",
+          "short_name" : "München",
+          "types" : [ "locality", "political" ]
+        },
+        {
+          "long_name" : "Oberbayern",
+          "short_name" : "Oberbayern",
+          "types" : [ "administrative_area_level_2", "political" ]
+        },
+        {
+          "long_name" : "Bayern",
+          "short_name" : "BY",
+          "types" : [ "administrative_area_level_1", "political" ]
+        },
+        {
+          "long_name" : "Germany",
+          "short_name" : "DE",
+          "types" : [ "country", "political" ]
+        },
+        {
+          "long_name" : "80636",
+          "short_name" : "80636",
+          "types" : [ "postal_code" ]
+        }
+      ],
+      "formatted_address" : "Blutenburgstraße 68, 80636 München, Germany",
+      "geometry" : {
+        "location" : {
+          "lat" : 48.1493945,
+          "lng" : 11.5433647
+        },
+        "location_type" : "APPROXIMATE",
+        "viewport" : {
+          "northeast" : {
+            "lat" : 48.1507434802915,
+            "lng" : 11.5447136802915
+          },
+          "southwest" : {
+            "lat" : 48.1480455197085,
+            "lng" : 11.5420157197085
+          }
+        }
+      },
+      "place_id" : "ChIJj7OBmA92nkcRAadP22NxTIM",
+      "types" : [ "establishment", "point_of_interest" ]
+    }
+  ],
+  "status" : "OK"
+}

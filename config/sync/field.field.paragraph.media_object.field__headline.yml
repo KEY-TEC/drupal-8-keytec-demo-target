@@ -1,18 +1,18 @@
-uuid: eb32f9ed-32b2-4a69-b277-c91f35b98527
+uuid: a88d93b1-3782-4d86-9f96-5df5d3b268f8
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field__headline
-    - paragraphs.paragraphs_type.text_header
-id: paragraph.text_header.field__headline
+    - paragraphs.paragraphs_type.media_object
+id: paragraph.media_object.field__headline
 field_name: field__headline
 entity_type: paragraph
-bundle: text_header
+bundle: media_object
 label: headline
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

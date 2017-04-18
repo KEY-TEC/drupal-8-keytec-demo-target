@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:26a723ca-25f9-467c-b817-73d580adaaeb'
   module:
     - block_content
-    - node
   theme:
     - keytec
 id: footer_text_2
@@ -23,15 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  node_type:
-    id: node_type
-    bundles:
-      article: article
-      clients: clients
-      page: page
-      reference: reference
-      service: service
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }

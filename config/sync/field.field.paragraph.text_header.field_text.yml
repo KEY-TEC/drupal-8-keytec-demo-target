@@ -1,19 +1,21 @@
-uuid: eb32f9ed-32b2-4a69-b277-c91f35b98527
+uuid: ff2d3710-b474-4fbb-8c7f-4d90bed0d157
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field__headline
+    - field.storage.paragraph.field_text
     - paragraphs.paragraphs_type.text_header
-id: paragraph.text_header.field__headline
-field_name: field__headline
+  module:
+    - text
+id: paragraph.text_header.field_text
+field_name: field_text
 entity_type: paragraph
 bundle: text_header
-label: headline
+label: text
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: string
+field_type: text_long

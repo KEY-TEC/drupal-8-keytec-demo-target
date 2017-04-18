@@ -6,7 +6,6 @@ dependencies:
     - contact.form.contact
   module:
     - contact_block
-    - node
   theme:
     - keytec
 id: contactblock_2
@@ -21,15 +20,4 @@ settings:
   provider: contact_block
   label_display: '0'
   contact_form: contact
-visibility:
-  node_type:
-    id: node_type
-    bundles:
-      article: article
-      clients: clients
-      page: page
-      reference: reference
-      service: service
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+visibility: {  }
