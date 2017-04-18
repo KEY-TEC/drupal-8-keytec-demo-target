@@ -12,6 +12,9 @@ node_modules
 # Node.js files
 npm-debug.log
 
+# style.css.map file
+style.css.map
+
 # Generated files
 *.sass-cache/
 

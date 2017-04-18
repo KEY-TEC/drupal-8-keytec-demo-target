@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraph
     - node.type.page
+    - paragraphs.paragraphs_type.about_us_entry
     - paragraphs.paragraphs_type.clients
     - paragraphs.paragraphs_type.header_simplepage
     - paragraphs.paragraphs_type.reference
@@ -32,6 +33,7 @@ settings:
       clients: clients
       header_simplepage: header_simplepage
       reference: reference
+      about_us_entry: about_us_entry
       service: service
       small_stage: small_stage
       services: services
@@ -44,13 +46,16 @@ settings:
       healine:
         weight: 12
         enabled: false
-      header_simplepage:
-        enabled: true
-        weight: 13
       one_image_col:
         weight: 13
         enabled: false
+      header_simplepage:
+        enabled: true
+        weight: 13
       reference:
+        enabled: true
+        weight: 14
+      about_us_entry:
         enabled: true
         weight: 14
       service:
