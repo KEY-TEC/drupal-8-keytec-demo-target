@@ -8,10 +8,11 @@ dependencies:
     - field.field.node.reference.field_tape
     - field.field.node.reference.field_teaser_image
     - node.type.reference
+    - responsive_image.styles.stage
   module:
     - ds
     - entity_reference_revisions
-    - image
+    - responsive_image
     - user
 third_party_settings:
   ds:
@@ -71,14 +72,16 @@ content:
     weight: 2
     label: hidden
     settings:
+      responsive_image_style: stage
       image_link: ''
-      image_style: ''
     third_party_settings:
       ds:
         ft:
-          id: reset
+          id: default
           settings:
             lb: ''
-    type: image
+            lb-col: false
+            classes: {  }
+    type: responsive_image
 hidden:
   links: true

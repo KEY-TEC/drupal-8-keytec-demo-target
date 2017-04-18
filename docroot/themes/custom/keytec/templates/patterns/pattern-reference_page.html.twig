@@ -4,7 +4,7 @@
 "tape_modifier": "large3 red" } %}
         {% embed "@molecules/one-col/one-col.twig" with {"modifier":"overlapping"} %}
             {% block content %}
-                {% include "@atoms/responsive-image/responsive-image.twig" with {"src": src, "modifier":"center" } %}
+                {% include "@atoms/image/image.twig" with {"img": src, "modifier":"center" } %}
             {% endblock content %}
         {% endembed %}
 {{ section }}
