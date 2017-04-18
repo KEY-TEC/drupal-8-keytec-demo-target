@@ -1,5 +1,6 @@
 {
   "modifier": "blue",
+  "label": "Meine Label",
   "attributes": {
     "Attribute()": {
     }

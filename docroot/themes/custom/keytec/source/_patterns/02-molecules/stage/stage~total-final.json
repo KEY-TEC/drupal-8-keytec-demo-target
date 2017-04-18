@@ -9,7 +9,8 @@
           "include()": {
             "pattern": "atoms-tape",
             "with": {
-              "label": "Hosting"
+              "label": "Hosting",
+              "modifier":"small white"
             }
           }
         },

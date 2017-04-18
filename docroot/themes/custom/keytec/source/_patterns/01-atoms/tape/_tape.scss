@@ -34,9 +34,13 @@
   background-size: contain;
   background-position: center;
 
+  .tape {
+    display: block;
+  }
+
   @include tape();
 
-  &--label {
+  &__label {
     color: $white;
     font-size: rem-calc(14);
     text-align: center;
@@ -53,7 +57,7 @@
     min-width: 0;
     @include tape('cross');
 
-    > .tape--label {
+    .tape__label {
       font-size: rem-calc(17);
       letter-spacing: rem-calc(-1);
       min-width: rem-calc(112);
@@ -66,7 +70,7 @@
     }
   }
 
-  &--white .tape--label {
+  &--white .tape__label {
     color: $primary-color;
   }
 
@@ -92,7 +96,12 @@
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
 
-    > .tape--label {
+    .tape__wrapper {
+      transform: rotate(3deg);
+      color: blue;
+    }
+
+    .tape__label {
       font-family: $alt-font;
       font-size: 15vw;
       line-height: 1;
@@ -117,13 +126,13 @@
     -ms-transform: rotate(-3deg);
     transform: rotate(-3deg);
 
-    > .tape--label {
+    .tape__label {
       font-family: $alt-font;
       font-size: 11vw;
       line-height: 1;
       padding: 4.2vw 0 0 4.8vw;
     }
-    > .tape--label2 {
+    .tape__label2 {
       color: $white;
       font-size: 3.6vw;
       font-weight: bold;
@@ -132,11 +141,11 @@
     }
 
     @include breakpoint(515) {
-      > .tape--label {
+      .tape__label {
         font-size: rem-calc(57);
         padding: rem-calc(22) 0 0 rem-calc(25);
       }
-      > .tape--label2 {
+      .tape__label2 {
         font-size: rem-calc(19);
         padding: 0 rem-calc(29) rem-calc(23);
       }
@@ -151,7 +160,7 @@
       height: rem-calc(120);
     }
 
-    > .tape--label {
+    .tape__label {
       font-family: $alt-font;
       font-size: 23vw;
       line-height: 1;
@@ -172,7 +181,7 @@
       height: rem-calc(120);
     }
 
-    > .tape--label {
+    .tape__label {
       font-family: $alt-font;
       font-size: 14.5vw;
       line-height: 1;
@@ -186,15 +195,20 @@
     }
   }
 
-  .tape-wrapper {
+  .tape__wrapper {
     text-align: center;
     position: absolute;
     width: 100%;
-    botton: -20%;
+    bottom: 0%;
 
-    .tape--label {
+    .tape__label {
+      font-family: $base-font;
       font-size: 5vw;
 
+      &--bold {
+        font-weight: bolder;
+
+      }
       @include breakpoint(400) {
         font-size: rem-calc(20);
       }
