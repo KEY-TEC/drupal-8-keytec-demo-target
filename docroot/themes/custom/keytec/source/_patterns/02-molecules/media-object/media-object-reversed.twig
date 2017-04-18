@@ -1,0 +1,10 @@
+    <div class=" media-object {{ modifier_class('media-object', modifier) }} {{ attributes.class }}" {{ attributes|without('class') }}>
+        <div class="media-object-section main-section" >
+            {{ content }}
+        </div>
+        <div class="media-object-section">
+            <div class="thumbnail">
+                <img src="{{ src }}"> </img>
+            </div>
+        </div>
+    </div>
