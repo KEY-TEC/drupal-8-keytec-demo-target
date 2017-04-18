@@ -1,20 +1,9 @@
 <div class="text-header {{ modifier_class('text-header', modifier) }} {{ attributes.class }}"{{ attributes|without('class') }}>
   <div class="row">
     <div class="text-center small-12 columns">
-      {% if tape_modifier != null %}
-        {% include "@atoms/tape/tape.twig" with {"modifier":tape_modifier ,"label":label} only %}
-      {% else %}
-        {% include "@atoms/headline/headline.twig" with{"modifier":label_modifier, "text":label,} %}
-      {% endif %}
-      {% if kicker != null %}
-        {% include "@atoms/text/text.twig" with {"text":kicker} %}
-      {% endif %}
-      {% if headline != null %}
-        {% include "@atoms/headline/headline.twig" with {"text":headline, "modifier":"center"} only %}
-      {% endif %}
-      {% include "@atoms/text/text.twig" with {"text":text, "modifier":"dark-color center"} only %}
+
+      {{ content }}
+
     </div>
   </div>
 </div>
-</div>
-

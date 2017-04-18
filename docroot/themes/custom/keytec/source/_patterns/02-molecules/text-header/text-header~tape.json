@@ -1,0 +1,33 @@
+{
+  "modifier": "greyed",
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-tape",
+          "with": {
+            "label": "Brockhaus",
+            "modifier": " large3 beige center",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text": "<p>Recherche- und Refernzenportlfür alle.</br>die es genau wissen wollen</p>",
+            "text_modifier": "dark-color center",
+            "attributes": {
+              "Attribute()": {
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

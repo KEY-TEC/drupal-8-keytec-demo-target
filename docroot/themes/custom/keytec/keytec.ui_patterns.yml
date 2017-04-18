@@ -44,6 +44,16 @@ small_stage:
       description: The image title.
       preview: Total Drupal
 
+text_header:
+  label: Text Header
+  description: A simple molecule with title.
+  fields:
+    content:
+      type: text
+      label: Content
+      description: The actual image.
+      preview: Background Image
+
 tape_double:
   label: Tape Double
   description: A simple Atom.
@@ -112,6 +122,16 @@ tape_association:
 
 tape_small:
   label: Tape Small
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The tape send.
+      preview: Tape Small
+
+tape_sub:
+  label: Tape Sub
   description: A simple Atom.
   fields:
     label:
@@ -370,52 +390,6 @@ form:
       description: The teaser service.
       preview: form
 
-
-#two_col:
-#  label: Two Col
-#  description: An Organism.
-#  fields:
-#    headline:
-#      type: text
-#      label: Headline
-#      description: The actual image.
-#      preview: Headline of section
-#    headline_left:
-#      type: text
-#      label: Headline Left
-#      description: The actual image.
-#      preview: Headline of section
-#    headline_right:
-#      type: text
-#      label: Headline Right
-#      description: The actual image.
-#      preview: Headline of section
-#    image_left:
-#      type: image
-#      label: Image Left
-#      description: The teaser service.
-#      preview: teaser
-#    image_right:
-#      type: image
-#      label: Image Right
-#      description: The teaser service.
-#      preview: teaser
-#    text_left:
-#      type: text
-#      label: Text Left
-#      description: The teaser service.
-#      preview: form
-#    text_right:
-#      type: text
-#      label: Text Right
-#      description: The teaser service.
-#      preview: form
-#    tape:
-#      type: text
-#      label: Tape
-#      description: The teaser service.
-#      preview: form
-
 two_col:
   label: Two Col
   description: An Organism.
@@ -435,3 +409,58 @@ two_col:
       label: Right
       description: The teaser service.
       preview: teaser
+
+media_object:
+  label: Media Object
+  description: An Organism.
+  fields:
+    content:
+      type: text
+      label: Content
+      description: The Two Col Headline.
+      preview: Headline of section
+    src:
+      type: image
+      label: SRC
+      description: The teaser service.
+      preview: teaser
+
+headline_balzac_pink:
+  label: Headline Balzac Pink
+  description: An Organism.
+  fields:
+    headline:
+      type: text
+      label: Headline
+      description: The Two Col Headline.
+      preview: Headline of section
+
+tape_small_beige:
+  label: Tape Small Beige
+  description: An Organism.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The Two Col Headline.
+      preview: Headline of section
+
+text_media_object:
+  label: Text Media Object
+  description: An Organism.
+  fields:
+    text:
+      type: text
+      label: text
+      description: The Two Col Headline.
+      preview: Headline of section
+
+headline_light_grey:
+  label: Headline Light Grey
+  description: An Atom.
+  fields:
+    text:
+      type: text
+      label: Headline
+      description: The Two Col Headline.
+      preview: Headline of section

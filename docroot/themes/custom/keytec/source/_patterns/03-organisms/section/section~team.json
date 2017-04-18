@@ -1,6 +1,6 @@
 {
   "headline":"Meet the Pack",
-  "modifier": "greyed",
+  "modifier": "greyed has-color",
   "content_has_row": true,
   "content": {
     "join()": [
