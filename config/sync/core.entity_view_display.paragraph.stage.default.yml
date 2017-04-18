@@ -8,9 +8,10 @@ dependencies:
     - field.field.paragraph.stage.field_tape_scroll
     - field.field.paragraph.stage.field_tape_subheadline
     - paragraphs.paragraphs_type.stage
+    - responsive_image.styles.stage
   module:
     - ds
-    - image_url_formatter
+    - responsive_image
 third_party_settings:
   ds:
     layout:
@@ -34,19 +35,20 @@ bundle: stage
 mode: default
 content:
   field_bg_image:
-    type: image_url
+    type: responsive_image
     weight: 0
     label: hidden
     settings:
-      url_type: '0'
-      image_style: ''
+      responsive_image_style: stage
       image_link: ''
     third_party_settings:
       ds:
         ft:
-          id: reset
+          id: default
           settings:
             lb: ''
+            lb-col: false
+            classes: {  }
   field_tape:
     type: string
     weight: 1
