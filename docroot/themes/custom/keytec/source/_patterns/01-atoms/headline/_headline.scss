@@ -1,5 +1,5 @@
 .headline {
-  color: $dark-gray;
+  color: $black;
   font-size: rem-calc(25);
   line-height: rem-calc(30);
   letter-spacing: rem-calc(-0.2);
@@ -25,6 +25,12 @@
   &--small {
     font-size: rem-calc(20);
     font-family: $base-font-bold;
+  }
+  &--blue {
+    color: #a5babf;
+  }
+  &--light-grey {
+    color: #c8c8c8;
   }
   &--yellow{
     color: #e7c78a;

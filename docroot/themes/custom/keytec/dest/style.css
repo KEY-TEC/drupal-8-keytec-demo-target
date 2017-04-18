@@ -3385,7 +3385,7 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .headline {
-  color: #747474;
+  color: #4a4a4a;
   font-size: 1.5625rem;
   line-height: 1.875rem;
   letter-spacing: -0.0125rem;
@@ -3417,6 +3417,14 @@ table.hover tr:nth-of-type(even):hover {
 .headline--small {
   font-size: 1.25rem;
   font-family: "Montserrat-Bold";
+}
+
+.headline--blue {
+  color: #a5babf;
+}
+
+.headline--light-grey {
+  color: #c8c8c8;
 }
 
 .headline--yellow {
@@ -3897,11 +3905,15 @@ table.hover tr:nth-of-type(even):hover {
   box-shadow: 0 5px 0 #4a4a4a, 0 10px 0 #4a4a4a;
 }
 
-.media-object-section .thumnail {
-  padding: 0 20px 0 20px;
+.media-object {
+  padding: 20px 20px 20px 20px;
 }
 
-.media-object-section__kicker {
+.media-object .media-object-section .thumnail {
+  padding: 0px 20px 0px 20px;
+}
+
+.media-object .media-object-section__kicker {
   color: #c7c7c7;
   font-size: 20px;
   font-weight: bold;
@@ -4097,7 +4109,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .text-header {
   padding-top: 5.9375rem;
-  padding-bottom: 10.9375rem;
+  padding-bottom: 5.9375rem;
   background-color: #f2f0f1;
 }
 
@@ -4219,8 +4231,9 @@ table.hover tr:nth-of-type(even):hover {
   background-color: #f2f0f1;
 }
 
-.section--no-spacing {
-  padding-bottom: 0;
+.section--has-color {
+  padding-top: 60px;
+  margin-bottom: 60px;
 }
 
 .two-col__content {

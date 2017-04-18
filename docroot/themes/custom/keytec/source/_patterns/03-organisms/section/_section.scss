@@ -16,7 +16,9 @@
   background-color: $keytec-grey;
   }
 
-  &--no-spacing {
-    padding-bottom: rem-calc(0);
+  &--has-color {
+    padding-top: 60px;
+    margin-bottom: 60px;
+
   }
 }

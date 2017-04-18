@@ -1,7 +1,9 @@
+.media-object {
+  padding: 20px 20px 20px 20px;
 .media-object-section{
   .thumnail {
 
-    padding: 0 20px 0 20px;
+    padding: 0px 20px 0px 20px;
 
   }
     &__kicker{
@@ -10,4 +12,5 @@
       font-weight: bold;
     }
 
+}
 }
