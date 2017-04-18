@@ -260,6 +260,56 @@ reference_page:
       description: The actual image.
       preview: Teaser Image
 
+reference_page:
+  label: Reference Page
+  description: A simple molecule.
+  fields:
+    label:
+      type: text
+      label: label
+      description: headline
+      preview: headline
+    subheadline:
+      type: text
+      label: Subheadline
+      description: Subheadline
+      preview: Subheadline
+    src:
+      type: image
+      label: src
+      description: The actual image.
+      preview: Teaser
+    section:
+      type: text
+      label: Section
+      description: The actual image.
+      preview: Teaser Image
+
+aboutus_page:
+  label: aboutus_page
+  description: A simple molecule.
+  fields:
+    title:
+      type: text
+      label: label
+      description: title
+      preview: title
+    kicker:
+      type: text
+      label: kicker
+      description: kicker
+      preview: kicker
+    subtitle:
+      type: text
+      label: Text
+      description: Subtitle
+      preview: Subtitle
+    src:
+      type: image
+      label: src
+      description: The actual image.
+      preview: Teaser
+
 header_simplepage:
   label: Header simplepage
   description: A simple molecule.

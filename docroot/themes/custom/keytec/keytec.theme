@@ -20,6 +20,9 @@ function keytec_preprocess(&$vars, $hook) {
       if ($entity->hasField('field_format')) {
         $vars['format'] = $entity->field_format->value;
       }
+      if ($entity->hasField('field_align')) {
+        $vars['align'] = $entity->field_align->value;
+      }
     }
   }
 }
