@@ -4268,6 +4268,10 @@ table.hover tr:nth-of-type(even):hover {
   background-color: #f2f0f1;
 }
 
+.section--no-spacing {
+  padding-bottom: 0;
+}
+
 .section--has-color {
   padding-top: 60px;
   margin-bottom: 60px;
