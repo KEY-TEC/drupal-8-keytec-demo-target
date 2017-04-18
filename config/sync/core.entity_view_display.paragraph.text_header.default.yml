@@ -4,8 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text_header.field__headline
-    - field.field.paragraph.text_header.field_headline
     - field.field.paragraph.text_header.field_subheadline
+    - field.field.paragraph.text_header.field_tape
+    - field.field.paragraph.text_header.field_text
     - paragraphs.paragraphs_type.text_header
   module:
     - ds
@@ -13,7 +14,7 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: pattern_reference_page
+      id: pattern_text_header
       path: ''
       library: ''
       disable_css: false
@@ -22,9 +23,10 @@ third_party_settings:
         pattern:
           field_templates: default
     regions:
-      label:
+      content:
+        - field_text
         - field__headline
-      subheadline:
+        - field_tape
         - field_subheadline
 id: paragraph.text_header.default
 targetEntityType: paragraph
@@ -32,19 +34,64 @@ bundle: text_header
 mode: default
 content:
   field__headline:
-    type: text_trimmed
-    weight: 0
-    label: above
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-  field_subheadline:
+    type: string
     weight: 1
     label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: headline_light_grey
+            pattern_mapping:
+              'ds_field_template:field__headline__value':
+                destination: text
+                weight: 0
+                plugin: ds_field_template
+                source: field__headline__value
+  field_subheadline:
+    weight: 3
+    label: hidden
     settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: text_media_object
+            pattern_mapping:
+              'ds_field_template:field_subheadline':
+                destination: text
+                weight: 0
+                plugin: ds_field_template
+                source: field_subheadline
+    type: text_default
+  field_tape:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
+    type: string
+  field_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: pattern
+          settings:
+            pattern: text_media_object
+            pattern_mapping:
+              'ds_field_template:field_text':
+                destination: text
+                weight: 0
+                plugin: ds_field_template
+                source: field_text
     type: text_default
 hidden:
   created: true
-  field_headline: true
   uid: true

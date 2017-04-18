@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.service.field__headline
+    - field.field.node.service.field_image
     - field.field.node.service.field_kicker
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
@@ -32,8 +33,8 @@ third_party_settings:
       background_image:
         - field_teaser_image
       label:
-        - field__headline
         - group_tape_double
+        - field__headline
         - field_kicker
       section:
         - field_paragraph
@@ -43,7 +44,7 @@ third_party_settings:
         - field__headline
         - field_kicker
       parent_name: ''
-      weight: 2
+      weight: 1
       format_type: pattern_formatter
       format_settings:
         label: 'Tape Double'
@@ -97,7 +98,7 @@ content:
                 source: field_kicker__value
   field_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 3
+    weight: 2
     label: hidden
     settings:
       view_mode: default
@@ -121,17 +122,11 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: default
+          id: reset
           settings:
             lb: ''
-            lb-col: false
-            classes: {  }
-  field_teaser_text:
-    weight: 4
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: basic_string
 hidden:
+  field_image: true
   field_teaser_image_hover: true
+  field_teaser_text: true
   links: true

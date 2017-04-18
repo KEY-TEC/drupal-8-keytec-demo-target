@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.service.field__headline
+    - field.field.node.service.field_image
     - field.field.node.service.field_kicker
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_teaser_image
@@ -31,6 +32,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+  field_image:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_kicker:
     weight: 2
     settings:
