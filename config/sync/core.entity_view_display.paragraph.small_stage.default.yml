@@ -78,9 +78,9 @@ content:
     weight: 1
     label: hidden
     settings:
-      url_type: '0'
       image_style: ''
       image_link: ''
+      url_type: ''
     third_party_settings:
       ds:
         ft:
