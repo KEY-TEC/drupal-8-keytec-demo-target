@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.about_us_entry.field_kicker
     - field.field.paragraph.about_us_entry.field_text
     - field.field.paragraph.about_us_entry.field_title
+    - image.style.max_325x325
     - paragraphs.paragraphs_type.about_us_entry
   module:
     - ds
@@ -41,7 +42,7 @@ content:
     weight: 3
     label: hidden
     settings:
-      image_style: ''
+      image_style: max_325x325
       image_link: ''
     third_party_settings:
       ds:
