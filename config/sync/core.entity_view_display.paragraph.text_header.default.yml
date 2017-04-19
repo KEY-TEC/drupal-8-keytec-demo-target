@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.text_header.field__headline
     - field.field.paragraph.text_header.field_subheadline
     - field.field.paragraph.text_header.field_tape
-    - field.field.paragraph.text_header.field_text
     - paragraphs.paragraphs_type.text_header
   module:
     - ds
@@ -24,9 +23,8 @@ third_party_settings:
           field_templates: default
     regions:
       content:
-        - field_text
-        - field__headline
         - field_tape
+        - field__headline
         - field_subheadline
 id: paragraph.text_header.default
 targetEntityType: paragraph
@@ -44,15 +42,15 @@ content:
         ft:
           id: pattern
           settings:
-            pattern: headline_light_grey
+            pattern: headline_balzac_green
             pattern_mapping:
               'ds_field_template:field__headline__value':
-                destination: text
+                destination: headline
                 weight: 0
                 plugin: ds_field_template
                 source: field__headline__value
   field_subheadline:
-    weight: 3
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings:
@@ -69,29 +67,23 @@ content:
                 source: field_subheadline
     type: text_default
   field_tape:
-    weight: 2
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_text:
-    weight: 0
-    label: hidden
-    settings: {  }
     third_party_settings:
       ds:
         ft:
           id: pattern
           settings:
-            pattern: text_media_object
+            pattern: tape_large3
             pattern_mapping:
-              'ds_field_template:field_text':
-                destination: text
+              'ds_field_template:field_tape__value':
+                destination: label
                 weight: 0
                 plugin: ds_field_template
-                source: field_text
-    type: text_default
+                source: field_tape__value
+    type: string
 hidden:
   created: true
   uid: true

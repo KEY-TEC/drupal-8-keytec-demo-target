@@ -3403,6 +3403,10 @@ table.hover tr:nth-of-type(even):hover {
   }
 }
 
+.headline--padding {
+  padding: 20px 0 20px 0;
+}
+
 .headline--center {
   text-align: center;
 }
@@ -3437,10 +3441,6 @@ table.hover tr:nth-of-type(even):hover {
 
 .headline--green {
   color: #b7cf95;
-}
-
-.headline--lightgray {
-  color: #c7c7c7;
 }
 
 .headline--spacer {
@@ -4116,14 +4116,6 @@ table.hover tr:nth-of-type(even):hover {
 .text-header--small {
   padding-bottom: 6.25rem;
   margin-bottom: 6.25rem;
-}
-
-.text-header--no-color {
-  background-color: transparent;
-}
-
-.text-header .headline--center {
-  padding: 20px 0 20px 0;
 }
 
 @media screen and (min-width: 40em) {

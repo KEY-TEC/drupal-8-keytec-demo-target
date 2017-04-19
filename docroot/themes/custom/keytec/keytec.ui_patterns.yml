@@ -210,6 +210,16 @@ section_clients:
       description: The teaser service.
       preview: teaser
 
+section_text:
+  label: Section Text
+  description: An Organism with teaser.
+  fields:
+    content:
+      type: text
+      label: Content
+      description: The teaser service.
+      preview: teaser
+
 teaser:
   label: Teaser
   description: A simple molecule.
@@ -425,6 +435,16 @@ media_object:
       description: The teaser service.
       preview: teaser
 
+headline_balzac_green:
+  label: Headline Balzac Green
+  description: An Organism.
+  fields:
+    headline:
+      type: text
+      label: Headline
+      description: The Two Col Headline.
+      preview: Headline of section
+
 headline_balzac_pink:
   label: Headline Balzac Pink
   description: An Organism.
@@ -434,6 +454,7 @@ headline_balzac_pink:
       label: Headline
       description: The Two Col Headline.
       preview: Headline of section
+
 
 tape_small_beige:
   label: Tape Small Beige
@@ -452,15 +473,5 @@ text_media_object:
     text:
       type: text
       label: text
-      description: The Two Col Headline.
-      preview: Headline of section
-
-headline_light_grey:
-  label: Headline Light Grey
-  description: An Atom.
-  fields:
-    text:
-      type: text
-      label: Headline
       description: The Two Col Headline.
       preview: Headline of section

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.team.field_image
     - field.field.node.team.field_paragraph_section
-    - field.field.node.team.field_paragraph_text_header
+    - field.field.node.team.field_paragraph_section_text
     - field.field.node.team.field_subheadline
     - field.field.node.team.field_tape
     - image.style.thumbnail
@@ -42,9 +42,9 @@ content:
       form_display_mode: default
       default_paragraph_type: ''
     third_party_settings: {  }
-  field_paragraph_text_header:
+  field_paragraph_section_text:
     type: entity_reference_paragraphs
-    weight: 34
+    weight: 36
     settings:
       title: Paragraph
       title_plural: Paragraphs
