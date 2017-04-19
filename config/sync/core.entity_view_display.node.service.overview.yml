@@ -155,6 +155,7 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_image: true
   field_paragraph: true
   field_teaser_image_hover: true
   links: true
