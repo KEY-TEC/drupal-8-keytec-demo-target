@@ -1,8 +1,15 @@
-<a href="{{ teaser_link }}" class="teaser {{ modifier_class('teaser', modifier) }} {{ attributes.class }}" {{ attributes|without('class')}}>
-    <img class="teaser__image" src="{{- src -}}" alt="" {% if hover_src %} data-hover="{{- hover_src -}}{% endif %}">
+<a href="{{ teaser_link }}"
+   class="teaser {{ modifier_class('teaser', modifier) }} {{ attributes.class }}" {{ attributes|without('class') }}>
+  <img class="teaser__image" src="{{- src -}}" alt="" {% if hover_src %} data-hover="{{- hover_src -}}{% endif %}">
+  {% if kicker != null %}
     <div class="teaser__kicker">{{- kicker -}}</div>
+  {% endif %}
+  {% if headline != null %}
     <div class="teaser__headline">
-        {% include "@atoms/headline/headline.twig" with {"modifier":"balzac","text":headline} only %}
+      {% include "@atoms/headline/headline.twig" with {"modifier":"balzac","text":headline} only %}
     </div>
+  {% endif %}
+  {% if subheadline != null %}
     <div class="teaser__subheadline">{{- subheadline -}}</div>
+  {% endif %}
 </a>

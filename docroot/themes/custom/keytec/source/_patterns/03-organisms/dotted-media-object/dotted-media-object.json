@@ -1,6 +1,8 @@
 {
-  "src": "/images/kyt_about_us.png",
+  "src": "<img src='/images/kyt_about_us.png'>",
   "kicker": "2000",
+  "modifier": "left",
+  "align": "left",
   "title": "Starting up",
   "subtitle": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam"
 }

@@ -5,7 +5,12 @@
     {% include "@atoms/image/image.twig" with{"img":img} only %}
   {% endif %}
   <div class="stage__layer">
-    <div class="row ">
+    <div class="row {{ rowcenter }}">
+      {% if img != null %}
+        <div class="medium-2 show-for-medium align-self-middle columns">
+          {% include "@atoms/image/image.twig" with{"src": img} only %}
+        </div>
+      {% endif %}
       {% if label != null %}
         <div class="medium-7 large-6 small-10 columns">
           {{ label }}
