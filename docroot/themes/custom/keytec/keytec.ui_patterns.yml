@@ -445,6 +445,17 @@ headline_balzac_green:
       description: The Two Col Headline.
       preview: Headline of section
 
+headline_balzac_pink:
+  label: Headline Balzac Pink
+  description: An Organism.
+  fields:
+    headline:
+      type: text
+      label: Headline
+      description: The Two Col Headline.
+      preview: Headline of section
+
+
 tape_small_beige:
   label: Tape Small Beige
   description: An Organism.
