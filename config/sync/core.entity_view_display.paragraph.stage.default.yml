@@ -28,7 +28,6 @@ third_party_settings:
         - field_bg_image
       label:
         - field_tape
-        - field_tape_subheadline
 id: paragraph.stage.default
 targetEntityType: paragraph
 bundle: stage
@@ -44,11 +43,9 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: default
+          id: reset
           settings:
             lb: ''
-            lb-col: false
-            classes: {  }
   field_tape:
     type: string
     weight: 1
@@ -62,19 +59,13 @@ content:
           settings:
             pattern: tape_double
             pattern_mapping:
-              'ds_field_template:field_tape__value':
+              'ds_field_template:field_tape':
                 destination: label
                 weight: 0
                 plugin: ds_field_template
-                source: field_tape__value
-  field_tape_subheadline:
-    type: string
-    weight: 2
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
+                source: field_tape
 hidden:
   created: true
   field_tape_scroll: true
+  field_tape_subheadline: true
   uid: true

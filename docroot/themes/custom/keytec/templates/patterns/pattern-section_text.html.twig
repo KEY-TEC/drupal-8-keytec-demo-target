@@ -1,0 +1,6 @@
+{% set content %}
+    {% embed "@atoms/text/text.twig" with {"modifier":"center", "text":content.field_text }%}{% endembed %}
+    {% embed "@atoms/headline/headline.twig" with {"modifier":"center light-grey padding","text":content.field__headline,}%}{% endembed %}
+    {% embed "@atoms/text/text.twig" with {"modifier":"center","text":content.field_subheadline}%}{% endembed %}
+{% endset %}
+{% include "@organisms/section/section.twig" with {"headline":null,"content_has_row": true, "content":content } only %}

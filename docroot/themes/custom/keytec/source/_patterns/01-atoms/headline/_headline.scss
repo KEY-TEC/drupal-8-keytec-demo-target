@@ -10,7 +10,11 @@
     line-height: rem-calc(46);
     //margin: rem-calc(84) auto rem-calc(12);
   }
+  &--padding{
+    padding: 20px 0 20px 0;
+  }
   &--center{
+
     text-align: center;
   }
   &--left{
@@ -38,9 +42,6 @@
   }
   &--green{
     color: #b7cf95;
-  }
-  &--lightgray {
-    color: #c7c7c7;
   }
   &--spacer{
     padding-top: 95px;

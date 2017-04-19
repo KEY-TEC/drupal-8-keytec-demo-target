@@ -8,10 +8,11 @@ dependencies:
     - field.field.paragraph.small_stage.field_tape
     - field.field.paragraph.small_stage.field_tape_subheadline
     - paragraphs.paragraphs_type.small_stage
+    - responsive_image.styles.stage
   module:
     - ds
     - field_group
-    - image_url_formatter
+    - responsive_image
 third_party_settings:
   ds:
     layout:
@@ -64,30 +65,28 @@ content:
     weight: 0
     label: hidden
     settings:
+      responsive_image_style: stage_small
       image_link: ''
-      image_style: ''
-      url_type: ''
     third_party_settings:
       ds:
         ft:
           id: reset
           settings:
             lb: ''
-    type: image_url
+    type: responsive_image
   field_image_left:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: stage
       image_link: ''
-      url_type: ''
     third_party_settings:
       ds:
         ft:
           id: reset
           settings:
             lb: ''
-    type: image_url
+    type: responsive_image
   field_tape:
     type: string
     weight: 3

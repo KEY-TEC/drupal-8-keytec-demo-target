@@ -1,0 +1,51 @@
+{
+
+  "headline":null,
+  "content_has_row": true,
+  "content": {
+    "join()": [
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempo",
+            "modifier": "center",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-12 columns"
+              }
+            }
+          }
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-headline",
+          "with": {
+            "text": "consetetur sadipscing elitr",
+            "modifier":"center light-grey padding",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-12 columns"
+              }
+            }
+          },"only": true
+        }
+      },
+      {
+        "include()": {
+          "pattern": "atoms-text",
+          "with": {
+            "text": "<p>Recherche- uns Refernzenportlfür alle.</br>die es genau wissen wollen</p>",
+            "modifier": "center",
+            "attributes": {
+              "Attribute()": {
+                "class":"small-12 columns"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}
