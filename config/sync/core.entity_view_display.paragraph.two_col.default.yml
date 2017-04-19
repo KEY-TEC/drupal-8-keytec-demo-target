@@ -21,7 +21,6 @@ dependencies:
   module:
     - ds
     - image
-    - options
     - text
 third_party_settings:
   ds:
@@ -102,12 +101,6 @@ content:
                 plugin: ds_field_template
                 source: field__text_right___value
     type: string
-  field_color:
-    weight: 12
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
   field_date_left:
     type: string
     weight: 3
@@ -201,7 +194,7 @@ content:
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: 'headline headline--balzac '
+            fi-cl: 'headline headline--balzac headline--yellow'
             fi-at: ''
             suffix: ''
             lbw: false
@@ -236,7 +229,7 @@ content:
             fis-at: ''
             fi: true
             fi-el: div
-            fi-cl: 'headline headline--balzac '
+            fi-cl: 'headline headline--balzac headline--yellow'
             fi-at: ''
             suffix: ''
             lbw: false
@@ -248,12 +241,6 @@ content:
             fis-def-at: false
             fi-def-at: false
     type: string
-  field_image_indent:
-    weight: 13
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: list_default
   field_image_left:
     weight: 2
     label: hidden
@@ -350,5 +337,7 @@ content:
     type: text_default
 hidden:
   created: true
+  field_color: true
   field_format: true
+  field_image_indent: true
   uid: true
