@@ -41,16 +41,12 @@ content:
             lb: ''
     type: basic_string
   field_name:
-    weight: 0
-    label: hidden
-    settings: {  }
-    third_party_settings:
-      ds:
-        ft:
-          id: reset
-          settings:
-            lb: ''
-    type: basic_string
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   message:
     type: basic_string
     weight: 2

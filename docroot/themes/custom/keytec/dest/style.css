@@ -4,6 +4,10 @@
   max-width: 960px;
 }
 
+#contact-message-contact-form label {
+  display: none;
+}
+
 /* montserrat-regular - latin */
 @font-face {
   font-family: 'Montserrat';
