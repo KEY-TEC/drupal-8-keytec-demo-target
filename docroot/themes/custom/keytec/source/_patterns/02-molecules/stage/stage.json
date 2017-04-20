@@ -2,10 +2,10 @@
   "src": "/images/kyt_beratung_collage_statisch_160524.jpg",
   "label": {
     "include()": {
-      "pattern": "atoms-tape",
+      "pattern": "atoms-tape-double",
       "with": {
         "label": "Total Drupal",
-        "modifier":"double beige",
+        "modifier":"double red",
         "attributes": {
           "Attribute()": {
           }

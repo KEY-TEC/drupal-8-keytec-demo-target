@@ -1,1 +1,4 @@
 {% include "@molecules/text-header/text-header.twig" with {"content":content,"modifier":"no-color"} only %}
+{% block label %}
+    {% include "@atoms/tape/tape.twig" with {"modifier": "scroll beige positioned"} only%}
+{% endblock label %}

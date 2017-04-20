@@ -1,8 +1,19 @@
 {
   "modifier": "double red",
   "label": "Total Final",
-  "label2":"TEAM"
-
+  "sub": {
+    "include()": {
+      "pattern": "atoms-tape",
+      "with": {
+        "label": "TEAM",
+        "modifier": "small white",
+        "attributes": {
+          "Attribute()": {
+          }
+        }
+      }
+    }
+  }
 }
 
 

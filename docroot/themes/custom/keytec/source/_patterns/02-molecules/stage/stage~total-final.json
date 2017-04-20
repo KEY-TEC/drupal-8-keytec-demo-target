@@ -2,21 +2,17 @@
   "src": "/images/kyt_hosting_collage_bg_160511.jpg",
   "label": {
     "include()": {
-      "pattern": "atoms-tape",
+      "pattern": "atoms-tape-total-final",
       "with": {
+        "modifier": "double beige",
         "label": "Total Final",
-        "label2": {
+        "sub": {
           "include()": {
             "pattern": "atoms-tape",
             "with": {
-              "label": "Hosting",
-              "modifier":"small white"
+              "label": "TEAM",
+              "modifier": "small white"
             }
-          }
-        },
-        "modifier":"double beige",
-        "attributes": {
-          "Attribute()": {
           }
         }
       }

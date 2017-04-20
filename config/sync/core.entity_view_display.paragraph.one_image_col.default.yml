@@ -3,19 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.one_image_col.field_date_left
-    - field.field.paragraph.one_image_col.field_date_right
-    - field.field.paragraph.one_image_col.field_headline_left
-    - field.field.paragraph.one_image_col.field_headline_right
-    - field.field.paragraph.one_image_col.field_image_left
-    - field.field.paragraph.one_image_col.field_image_right
-    - field.field.paragraph.one_image_col.field_text_left
-    - field.field.paragraph.one_image_col.field_text_right
     - paragraphs.paragraphs_type.one_image_col
   module:
     - ds
-    - image_url_formatter
-    - text
 third_party_settings:
   ds:
     layout:
@@ -42,74 +32,7 @@ id: paragraph.one_image_col.default
 targetEntityType: paragraph
 bundle: one_image_col
 mode: default
-content:
-  field_date_left:
-    weight: 1
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_date_right:
-    weight: 5
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_headline_left:
-    weight: 3
-    label: hidden
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-  field_headline_right:
-    weight: 6
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-  field_image_left:
-    weight: 0
-    label: hidden
-    settings:
-      image_style: ''
-      image_link: ''
-      url_type: ''
-    third_party_settings:
-      ds:
-        ft:
-          id: reset
-          settings:
-            lb: ''
-    type: image_url
-  field_image_right:
-    weight: 4
-    label: hidden
-    settings:
-      url_type: '0'
-      image_style: ''
-      image_link: ''
-    third_party_settings:
-      ds:
-        ft:
-          id: reset
-          settings:
-            lb: ''
-    type: image_url
-  field_text_left:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-  field_text_right:
-    weight: 7
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
+content: {  }
 hidden:
   created: true
   uid: true

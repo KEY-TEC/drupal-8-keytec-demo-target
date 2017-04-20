@@ -77,11 +77,9 @@ content:
     third_party_settings:
       ds:
         ft:
-          id: default
+          id: reset
           settings:
             lb: ''
-            lb-col: false
-            classes: {  }
     type: responsive_image
 hidden:
   links: true

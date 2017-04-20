@@ -6,12 +6,14 @@
       {% endblock label %}
     </div>
     {% if label2 != null %}
-      <div class="tape__label2">
+      <div class="tape__label2 {{ modifier_class('tape__label2', label2_modifier) }} ">
         {% block label2 %}
           {{- label2 -}}
         {% endblock label2 %}
       </div>
     {% endif %}
+    {% block sub %}
     {{ sub }}
+    {% endblock sub %}
   </div>
 </div>

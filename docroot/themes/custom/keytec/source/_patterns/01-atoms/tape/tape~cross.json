@@ -1,6 +1,7 @@
 {
   "class": "small-12 columns text-center",
   "label": "est.2000",
+  "label2": null,
   "modifier": "cross red",
   "attributes": {
     "Attribute()": {

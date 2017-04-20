@@ -47,7 +47,7 @@ third_party_settings:
       weight: 1
       format_type: pattern_formatter
       format_settings:
-        label: 'Tape Double'
+        label: tape_double
         pattern: tape_double_kicker
         pattern_mapping:
           'fields:field__headline':
@@ -56,11 +56,11 @@ third_party_settings:
             plugin: fields
             source: field__headline
           'fields:field_kicker':
-            destination: label2
+            destination: sub
             weight: 1
             plugin: fields
             source: field_kicker
-      label: 'Tape Double'
+      label: tape_double
 id: node.service.default
 targetEntityType: node
 bundle: service
@@ -68,19 +68,21 @@ mode: default
 content:
   field__headline:
     type: string
-    weight: 1
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings:
       ds:
         ft:
-          id: reset
+          id: default
           settings:
             lb: ''
+            lb-col: false
+            classes: {  }
   field_kicker:
     type: string
-    weight: 2
+    weight: 7
     label: hidden
     settings:
       link_to_entity: false
@@ -98,7 +100,7 @@ content:
                 source: field_kicker__value
   field_paragraph:
     type: entity_reference_revisions_entity_view
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       view_mode: default

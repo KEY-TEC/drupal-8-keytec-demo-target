@@ -73,11 +73,27 @@ tape_double_kicker:
       label: Label
       description: The image title.
       preview: Tape
-    label2:
+    sub:
       type: text
-      label: Label2
+      label: Sub
       description: The image title.
       preview: Tape
+
+tape_double_kicker_team:
+  label: Tape Double Kicker Team
+  description: A simple Atom.
+  fields:
+    label:
+      type: text
+      label: Label
+      description: The image title.
+      preview: Tape
+    sub:
+      type: text
+      label: Sub
+      description: The image title.
+      preview: Tape
+
 
 tape_scroll:
   label: Tape Scroll
@@ -130,8 +146,8 @@ tape_small:
       description: The tape send.
       preview: Tape Small
 
-tape_sub:
-  label: Tape Sub
+tape_final:
+  label: Tape Final
   description: A simple Atom.
   fields:
     label:
@@ -139,6 +155,7 @@ tape_sub:
       label: Label
       description: The tape send.
       preview: Tape Small
+
 
 tape_subheadline:
   label: Tape Subheadline

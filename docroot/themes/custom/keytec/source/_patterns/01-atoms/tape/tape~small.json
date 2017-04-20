@@ -1,5 +1,6 @@
 {
   "label": "SENDEN",
+  "label2": null,
   "modifier": "small red",
   "attributes": {
     "Attribute()": {
