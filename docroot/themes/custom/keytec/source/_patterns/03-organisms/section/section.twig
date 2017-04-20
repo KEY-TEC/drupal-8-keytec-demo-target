@@ -10,7 +10,7 @@
     </div>
   {% endif %}
   {% if content_has_row == true %}
-  <div class="row">
+  <div class="row {{ row_modifier }}">
     {% endif %}
     {% block content %}
       {{ content }}

@@ -1,4 +1,4 @@
-uuid: f34a8f97-3b42-4cb1-898c-fb75345efd11
+uuid: 54efd692-500b-4b86-ac7d-bfaef13069b4
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,10 @@ dependencies:
 id: contact_message.field_name
 field_name: field_name
 entity_type: contact_message
-type: string_long
+type: string
 settings:
+  max_length: 255
+  is_ascii: false
   case_sensitive: false
 module: core
 locked: false

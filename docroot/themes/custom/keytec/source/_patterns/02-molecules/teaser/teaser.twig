@@ -1,5 +1,4 @@
-<a href="{{ teaser_link }}"
-   class="teaser {{ modifier_class('teaser', modifier) }} {{ attributes.class }}" {{ attributes|without('class') }}>
+<{{ tag_name|default('a') }} {%  if teaser_link is not empty %} href="{{ teaser_link }}" {% endif %} class="teaser {{ modifier_class('teaser', modifier) }} {{ attributes.class }}" {{ attributes|without('class') }}>
   <img class="teaser__image" src="{{- src -}}" alt="" {% if hover_src %} data-hover="{{- hover_src -}}{% endif %}">
   {% if kicker != null %}
     <div class="teaser__kicker">{{- kicker -}}</div>
@@ -12,4 +11,4 @@
   {% if subheadline != null %}
     <div class="teaser__subheadline">{{- subheadline -}}</div>
   {% endif %}
-</a>
+</{{ tag_name|default('a') }}>
