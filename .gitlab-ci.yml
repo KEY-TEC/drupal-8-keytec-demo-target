@@ -18,7 +18,7 @@ before_script:
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   - git config --global push.default simple
   - git pull origin $CI_BUILD_REF_NAME
-  - git remote add origin "keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git"
+  - git remote add acquia "keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git"
 
 after_script:
   - git remote rm acquia
