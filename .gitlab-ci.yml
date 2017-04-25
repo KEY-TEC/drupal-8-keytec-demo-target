@@ -27,7 +27,6 @@ test:
   stage: test
   script:
     - echo "Running tests"
-    - curl -fsSL get.docksal.io | sh
     - fin up
 
 deploy_staging:
