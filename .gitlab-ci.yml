@@ -1,0 +1,31 @@
+stages:
+  - deploy
+
+before_script:
+  # Install ssh-agent if not already installed, it is required by Docker.
+  # (change apt-get to yum if you use a CentOS-based image)
+  - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )'
+
+  # Run ssh-agent (inside the build environment)
+  - eval $(ssh-agent -s)
+
+  # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
+  - ssh-add <(echo "$ACQUIA_SSH_KEY")
+
+  - mkdir -p ~/.ssh
+  - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  - git config --global push.default simple
+  - git remote rm acquia
+  - git remote add acquia keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git
+  - git pull origin $CI_BUILD_REF_NAME
+  - git checkout $CI_BUILD_REF_NAME
+deploy_staging:
+  stage: deploy
+  script:
+    - echo "Deploy to staging server"
+    - git pull origin $CI_BUILD_REF_NAME
+    - git checkout $CI_BUILD_REF_NAME
+    - git pull
+    - git push acquia $CI_BUILD_REF_NAME:$CI_BUILD_REF_NAME
+  environment:
+    name: schaer.dev
