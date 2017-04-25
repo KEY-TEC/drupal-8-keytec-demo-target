@@ -1,4 +1,5 @@
 stages:
+  - test
   - deploy
 
 before_script:
@@ -9,16 +10,23 @@ before_script:
   # Run ssh-agent (inside the build environment)
   - eval $(ssh-agent -s)
   - echo $ACQUIA_SSH_KEY
+  - pwd
   # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
   - ssh-add <(echo "$ACQUIA_SSH_KEY")
 
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
   - git config --global push.default simple
-  - git remote rm acquia
-  - git remote add acquia keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git
+  - git remote set-url acquia "keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git"
   - git pull origin $CI_BUILD_REF_NAME
   - git checkout $CI_BUILD_REF_NAME
+test:
+  stage: test
+  script:
+    - echo "Running tests"
+    - curl -fsSL get.docksal.io | sh
+    - fin up
+
 deploy_staging:
   stage: deploy
   script:
@@ -28,4 +36,6 @@ deploy_staging:
     - git pull
     - git push acquia $CI_BUILD_REF_NAME:$CI_BUILD_REF_NAME
   environment:
-    name: schaer.dev
+    name: keytec.dev
+  only:
+    - master
