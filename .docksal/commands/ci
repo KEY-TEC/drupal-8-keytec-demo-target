@@ -11,7 +11,6 @@ set -e
     fin up
     REMOTE_SITE=${PROJECT}.${ENV}
     SITEDIR_PATH="${DOCROOT_PATH}/sites/default"
-      #sudo mkdir -p ${SITEDIR_PATH}
     cp -R ${PROJECT_ROOT}/.docksal/drupal/files $SITEDIR_PATH
 
     cp ${PROJECT_ROOT}/.docksal/drupal/ci.settings.local.php ${SITEDIR_PATH}/settings.local.php
@@ -24,5 +23,3 @@ set -e
     fin drush cim -y
     fin drush -y rsync @${REMOTE_SITE}:sites/default/files @self:sites/default
     fin share
-
-exit 1;
