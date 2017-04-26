@@ -7,7 +7,7 @@ echo ${PROJECT_ROOT}
 PROJECT='keytec';
 ENV="dev"
 
-set -e
+#set -e
     fin up
     REMOTE_SITE=${PROJECT}.${ENV}
     SITEDIR_PATH="${DOCROOT_PATH}/sites/default"
