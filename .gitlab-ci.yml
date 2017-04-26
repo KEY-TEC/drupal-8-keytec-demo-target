@@ -9,10 +9,10 @@ before_script:
 
   # Run ssh-agent (inside the build environment)
   - eval $(ssh-agent -s)
-  - echo $ACQUIA_SSH_KEY
   - pwd
   # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
   - ssh-add <(echo "$ACQUIA_SSH_KEY")
+  - fin ssh-add <(echo "$ACQUIA_SSH_KEY")
 
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
