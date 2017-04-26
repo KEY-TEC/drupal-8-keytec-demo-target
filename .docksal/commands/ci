@@ -22,4 +22,4 @@ set -e
     fin drush updb -y
     fin drush cim -y
     fin drush -y rsync @${REMOTE_SITE}:sites/default/files @self:sites/default
-    fin share
+    #fin share
