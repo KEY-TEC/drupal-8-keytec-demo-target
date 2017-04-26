@@ -7,7 +7,7 @@ echo ${PROJECT_ROOT}
 PROJECT='keytec';
 ENV="dev"
 
-#set -e
+set -e
     fin up
     REMOTE_SITE=${PROJECT}.${ENV}
     SITEDIR_PATH="${DOCROOT_PATH}/sites/default"
@@ -21,5 +21,5 @@ ENV="dev"
     fin drush cr
     fin drush updb -y
     fin drush cim -y
-    fin drush -y rsync @${REMOTE_SITE}:sites/default/files @self:sites/default
+    #fin drush -y rsync @${REMOTE_SITE}:sites/default/files @self:sites/default
     fin share
