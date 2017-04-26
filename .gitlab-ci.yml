@@ -27,7 +27,7 @@ test:
   stage: test
   script:
     - echo "Running tests"
-    - fin up
+    - fin ci
 
 deploy_staging:
   stage: deploy
