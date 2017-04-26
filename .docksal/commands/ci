@@ -16,10 +16,9 @@ do
       REMOTE_SITE=${PROJECT}.${ENVS[$i]}
       SITEDIR_PATH="${DOCROOT_PATH}/sites/default"
       #sudo mkdir -p ${SITEDIR_PATH}
-      sudo cp -R ${PROJECT_ROOT}/.docksal/drupal/files $SITEDIR_PATH
-      sudo chmod -R 777 ${SITEDIR_PATH}/files
+      cp -R ${PROJECT_ROOT}/.docksal/drupal/files $SITEDIR_PATH
 
-      sudo cp ${PROJECT_ROOT}/.docksal/drupal/ci.settings.local.php ${SITEDIR_PATH}/settings.local.php
+      cp ${PROJECT_ROOT}/.docksal/drupal/ci.settings.local.php ${SITEDIR_PATH}/settings.local.php
 
       cd ${SITEDIR_PATH}
 
