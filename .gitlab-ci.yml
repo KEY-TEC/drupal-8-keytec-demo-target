@@ -12,7 +12,7 @@ before_script:
   - pwd
   # Add the SSH key stored in SSH_PRIVATE_KEY variable to the agent store
   - ssh-add <(echo "$ACQUIA_SSH_KEY")
-  - fin ssh-add <(echo "$ACQUIA_SSH_KEY")
+  - fin ssh-add id_rsa
 
   - mkdir -p ~/.ssh
   - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
