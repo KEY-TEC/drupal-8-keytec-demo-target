@@ -28,7 +28,7 @@ do
         fin drush cr
         fin drush updb -y
         fin drush cim -y
-        fin drush rsync @${REMOTE_SITE}:sites/default/files @self:${SITEDIR_PATH} -y
+        fin drush -y rsync @${REMOTE_SITE}:sites/default/files @self:sites/default
 done
 
 exit 1;
