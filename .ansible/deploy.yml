@@ -5,6 +5,6 @@
   roles:
     - role: drupal-git-deployment
       git_source_repository_path: /home/cw/projects/keytec2017
-      git_target_repository_path: keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git
-      target_dir: /home/cw/ansible/keytec
+      git_target_repository_path: /home/cw/ansible/target_keytec
+      build_dir: /home/cw/ansible/keytec
       branch: "gitlab-automate"

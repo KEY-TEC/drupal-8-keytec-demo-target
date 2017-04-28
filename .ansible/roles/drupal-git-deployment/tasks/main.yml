@@ -1,24 +1,36 @@
 ---
+- name: clean up
+  shell: rm -R "{{ build_dir }}"
+
 - name: check out a git repository
   local_action:
     module: git
     repo: "{{ git_source_repository_path }}"
-    dest: "{{ target_dir }}"
-- name: check out a git repository
-  local_action:
-    module: git
-    repo: "{{ git_source_repository_path }}"
-    dest: "{{ target_dir }}"
-- name: composer install
-  shell: composer install
-  args:
-    chdir: "{{ target_dir }}"
+    dest: "{{ build_dir }}"
+    version: "{{ branch }}"
 
 - name: git add remote
   shell: git remote add remote "{{ git_target_repository_path }}"
+  args:
+    chdir: "{{ build_dir }}"
+
+- name: remove
+  blockinfile:
+    path: "{{ build_dir }}/.gitignore"
+    marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
+    content: ""
+
 - name: git add files
   shell: git add .
+  args:
+    chdir: "{{ build_dir }}"
+
 - name: git commit files
-  shell: git add .
+  shell: git commit -a "deployment"
+  args:
+    chdir: "{{ build_dir }}"
+
 - name: git push
-  shell: git push remote
+  shell: git push remote "{{ branch }}:{{ branch }}"
+  args:
+    chdir: "{{ build_dir }}"
