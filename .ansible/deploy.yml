@@ -1,0 +1,10 @@
+---
+- name: Deploy gitlab repository to acquia repository
+  hosts: 127.0.0.1
+  connection: local
+  roles:
+    - role: drupal-git-deployment
+      git_source_repository_path: /home/cw/projects/keytec2017
+      git_target_repository_path: keytec@svn-4443.devcloud.hosting.acquia.com:keytec.git
+      target_dir: /home/cw/ansible/keytec
+      branch: "gitlab-automate"

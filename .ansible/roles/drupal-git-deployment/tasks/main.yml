@@ -1,0 +1,24 @@
+---
+- name: check out a git repository
+  local_action:
+    module: git
+    repo: "{{ git_source_repository_path }}"
+    dest: "{{ target_dir }}"
+- name: check out a git repository
+  local_action:
+    module: git
+    repo: "{{ git_source_repository_path }}"
+    dest: "{{ target_dir }}"
+- name: composer install
+  shell: composer install
+  args:
+    chdir: "{{ target_dir }}"
+
+- name: git add remote
+  shell: git remote add remote "{{ git_target_repository_path }}"
+- name: git add files
+  shell: git add .
+- name: git commit files
+  shell: git add .
+- name: git push
+  shell: git push remote
