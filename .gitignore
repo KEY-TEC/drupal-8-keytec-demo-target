@@ -9,4 +9,7 @@ docroot/sites/*/files
 #### COMPOSER ###
 docroot/core
 docroot/modules/contrib
+docroot/themes/contrib
+docroot/profiles/contrib
+vendor
 #### COMPOSER ###

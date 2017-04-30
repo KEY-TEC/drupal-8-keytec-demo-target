@@ -14,11 +14,16 @@
   args:
     chdir: "{{ build_dir }}"
 
-- name: remove
+- name: Remove from gitignore
   blockinfile:
     path: "{{ build_dir }}/.gitignore"
-    marker: "<!-- {mark} ANSIBLE MANAGED BLOCK -->"
+    marker: "#### COMPOSER ###"
     content: ""
+
+- name: composer install
+  shell: fin exec "composer install
+  args:
+    chdir: "{{ build_dir }}"
 
 - name: git add files
   shell: git add .
@@ -26,7 +31,7 @@
     chdir: "{{ build_dir }}"
 
 - name: git commit files
-  shell: git commit -a "deployment"
+  shell: "git commit -am \"build: {{ ansible_date_time.iso8601 }}\""
   args:
     chdir: "{{ build_dir }}"
 
