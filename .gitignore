@@ -6,10 +6,10 @@ docker-compose.yml
 docroot/sites/*/settings.local.php
 docroot/sites/*/files
 
-#### COMPOSER ###
+#### BEGIN COMPOSER ###
 docroot/core
 docroot/modules/contrib
 docroot/themes/contrib
 docroot/profiles/contrib
 vendor
-#### COMPOSER ###
+#### END COMPOSER ###
